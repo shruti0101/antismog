@@ -241,7 +241,7 @@ const Productcategory = () => {
 
               {/* CTA */}
               <Link
-                href="/contact"
+                href="/contactse"
                 className="mt-6 bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg text-center font-semibold"
               >
                 Enquire Now
