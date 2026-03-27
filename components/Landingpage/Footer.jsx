@@ -121,7 +121,7 @@ export default function Footer() {
             className="cursor-pointer group"
           >
             <Image
-              src="/home/trustseal.png"
+              src="/TRUST-ELITE.webp"
               alt="Trust Elite"
               width={110}
               height={110}
