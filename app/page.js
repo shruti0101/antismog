@@ -10,7 +10,7 @@ import Process from "@/components/Landingpage/Process";
 import Faq from "@/components/Landingpage/Faq";
 import TestimonialSlider from "@/components/Landingpage/Testimonials";
 import Formsection from "@/components/Landingpage/Formsection";
-import Popup from "@/components/Popup";
+// import Popup from "@/components/Popup";
 // import CityPage from "../components/City";
 import Dedicated from "@/components/Landingpage/Dedicated";
 import Otherproduct from "@/components/Landingpage/Otherpro";
@@ -22,7 +22,7 @@ import ClienteleSlider from "@/components/Landingpage/Clientele";
 export default function Home() {
   return (
     <>
-      <Popup></Popup>
+      {/* <Popup></Popup> */}
       <Hero />
    <ClienteleSlider></ClienteleSlider>
       <About />
