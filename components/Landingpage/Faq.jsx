@@ -137,7 +137,7 @@ Kapmix experts can guide you in selecting the best model.`,
                 openIndex === i ? "max-h-[500px] py-4" : "max-h-0"
               }`}
             >
-              <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">
+              <p className="text-black text-sm leading-relaxed whitespace-pre-line">
                 {item.a}
               </p>
             </div>

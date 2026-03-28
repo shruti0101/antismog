@@ -5,7 +5,7 @@ import Image from "next/image";
 // import Heroform from "@/components/Landingpage/Heroform";
 
 // ✅ Separate images
-const desktopImages = ["/banner1.jpeg","/banner2.jpeg","/banner3.jpeg" ];
+const desktopImages = ["/banner1.webp","/banner2.webp" ];
 const mobileImages = ["/mobile3.webp","/mobile2.webp","/mobile1.webp","/mobile4.webp"];
 
 const Hero = () => {

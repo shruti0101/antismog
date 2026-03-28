@@ -24,7 +24,7 @@ export const metadata = {
   description:
     "anti smog gun",
   icons: {
-    icon: "/logo.webp",
+    icon: "/logo.png",
   },
 };
 

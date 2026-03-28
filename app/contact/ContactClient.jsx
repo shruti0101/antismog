@@ -22,8 +22,8 @@ export default function ContactPage() {
 
     try {
       const formData = {
-        platform: "Sangam Garbage Bag Contact Form",
-        platformEmail: "info@sangamgarbagebags.com",
+        platform: "Kapmix Machinery Contact Form",
+        platformEmail: "info@kapmix.com",
         name,
         phone,
         email,
@@ -47,14 +47,12 @@ City: ${city}
 Message: ${message}
 Contact: ${phone}`;
 
-        setTimeout(() => {
-          window.open(
-            `https://wa.me/91XXXXXXXXXX?text=${encodeURIComponent(
-              whatsappText
-            )}`,
-            "_blank"
-          );
-        }, 1000);
+        window.open(
+          `https://wa.me/919810057441?text=${encodeURIComponent(
+            whatsappText
+          )}`,
+          "_blank"
+        );
 
         setName("");
         setPhone("");
@@ -75,52 +73,55 @@ Contact: ${phone}`;
   return (
     <div>
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section
-        style={{ backgroundImage: "url('/bag/bg-other.webp')" }}
-        className="w-full h-[55vh] md:h-[80vh] bg-cover bg-center relative flex items-center justify-center"
+        style={{ backgroundImage: "url('/Anti-smog-gun-copy.jpg')" }}
+        className="w-full h-[60vh] md:h-[85vh] bg-cover bg-center relative flex items-center justify-center"
       >
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
+
         <div className="relative text-center text-white px-6">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Contact Sangam Garbage Bag Manufacturer
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Contact Kapmix Machinery
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto">
-            Premium Quality Garbage Bags Manufacturer & Supplier in India
+          <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-200">
+            Leading Anti Smog Gun & Construction Equipment Manufacturer in India
           </p>
         </div>
       </section>
 
       {/* CONTACT INFO */}
-      <section className="bg-gray-100 py-16 px-6 md:px-20">
+      <section className="bg-white py-16 px-6 md:px-20">
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
 
           {/* Phone */}
-          <div className="bg-green-700 text-white p-8 rounded-2xl shadow-lg text-center">
-            <Phone size={40} className="mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-2">Call Us</h3>
+          <div className="bg-gradient-to-br from-red-600 to-red-800 text-white p-8 rounded-3xl shadow-xl text-center hover:scale-105 transition">
+            <Phone size={38} className="mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Call Us</h3>
             <p className="text-lg">+91-9810057441</p>
             <p className="text-lg">+91-9810026034</p>
           </div>
 
           {/* Email */}
-          <div className="bg-white border-2 border-green-700 p-8 rounded-2xl shadow-lg text-center">
-            <Mail size={40} className="mx-auto mb-4 text-green-700" />
-            <h3 className="text-xl font-bold text-green-700 mb-2">
+          <div className="bg-white border-2 border-red-600 p-8 rounded-3xl shadow-xl text-center hover:scale-105 transition">
+            <Mail size={38} className="mx-auto mb-4 text-red-600" />
+            <h3 className="text-xl font-semibold text-red-600 mb-2">
               Email Address
             </h3>
             <p className="text-gray-800 text-lg">
-             info@polywell.co.in
+              info@kapmix.com
             </p>
           </div>
 
           {/* Address */}
-          <div className="bg-green-700 text-white p-8 rounded-2xl shadow-lg text-center">
-            <MapPin size={40} className="mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-2">Factory Address</h3>
-            <p>
-          Address - 110, Satya Bhawan, 36 Community Center, Wazirpur Industrial Area, New Delhi-110052
+          <div className="bg-gradient-to-br from-red-600 to-red-800 text-white p-8 rounded-3xl shadow-xl text-center hover:scale-105 transition">
+            <MapPin size={38} className="mx-auto mb-4" />
+            <h3 className="text-xl font-semibold mb-2">Factory Address</h3>
+            <p className="text-sm leading-relaxed">
+              Kapmix Machinery Pvt. Ltd. <br />
+              Wazirpur Industrial Area, <br />
+              New Delhi – 110052, India
             </p>
           </div>
 
@@ -130,9 +131,10 @@ Contact: ${phone}`;
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
           {/* FORM */}
-          <div className="bg-white p-10 rounded-2xl shadow-xl">
+          <div className="bg-white p-10 rounded-3xl shadow-2xl border">
+
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
-              Send Us Your Requirement
+              Send Your Requirement
             </h2>
 
             <form className="space-y-5" onSubmit={handleSubmit}>
@@ -142,7 +144,7 @@ Contact: ${phone}`;
                   type="text"
                   required
                   placeholder="Full Name"
-                  className="border rounded-lg px-4 py-3 w-full"
+                  className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -153,7 +155,7 @@ Contact: ${phone}`;
                   maxLength={10}
                   pattern="[0-9]{10}"
                   placeholder="Phone Number"
-                  className="border rounded-lg px-4 py-3 w-full"
+                  className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
@@ -163,22 +165,20 @@ Contact: ${phone}`;
                 <input
                   type="text"
                   placeholder="City"
-                  className="border rounded-lg px-4 py-3 w-full"
+                  className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
                 />
 
                 <select
-                  className="border rounded-lg px-4 py-3 w-full bg-green-700 text-white font-semibold"
+                  className="border rounded-lg px-4 py-3 w-full bg-red-600 text-white font-semibold"
                   value={requirement}
                   onChange={(e) => setRequirement(e.target.value)}
                 >
                   <option value="">Select Product</option>
-                  <option value="Black Garbage Bags">Biodegradable Garbage Bags</option>
-                  <option value="Green Garbage Bags">Disposable Garbage Bags</option>
-                  <option value="Biomedical Waste Bags">Biomedical garbage bags</option>
-              
-             
+                  <option value="Anti Smog Gun">Anti Smog Gun</option>
+                  <option value="Truck Mounted Smog Gun">Truck Mounted Smog Gun</option>
+                  <option value="Industrial Dust Suppression">Dust Suppression System</option>
                 </select>
               </div>
 
@@ -186,7 +186,7 @@ Contact: ${phone}`;
                 type="email"
                 required
                 placeholder="Email Address"
-                className="border rounded-lg px-4 py-3 w-full"
+                className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -194,7 +194,7 @@ Contact: ${phone}`;
               <textarea
                 rows={4}
                 placeholder="Message"
-                className="border rounded-lg px-4 py-3 w-full"
+                className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
@@ -202,31 +202,33 @@ Contact: ${phone}`;
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-green-700 hover:bg-green-800 transition text-white px-6 py-3 rounded-lg font-semibold w-full"
+                className="bg-gradient-to-r from-red-600 to-red-800 hover:opacity-90 transition text-white px-6 py-3 rounded-xl font-semibold w-full shadow-lg"
               >
                 {loading ? "Submitting..." : "Submit Inquiry"}
               </button>
 
               {status === "success" && (
-                <p className="text-green-600 font-semibold mt-2">
-                  Thank you! Our team will contact you shortly.
+                <p className="text-green-600 font-semibold">
+                  ✅ Thank you! We will contact you shortly.
                 </p>
               )}
               {status === "error" && (
-                <p className="text-red-600 font-semibold mt-2">
-                  Something went wrong. Please try again.
+                <p className="text-red-600 font-semibold">
+                  ❌ Something went wrong. Try again.
                 </p>
               )}
 
             </form>
           </div>
 
-{/* map */}
-<div className="mt-5">
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.2848900849685!2d77.1662442!3d28.702004099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0223846e0903%3A0x6b8f0fbb73c40b4c!2sSangam%20Plastic%20Industries%20Pvt.%20Ltd.!5e1!3m2!1sen!2sin!4v1771318884119!5m2!1sen!2sin"  allowFullScreen="" loading="lazy" className="w-full h-100" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-
+          {/* MAP */}
+          <div className="rounded-3xl overflow-hidden shadow-2xl border">
+            <iframe
+              src="https://www.google.com/maps?q=Wazirpur%20Industrial%20Area%20Delhi&output=embed"
+              className="w-full h-[500px]"
+              loading="lazy"
+            ></iframe>
+          </div>
 
         </div>
       </section>

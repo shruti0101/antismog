@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { categories } from "@/Data";
 import {
   ChevronDown,
 
@@ -84,57 +86,102 @@ export default function Navbar() {
 
       {/* ===== MAIN NAV (GLASS FLOATING) ===== */}
       <div className="mx-auto w-full  bg-white backdrop-blur-lg border border-white/10 shadow-lg">
-        <div className="flex items-center justify-between px-8 h-[80px] text-black">
+        <div className="flex items-center justify-between px-8 h-[85px] text-black">
+
+<Link href="/">
 
           {/* LOGO */}
           <Image
-            src="/logo.webp"
+            src="/logo.png"
             alt="Vands"
-            width={180}
-            height={50}
+            width={120}
+            height={70}
             priority
+            className="object-cover mt-2"
           />
+</Link>
 
           {/* NAV LINKS */}
-          <nav className="flex items-center gap-8 text-[18px] uppercase tracking-wide">
+      <nav className="flex items-center gap-8 text-[18px] uppercase tracking-wide">
 
-            {["HOME", "ABOUT US", "BLOGS", "CONTACT US"].map((item, i) => (
-              <button key={i} className="relative group">
-                <span className="text-black group-hover:text-yellow-500 transition">
-                  {item}
-                </span>
+  {/* HOME */}
+  <Link href="/" className="relative group">
+    <span className="text-black group-hover:text-yellow-500 transition">
+      HOME
+    </span>
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+  </Link>
 
-                {/* underline animation */}
-                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-              </button>
-            ))}
+  {/* ABOUT */}
+  <Link href="/about" className="relative group">
+    <span className="text-black group-hover:text-yellow-500 transition">
+      ABOUT US
+    </span>
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+  </Link>
 
-            {/* DROPDOWN */}
-            <div className="relative group">
-              <button className="flex items-center gap-1 text-black group-hover:text-yellow-500 transition">
-                OUR PRODUCTS <ChevronDown size={15}/>
-              </button>
+  {/* 🔥 PRODUCTS (MIDDLE) */}
+ <div className="relative group">
 
-              <div className="absolute left-0 top-[120%] opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-3 group-hover:translate-y-0 transition-all duration-300 bg-white text-black rounded-lg shadow-xl min-w-[230px] overflow-hidden">
-                <ul className="flex flex-col text-[14px]">
-                  {[
-                    "Airless Spray Machine",
-                    "Wall Putty Spray Machine",
-                    "Airless Painting Machine",
-                  ].map((item, i) => (
-                    <li
-                      key={i}
-                      className="px-5 py-3 hover:bg-gray-100 cursor-pointer"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+  {/* BUTTON */}
+  <button className="flex items-center gap-1 text-black group-hover:text-yellow-500 transition">
+    OUR PRODUCTS <ChevronDown size={15}/>
+  </button>
 
-          </nav>
+  {/* ===== MEGA MENU ===== */}
+  <div className="absolute left-1/2 -translate-x-1/2 top-[120%] w-[900px] bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-4 group-hover:translate-y-0 transition-all duration-300 z-50">
 
+    <div className="grid grid-cols-4 gap-6 p-6">
+
+      {categories.map((cat, i) => (
+        <div key={i} className="group/item">
+
+          {/* CATEGORY IMAGE */}
+          <div className="relative w-full h-[210px] bg-gray-50 rounded-lg overflow-hidden mb-3">
+            <Image
+              src={cat.products?.[0]?.image?.[0]?.src || "/placeholder.png"}
+              alt={cat.name}
+              fill
+              className="object-cover group-hover/item:scale-105 transition"
+            />
+          </div>
+
+          {/* CATEGORY NAME */}
+          <Link
+            href={`/categories/${cat.id}`}
+            className="block font-semibold text-center text-black hover:text-red-600 mb-2"
+          >
+            {cat.name}
+          </Link>
+
+          {/* PRODUCTS LIST (LIMIT 4) */}
+        
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</div>
+
+  {/* BLOGS */}
+  <Link href="/blogs" className="relative group">
+    <span className="text-black group-hover:text-yellow-500 transition">
+      BLOGS
+    </span>
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+  </Link>
+
+  {/* CONTACT */}
+  <Link href="/contact" className="relative group">
+    <span className="text-black group-hover:text-yellow-500 transition">
+      CONTACT US
+    </span>
+    <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+  </Link>
+
+</nav>
           {/* RIGHT SIDE */}
           <div className="flex items-center gap-5">
 

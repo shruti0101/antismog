@@ -12,6 +12,7 @@ import {
 import { useRef } from "react";
 const About = () => {
  const videoRef = useRef(null);
+ 
   const industries = [
     {
       title: "Construction & Infrastructure Sites",
@@ -85,7 +86,7 @@ const About = () => {
 
 
         {/* ===== LEFT CONTENT ===== */}
-        
+
         <div>
 
           <span className="inline-block mb-4 px-4 py-1.5 text-xs font-semibold tracking-wider text-red-400 bg-red-500/10 rounded-full border border-red-500/20">
