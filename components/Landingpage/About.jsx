@@ -13,32 +13,32 @@ import { useRef } from "react";
 const About = () => {
  const videoRef = useRef(null);
  
-  const industries = [
-    {
-      title: "Construction & Infrastructure Sites",
-      icon: Building2,
-    },
-    {
-      title: "Municipal Corporations & Smart Cities",
-      icon: Factory,
-    },
-    {
-      title: "Mining & Quarry Operations",
-      icon: Truck,
-    },
-    {
-      title: "Industrial Plants & Warehouses",
-      icon: Warehouse,
-    },
-    {
-      title: "Pollution Control Boards & Govt Projects",
-      icon: ShieldCheck,
-    },
-    {
-      title: "Road Dust & Demolition Zones",
-      icon: Wind,
-    },
-  ];
+const industries = [
+  {
+    title: "Construction & Real Estate Projects",
+    icon: Building2, // buildings / construction
+  },
+  {
+    title: "Mining & Quarrying Sites",
+    icon: Truck, // heavy vehicles
+  },
+  {
+    title: "Cement & Steel Industries",
+    icon: Factory, // industrial factory
+  },
+  {
+    title: "Municipal Corporations & Smart Cities",
+    icon: ShieldCheck, // govt / authority
+  },
+  {
+    title: "Highways & Infrastructure Projects",
+    icon: Warehouse, // infra / large structures
+  },
+  {
+    title: "Waste Management & Landfills",
+    icon: Wind, // pollution / environment
+  },
+];
 
   return (
     <section className="relative bg-white py-20 px-4 sm:px-14 overflow-hidden">

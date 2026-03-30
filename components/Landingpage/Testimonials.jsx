@@ -5,22 +5,26 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
-    text: "We are incredibly impressed with Polywell's range of waste management solutions. The dustbins are robust and versatile, accommodating various types of waste with ease. Our municipality has benefited greatly from the efficient garbage rickshaws, which streamline waste collection in our urban areas. Polywell's wheelbarrows and garbage bags are essential tools in our daily operations.",
-    name: "GURDIP SINGH",
-    designation: "A.G International",
+    text: "Kapmix Anti Smog Guns have significantly improved air quality at our construction sites. The dust suppression is highly effective, even in high-density areas, helping us comply with pollution control norms without any hassle.",
+    name: "RAJEEV SHARMA",
+    designation: "Project Manager, InfraBuild Pvt Ltd",
   },
   {
-    text: "Polywell's waste management products have transformed our operations. Their durable Pedal/Wheeled dustbins withstand heavy usage and harsh weather, ensuring efficient waste collection. The garbage rickshaws are a boon for our workers, enabling swift and organized garbage pickup. With Polywell's wheelbarrows and garbage bags, our waste management process has never been more effective.",
-    name: "SACHIN GUPTA",
-    designation: "PSV Biotech Pvt Ltd.",
+    text: "We have been using Kapmix smog guns at our mining site, and the performance is outstanding. The mist technology efficiently controls dust, improving visibility and ensuring a safer working environment for our team.",
+    name: "AMIT VERMA",
+    designation: "Operations Head, Rock Mining Co.",
   },
   {
-    text: "Polywell's commitment to excellence shines through in their waste management products. The dustbins are not only sturdy but also aesthetically pleasing, enhancing the cleanliness of our public spaces. Our waste collection teams rely on the reliable garbage rickshaws, which navigate narrow streets effortlessly. With Polywell's wheelbarrows and garbage bags, waste disposal has become a breeze.",
-    name: "MEHUL VOHRA",
-    designation: "Medikit Products",
+    text: "Kapmix has delivered reliable and durable pollution control solutions for our industrial plant. Their anti smog guns help us maintain environmental standards and reduce airborne particles effectively.",
+    name: "NEHA GUPTA",
+    designation: "Plant Manager, SteelTech Industries",
+  },
+  {
+    text: "As a municipal contractor, we rely on Kapmix Anti Smog Guns for urban dust control. The machines are easy to operate and cover large areas efficiently, making them ideal for city pollution management projects.",
+    name: "VIKAS SINGH",
+    designation: "Municipal Contractor, Smart City Project",
   },
 ];
-
 
 export default function TestimonialSlider() {
   const [index, setIndex] = useState(0);
@@ -47,9 +51,9 @@ export default function TestimonialSlider() {
 
     <>
     
-    <section className="relative h-full w-full  bg-[url('/bag/leafbg.webp')] bg-cover bg-fixed  bg-center py-16 text-white">
+    <section style={{backgroundImage:"url(/testimonial.jpeg)"}} className="relative h-full w-full  bg-cover   bg-center py-25 text-white">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#08372C]/20"></div>
+      <div className="absolute inset-0 bg-[#08372C]/30"></div>
 
       <div className="relative max-w-5xl mx-auto text-center px-6">
         {/* Heading */}
@@ -68,7 +72,7 @@ export default function TestimonialSlider() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <p className="italic text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+            <p className="italic text-lg md:text-2xl leading-relaxed max-w-3xl mx-auto">
               {current.text}
             </p>
 
@@ -86,7 +90,7 @@ export default function TestimonialSlider() {
             onClick={prevSlide}
             className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition"
           >
-            <ChevronLeft className="w-6 h-6 text-blue-500" />
+            <ChevronLeft className="w-6 h-6 text-red-500" />
           </button>
         </div>
         <div className="absolute top-1/2 right-6 -translate-y-1/2">

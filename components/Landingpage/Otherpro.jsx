@@ -1,68 +1,84 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
+import React from "react";
+import {
+  Wind,
+  CloudFog,
+  Building2,
+  Factory,
+} from "lucide-react";
 
-const products = [
-  {
-    title: "Plastic Dustbin",
-    image: "/bag/Plastic-Dustbin.webp", 
-    href:"https://plasticdustbinmanufacturer.com/"
-  },
-  {
-    title: "Sharp Container",
-    image: "/bag/Sharp-Container.webp",
-    href:"https://sharpcontainermanufacturer.com/"
-  },
-  {
-    title: "Needle Cutter",
-    image: "/bag/Needle-Cutter.webp",
-    href:"https://sharpcontainermanufacturer.com/needle-cutter"
-  },
-  {
-    title: "Wringer Trolley",
-    image: "/bag/18-L-Double-Bucket-Wringer-Trolley.webp",
-    href:"https://wringertrolleymanufacturer.com/"
-  },
-];
+const IndustryClassification = () => {
+  const data = [
+    {
+      title: "Environmental Pollution Control Industry",
+      desc: "Anti smog guns are primarily used to reduce air pollution (PM10, PM2.5) by spraying ultra-fine water mist that captures dust and pollutants and brings them to the ground.",
+      icon: Wind,
+    },
+    {
+      title: "Dust Suppression Equipment Industry",
+      desc: "They are a type of fog cannon / dust suppression system, widely used to control airborne dust at the source in various environments.",
+      icon: CloudFog,
+    },
+    {
+      title: "Construction & Infrastructure Industry",
+      desc: "These machines are heavily used at construction sites to maintain air quality and comply with pollution control norms.",
+      icon: Building2,
+    },
+    {
+      title: "Industrial Air Quality Management",
+      desc: "Industries like cement plants, steel plants, and factories use anti smog guns to control dust emissions and improve workplace safety.",
+      icon: Factory,
+    },
+  ];
 
-export default function ProductsManufacturing() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-20 px-4 sm:px-14">
+      <div className="max-w-[1300px] mx-auto">
 
-        {/* Heading */}
-        <h2 className="text-center text-4xl md:text-5xl font-extrabold mb-14">
-          <span className="text-black">OUR </span>
-          <span className="text-green-600">PRODUCTS MANUFACTURING</span>
-        </h2>
+        {/* HEADING */}
+        <div className="text-center mb-14">
+          <span className="inline-block mb-3 px-4 py-1 text-xs tracking-wider text-red-600 bg-red-100 border border-red-200 rounded-full">
+            INDUSTRY OVERVIEW
+          </span>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map((item, index) => (
-            <Link
-            href={item.href}
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Industry Classification of Anti Smog Gun
+          </h2>
+
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Anti smog guns play a crucial role across multiple industries by
+            controlling dust, improving air quality, and ensuring environmental compliance.
+          </p>
+        </div>
+
+        {/* GRID */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {data.map((item, index) => (
+            <div
               key={index}
-              className="border border-green-600 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition duration-300 bg-white"
+              className="group p-6 rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
             >
-              {/* Image Area */}
-              <div className="bg-white  flex items-center justify-center ">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  width={500}
-                  height={400}
-                  className="object-cover h-full w-full"
-                />
+              {/* ICON */}
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-red-100 border border-red-200 mb-5">
+                <item.icon className="w-6 h-6 text-red-600" />
               </div>
 
-              {/* Bottom Title Bar */}
-              <div className="bg-green-600 text-white text-center py-4 text-lg font-semibold">
+              {/* TITLE */}
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-red-600 transition">
                 {item.title}
-              </div>
-            </Link>
+              </h3>
+
+              {/* DESCRIPTION */}
+              <p className="text-gray-600 leading-relaxed text-sm">
+                {item.desc}
+              </p>
+            </div>
           ))}
         </div>
+
       </div>
     </section>
   );
-}
+};
+
+export default IndustryClassification;

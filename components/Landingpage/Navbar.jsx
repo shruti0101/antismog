@@ -22,7 +22,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function Navbar() {
   const [showTopBar, setShowTopBar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
+const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
@@ -40,6 +40,19 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+
+
+
+  useEffect(() => {
+  const handleClickOutside = (e) => {
+    if (!e.target.closest(".products-menu")) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  document.addEventListener("click", handleClickOutside);
+  return () => document.removeEventListener("click", handleClickOutside);
+}, []);
   return (
 
   
@@ -120,23 +133,44 @@ export default function Navbar() {
     <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
   </Link>
 
-  {/* 🔥 PRODUCTS (MIDDLE) */}
- <div className="relative group">
+  {/*PRODUCTS  */}
+ 
+ 
+ 
+ {/* 🔥 PRODUCTS */}
+<div className="relative products-menu">
 
   {/* BUTTON */}
-  <button className="flex items-center gap-1 text-black group-hover:text-yellow-500 transition">
-    OUR PRODUCTS <ChevronDown size={15}/>
+  <button
+    onClick={() => setIsMenuOpen(!isMenuOpen)}
+    className="flex items-center gap-1 text-black hover:text-yellow-500 transition"
+  >
+    OUR PRODUCTS
+    <ChevronDown
+      size={15}
+      className={`transition-transform duration-300 ${
+        isMenuOpen ? "rotate-180" : ""
+      }`}
+    />
   </button>
 
   {/* ===== MEGA MENU ===== */}
-  <div className="absolute left-1/2 -translate-x-1/2 top-[120%] w-[900px] bg-white shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible translate-y-4 group-hover:translate-y-0 transition-all duration-300 z-50">
-
+  <div
+    className={`absolute left-1/2 -translate-x-1/2 top-[120%] w-[900px] bg-white shadow-2xl rounded-xl transition-all duration-300 z-50 ${
+      isMenuOpen
+        ? "opacity-100 visible translate-y-0"
+        : "opacity-0 invisible translate-y-4"
+    }`}
+  >
     <div className="grid grid-cols-4 gap-6 p-6">
-
       {categories.map((cat, i) => (
-        <div key={i} className="group/item">
-
-          {/* CATEGORY IMAGE */}
+        <Link
+          href={`/categories/${cat.id}`}
+          key={i}
+          className="group/item"
+          onClick={() => setIsMenuOpen(false)} // ✅ CLOSE ON CLICK
+        >
+          {/* IMAGE */}
           <div className="relative w-full h-[210px] bg-gray-50 rounded-lg overflow-hidden mb-3">
             <Image
               src={cat.products?.[0]?.image?.[0]?.src || "/placeholder.png"}
@@ -146,24 +180,16 @@ export default function Navbar() {
             />
           </div>
 
-          {/* CATEGORY NAME */}
-          <Link
-            href={`/categories/${cat.id}`}
-            className="block font-semibold text-center text-black hover:text-red-600 mb-2"
-          >
+          {/* NAME */}
+          <p className="block font-semibold text-center text-black hover:text-red-600 mb-2">
             {cat.name}
-          </Link>
-
-          {/* PRODUCTS LIST (LIMIT 4) */}
-        
-
-        </div>
+          </p>
+        </Link>
       ))}
-
     </div>
-
   </div>
 </div>
+
 
   {/* BLOGS */}
   <Link href="/blogs" className="relative group">

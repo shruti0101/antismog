@@ -4,15 +4,15 @@ import About from "@/components/Landingpage/About";
 import Categories from "@/components/Landingpage/Categories";
 import Countup from "@/components/Landingpage/Countup";
 import Cta from "@/components/Landingpage/Cta";
-import Whoweare from "@/components/Landingpage/Whoweare";
+
 import Whychoose from "@/components/Landingpage/Whychoose";
 import Process from "@/components/Landingpage/Process";
 import Faq from "@/components/Landingpage/Faq";
 import TestimonialSlider from "@/components/Landingpage/Testimonials";
-import Formsection from "@/components/Landingpage/Formsection";
+
 // import Popup from "@/components/Popup";
 // import CityPage from "../components/City";
-import Dedicated from "@/components/Landingpage/Dedicated";
+
 import Otherproduct from "@/components/Landingpage/Otherpro";
 
 import Loactions from "@/components/Locations";
@@ -26,25 +26,28 @@ export default function Home() {
       <Hero />
    <ClienteleSlider></ClienteleSlider>
       <About />
+           <Process></Process>  
+         <Categories />
       <Cta></Cta>
-    
-      <Categories />
-      <Countup />
-      <Whychoose />
-
-      {/* <Whoweare />
-      <Otherproduct></Otherproduct>
-      <Dedicated></Dedicated>
-
-      <Formsection></Formsection>
-      <Process></Process>
+  
       
+  
+      <Whychoose />
+ 
+      <Countup />
+  
+      <Otherproduct></Otherproduct>
+   
 
-      <TestimonialSlider></TestimonialSlider>
+   
+
+    
      
-      <Loactions /> */}
+      {/* <Loactions />  */}
 
       {/* <CityPage /> */}
+
+        <TestimonialSlider></TestimonialSlider>
        <Faq></Faq>
     </>
   );

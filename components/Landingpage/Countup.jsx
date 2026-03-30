@@ -12,7 +12,7 @@ export default function HighQualityCTA() {
       <Reveal>
         <div className="grid grid-cols-1 md:grid-cols-[420px_1fr] items-stretch">
 
-          {/* ================= LEFT IMAGE ================= */}
+          {/*  LEFT IMAGE  */}
           <div className="relative h-[260px] md:h-auto w-full">
             <Image
               src="/cta.png"
@@ -27,7 +27,7 @@ export default function HighQualityCTA() {
           
           </div>
 
-          {/* ================= RIGHT CONTENT ================= */}
+          {/* RIGHT CONTENT  */}
           <div className="relative flex items-center bg-gradient-to-br from-black via-[#0a0a0a] to-black">
 
             {/* SUBTLE GRID / DOT TEXTURE */}
@@ -45,7 +45,7 @@ export default function HighQualityCTA() {
 
             <div className="relative w-full max-w-7xl mx-auto px-6 sm:px-10 md:px-16 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
 
-              {/* ================= TEXT ================= */}
+              {/* TEXT  */}
               <div className="max-w-2xl">
                 <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight mb-4">
                   High Performance. <br />
@@ -61,7 +61,7 @@ export default function HighQualityCTA() {
                 </p>
               </div>
 
-              {/* ================= BUTTON ================= */}
+              {/*  BUTTON  */}
               <Link href="/products">
 
                 <motion.button
