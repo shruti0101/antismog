@@ -93,20 +93,18 @@ const About = () => {
             AIR POLLUTION CONTROL SOLUTION
           </span>
 
-          <h2 className="text-3xl sm:text-4xl font-bold text-black leading-tight mb-5">
+          <h1 className="text-3xl sm:text-4xl font-bold text-black leading-tight mb-3">
             High Performance Anti Smog Gun 
             for Effective Dust Suppression
-          </h2>
+          </h1>
 
-          <p className="text-xl text-black mb-8 max-w-xl">
-            Our Anti Smog Gun is designed to control airborne dust particles 
-            at construction sites, industrial zones, and urban areas. With 
-            powerful mist technology, it ensures efficient dust suppression 
-            while meeting environmental compliance standards.
+          <p className="text-lg text-black mb-5 max-w-xl">
+          Founded in 2012, Kapmix Machinery Pvt. Ltd. is a trusted Anti Smog Gun Supplier . We deliver high-quality pollution control machinery designed for durability, precision, and efficiency. 
+Kapmix Machinery Pvt. Ltd. – India’s Leading Anti Smog Gun Supplier is a trusted name in the field of dust suppression and pollution control equipment. With a strong commitment to quality, innovation, and environmental responsibility, the company delivers advanced solutions to control air pollution across construction and industrial sites.
           </p>
 
           {/* FEATURES GRID */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-2">
             {industries.map((item, index) => (
               <div
                 key={index}
@@ -124,7 +122,7 @@ const About = () => {
           </div>
 
           {/* CTA */}
-          <div className="flex items-center gap-4 mt-10">
+          <div className="flex items-center gap-4 mt-5">
 
             <Link
               href="/contact"
