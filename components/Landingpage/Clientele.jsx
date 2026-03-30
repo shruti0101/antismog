@@ -19,7 +19,7 @@ export default function ClienteleSlider() {
   ];
 
   return (
-    <section className="py-10 bg-white">
+    <section className="mt-7 bg-white">
 
       <div className="w-full mx-auto px-4">
 

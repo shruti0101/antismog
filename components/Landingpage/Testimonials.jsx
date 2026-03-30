@@ -98,7 +98,7 @@ export default function TestimonialSlider() {
             onClick={nextSlide}
             className="bg-white/20 hover:bg-white/40 p-3 rounded-full transition"
           >
-            <ChevronRight className="w-6 h-6 text-blue-500" />
+            <ChevronRight className="w-6 h-6 text-red-500" />
           </button>
         </div>
 

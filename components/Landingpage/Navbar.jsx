@@ -66,7 +66,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           showTopBar ? "h-[50px]" : "h-0"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto flex items-center justify-between h-[55px] px-6 text-[13px]">
+        <div className="max-w-[1400px] mx-auto flex items-center justify-between h-[55px] px-6 text-[16px]">
 
           {/* LEFT INFO */}
           <div className="flex items-center gap-6 ">
@@ -89,7 +89,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           <div className="flex items-center gap-2">
             {[Facebook, Twitter, Instagram, Youtube, Linkedin].map((Icon, i) => (
               <div key={i} className="p-2 rounded-full hover:bg-white/20 transition cursor-pointer">
-                <Icon size={14}/>
+                <Icon size={16}/>
               </div>
             ))}
           </div>

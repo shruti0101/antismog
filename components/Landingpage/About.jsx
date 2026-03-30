@@ -41,7 +41,7 @@ const industries = [
 ];
 
   return (
-    <section className="relative bg-white py-20 px-4 sm:px-14 overflow-hidden">
+    <section className="relative bg-white py-18 px-4 sm:px-14 overflow-hidden">
 
       <div className="w-full mx-auto grid lg:grid-cols-2 gap-14 items-center">
 

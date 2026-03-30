@@ -32,8 +32,8 @@ export default function Footer() {
 
         {/* ===== ABOUT ===== */}
         <div>
-          <div className="bg-white rounded-xl inline-block mb-6">
-            <Image src="/logo.png" alt="logo" width={120} height={60} />
+          <div className="bg-white rounded-xl inline-block  mb-6">
+            <Image src="/logoo.png" alt="logo" width={120} height={50} />
           </div>
 
           <h3 className="text-lg font-semibold mb-4">About Company</h3>
