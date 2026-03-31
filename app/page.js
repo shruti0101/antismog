@@ -18,37 +18,29 @@ import Otherproduct from "@/components/Landingpage/Otherpro";
 import Loactions from "@/components/Locations";
 import ClienteleSlider from "@/components/Landingpage/Clientele";
 
-
 export default function Home() {
   return (
     <>
       {/* <Popup></Popup> */}
       <Hero />
-   <ClienteleSlider></ClienteleSlider>
+      <ClienteleSlider></ClienteleSlider>
       <About />
-           <Process></Process>  
-         <Categories />
+      <Process></Process>
+      <Categories />
       <Cta></Cta>
-  
-      
-  
+
       <Whychoose />
- 
+
       <Countup />
-  
+
       <Otherproduct></Otherproduct>
-   
 
-   
-
-    
-     
       {/* <Loactions />  */}
 
       {/* <CityPage /> */}
 
-        <TestimonialSlider></TestimonialSlider>
-       <Faq></Faq>
+      <TestimonialSlider></TestimonialSlider>
+      <Faq></Faq>
     </>
   );
 }

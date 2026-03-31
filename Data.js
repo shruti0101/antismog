@@ -93,7 +93,10 @@ export const categories = [
         ],
 
         image: [
-          { src: "/prodtest.webp", alt: "75–100 Meter Anti Smog Gun Machine" },
+          {
+            src: "/nav/category-1-nav.webp",
+            alt: "75–100 Meter Anti Smog Gun Machine",
+          },
         ],
       },
       {
@@ -180,7 +183,7 @@ export const categories = [
         ],
 
         image: [
-          { src: "/prodtest.webp", alt: "30–100 Meter Anti Smog Gun Machine" },
+          { src: "/kapmix products/roof mounted a8.webp", alt: "30–100 Meter Anti Smog Gun Machine" },
         ],
       },
       {
@@ -277,7 +280,7 @@ export const categories = [
 
         image: [
           {
-            src: "/prodtest.webp",
+            src: "/kapmix products/roof mounted anti.webp",
             alt: "Anti Smog Gun Without Water Tank Machine",
           },
         ],
@@ -373,7 +376,7 @@ export const categories = [
         ],
 
         image: [
-          { src: "/prodtest.webp", alt: "Anti-Pollution Control Gun Machine" },
+          { src: "/kapmix products/roof top .webp", alt: "Anti-Pollution Control Gun Machine" },
         ],
       },
       {
@@ -464,10 +467,15 @@ export const categories = [
             value: "Manual / Semi-Automatic / Fully Automatic",
           },
           { label: "Application", value: "Air Pollution & Dust Control" },
+          { label: "Throw Range	30 Meter", value: "Material	Mild Steel" },
+          { label: "Automation Grade", value: "Semi Automatic" },
+          { label: "Colour", value: "Red" },
+          { label: "Warranty", value: "2 Years" },
+          { label: "Brand	", value: "2 Years" },
         ],
 
         image: [
-          { src: "/prodtest.webp", alt: "Anti-Pollution Control Gun Machine" },
+          { src: "/kapmix products/roof mounted a8.webp", alt: "Anti-Pollution Control Gun Machine" },
         ],
       },
       {
@@ -564,7 +572,7 @@ export const categories = [
 
         image: [
           {
-            src: "/prodtest.webp",
+            src: "/kapmix products/roof mounted anti.webp",
             alt: "Semi-Automatic Anti Smog Gun Without Autoswing",
           },
         ],
@@ -660,7 +668,7 @@ export const categories = [
           },
         ],
 
-        image: [{ src: "/prodtest.webp", alt: "Fog Cannon Spray Machine" }],
+        image: [{ src: "/kapmix products/aNTI smog gun(1).webp", alt: "Fog Cannon Spray Machine" }],
       },
       {
         id: "fog-cannon-machine",
@@ -754,7 +762,7 @@ export const categories = [
           },
         ],
 
-        image: [{ src: "/prodtest.webp", alt: "Fog Cannon Machine" }],
+        image: [{ src: "/kapmix products/anti smog gun.webp", alt: "Fog Cannon Machine" }],
       },
       {
         id: "air-pollution-control-cannon",
@@ -851,7 +859,7 @@ export const categories = [
 
         image: [
           {
-            src: "/prodtest.webp",
+            src: "/kapmix products/anti smog gun9.webp",
             alt: "Air Pollution Control Cannon Machine",
           },
         ],
@@ -949,7 +957,7 @@ export const categories = [
           },
         ],
 
-        image: [{ src: "/prodtest.webp", alt: "Industrial Fogging Machine" }],
+        image: [{ src: "/kapmix products/anti smog ginn.webp", alt: "Industrial Fogging Machine" }],
       },
       {
         id: "spray-cannon-machine",
@@ -1155,7 +1163,12 @@ export const categories = [
           },
         ],
 
-        image: [{ src: "/prodtest.webp", alt: "Roof-Mounted Anti Smog Gun" }],
+        image: [
+          {
+            src: "/nav/category-2-nav.webp",
+            alt: "Roof-Mounted Anti Smog Gun",
+          },
+        ],
       },
       {
         id: "terrace-anti-smog-gun",
@@ -1245,7 +1258,316 @@ export const categories = [
           { label: "Application", value: "Urban & Confined Area Dust Control" },
         ],
 
-        image: [{ src: "/prodtest.webp", alt: "Terrace Anti Smog Gun" }],
+        image: [{ src: "/kapmix products/roof mounted a8.webp", alt: "Terrace Anti Smog Gun" }],
+      },
+      {
+        id: "roof-mounted-fog-cannon",
+        name: "Roof Mounted Fog Cannon",
+        metaTitle: "Roof Mounted Fog Cannon Supplier",
+        metaDescription:
+          "Advanced roof mounted fog cannon for efficient dust suppression and air pollution control across industrial, warehouse, and urban environments.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Roof Mounted Fog Cannon supplier offering advanced and space-efficient dust suppression solutions designed for fixed installation on rooftops and elevated structures.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "The fog cannon uses high-pressure mist atomization technology to generate ultra-fine droplets that bind with airborne dust particles such as PM2.5 and PM10, improving air quality effectively.",
+          },
+          {
+            type: "h3",
+            text: "Elevated Installation Advantage",
+          },
+          {
+            type: "p",
+            text: "Mounted on rooftops or elevated platforms, the system ensures wider coverage and better dispersion of mist, making it ideal for large industrial premises and urban pollution control zones.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & Easy Operation",
+          },
+          {
+            type: "p",
+            text: "The system supports semi-automatic and fully automatic controls with adjustable spray angle, oscillation, and timing for efficient and continuous operation.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Weather-Resistant Design",
+          },
+          {
+            type: "p",
+            text: "Constructed with high-quality, corrosion-resistant materials, the machine is designed to withstand harsh weather conditions including heat, dust, and rain.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental standards, the system ensures effective dust suppression with optimized water usage and minimal environmental impact.",
+          },
+        ],
+
+        features: [
+          "Roof Mounted Installation",
+          "High-Performance Fogging System",
+          "Wide Spray Coverage",
+          "Water & Energy Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Industrial plants and factories",
+          "Warehouses and storage yards",
+          "Construction sites",
+          "Power plants and cement industries",
+          "Urban pollution control areas",
+        ],
+
+        whyChoose: [
+          "Extensive Industry Experience",
+          "Strict Quality Standards",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "Roof Mounted" },
+          {
+            label: "Operation",
+            value: "Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Dust Suppression & Air Pollution Control",
+          },
+        ],
+
+        image: [
+          {
+            src: "/kapmix products/roof mounted anti.webp",
+            alt: "Roof Mounted Fog Cannon",
+          },
+        ],
+
+        relatedProducts: [
+          "truck-mounted-dust-suppression-cannon",
+          "truck-mounted-spray-cannon",
+          "tractor-mounted-fog-cannon",
+        ],
+      },
+      {
+        id: "rooftop-anti-smog-gun",
+        name: "Rooftop Anti Smog Gun",
+        metaTitle: "Rooftop Anti Smog Gun Supplier",
+        metaDescription:
+          "Advanced rooftop anti smog gun for efficient dust suppression and air pollution control across industrial, commercial, and urban environments.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Rooftop Anti Smog Gun supplier providing advanced and space-efficient air pollution control solutions designed for installation on rooftops and elevated platforms.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "The Anti Smog Gun uses advanced mist atomization technology to produce ultra-fine droplets that bind with airborne dust particles such as PM2.5 and PM10, improving air quality effectively.",
+          },
+          {
+            type: "h3",
+            text: "Elevated Installation Advantage",
+          },
+          {
+            type: "p",
+            text: "Mounted on rooftops or elevated platforms, the system ensures wider coverage and uniform mist distribution, making it ideal for large industrial and urban environments.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & Easy Operation",
+          },
+          {
+            type: "p",
+            text: "The system supports semi-automatic and fully automatic controls with adjustable spray angle, oscillation, and timer-based operation for efficient and hassle-free performance.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Weather-Resistant Design",
+          },
+          {
+            type: "p",
+            text: "Constructed with high-quality, corrosion-resistant materials, the machine is designed to withstand extreme weather conditions such as heat, dust, and rain.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental compliance standards, the system effectively controls dust without harming the surroundings, supporting sustainable and compliant operations.",
+          },
+        ],
+
+        features: [
+          "Rooftop Mounted Design",
+          "High Dust Suppression Efficiency",
+          "Wide Area Coverage",
+          "Water & Energy Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Industrial plants and factories",
+          "Warehouses and logistics hubs",
+          "Construction and infrastructure sites",
+          "Power plants and cement industries",
+          "Urban air pollution control",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "Rooftop Mounted" },
+          {
+            label: "Operation",
+            value: "Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Dust Suppression & Air Pollution Control",
+          },
+        ],
+
+        image: [
+          {
+            src: "/kapmix products/roof top .webp",
+            alt: "Rooftop Anti Smog Gun",
+          },
+        ],
+
+        relatedProducts: [
+          "roof-mounted-fog-cannon",
+          "truck-mounted-dust-suppression-cannon",
+          "tractor-mounted-anti-smog-gun",
+        ],
+      },
+      {
+        id: "roof-mounted-dust-suppression-cannon",
+        name: "Roof Mounted Dust Suppression Cannon",
+        metaTitle: "Roof Mounted Dust Suppression Cannon Supplier",
+        metaDescription:
+          "Advanced roof mounted dust suppression cannon for efficient dust control and air pollution management across industrial, commercial, and urban environments.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Roof Mounted Dust Suppression Cannon supplier offering advanced and space-saving dust control solutions designed for installation on rooftops and elevated platforms.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "The dust suppression cannon uses high-pressure mist atomization technology to generate ultra-fine droplets that bind with airborne dust particles such as PM2.5 and PM10, improving air quality effectively.",
+          },
+          {
+            type: "h3",
+            text: "Elevated Installation Advantage",
+          },
+          {
+            type: "p",
+            text: "Mounted on rooftops or elevated structures, the system ensures wider coverage and superior mist dispersion, making it ideal for large industrial and urban environments.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & Easy Operation",
+          },
+          {
+            type: "p",
+            text: "The system supports semi-automatic and fully automatic controls with adjustable spray angle, oscillation, and timing for efficient and continuous dust control.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Weather-Resistant Design",
+          },
+          {
+            type: "p",
+            text: "Constructed with high-quality, corrosion-resistant materials, the machine is designed to withstand extreme weather conditions such as heat, dust, and rain.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Dust Control Solution",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental compliance standards, the system effectively suppresses dust while minimizing water usage and environmental impact.",
+          },
+        ],
+
+        features: [
+          "Roof Mounted Installation",
+          "High-Performance Dust Suppression",
+          "Wide Spray Coverage",
+          "Water & Energy Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Industrial plants and factories",
+          "Warehouses and storage yards",
+          "Construction and infrastructure sites",
+          "Power plants and cement industries",
+          "Urban air pollution control",
+        ],
+
+        whyChoose: [
+          "Industry Experience",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "Roof Mounted" },
+          {
+            label: "Operation",
+            value: "Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Dust Suppression & Air Pollution Control",
+          },
+        ],
+
+        image: [
+          {
+            src: "/kapmix products/roof mounted a8.webp",
+            alt: "Roof Mounted Dust Suppression Cannon",
+          },
+        ],
+
+        relatedProducts: [
+          "roof-mounted-fog-cannon",
+          "rooftop-anti-smog-gun",
+          "truck-mounted-dust-suppression-cannon",
+        ],
       },
     ],
   },
@@ -1372,7 +1694,10 @@ export const categories = [
         ],
 
         image: [
-          { src: "/prodtest.webp", alt: "Tractor Operated Anti Smog Gun" },
+          {
+            src: "/nav/category-3-nav.webp",
+            alt: "Tractor Operated Anti Smog Gun",
+          },
         ],
       },
       {
@@ -1469,17 +1794,326 @@ export const categories = [
           { label: "Application", value: "Mobile Dust Suppression" },
         ],
 
-        image: [{ src: "/prodtest.webp", alt: "Tyre-Mounted Anti Smog Gun" }],
+        image: [{ src: "/kapmix products/tractor mounted(1).webp", alt: "Tyre-Mounted Anti Smog Gun" }],
+      },
+      {
+        id: "tractor-mounted-anti-smog-gun",
+        name: "Tractor Mounted Anti Smog Gun",
+        metaTitle: "Tractor Mounted Anti Smog Gun Supplier",
+        metaDescription:
+          "Advanced tractor mounted anti smog gun for efficient dust suppression and air pollution control across construction, road, and industrial sites.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Tractor Mounted Anti Smog Gun supplier providing advanced and cost-effective dust suppression solutions designed for flexible and wide-area operations.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "The Anti Smog Gun uses fine mist atomization technology to suppress airborne dust particles such as PM2.5 and PM10, improving air quality in real-time.",
+          },
+          {
+            type: "h3",
+            text: "Tractor-Based Mobility Advantage",
+          },
+          {
+            type: "p",
+            text: "Mounted on a tractor, the system allows easy transportation and flexible usage across multiple locations, making it ideal for large outdoor and continuously changing job sites.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & User-Friendly Operation",
+          },
+          {
+            type: "p",
+            text: "The system supports semi-automatic and fully automatic controls with adjustable spray direction, oscillation, and coverage for efficient and effortless operation.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Construction",
+          },
+          {
+            type: "p",
+            text: "Built using high-quality materials and industrial-grade components, the machine ensures reliable performance in tough outdoor environments and long service life.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental standards, the system effectively controls dust without harming the surroundings, supporting sustainable operations and compliance.",
+          },
+        ],
+
+        features: [
+          "Tractor Mounted Design",
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Oscillation",
+          "Water & Energy Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Road construction and maintenance",
+          "Infrastructure and highway projects",
+          "Mining and quarrying",
+          "Industrial areas",
+          "Municipal dust control",
+        ],
+
+        whyChoose: [
+          "Industry Experience",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "Tractor Mounted" },
+          {
+            label: "Operation",
+            value: "Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Dust Suppression & Air Pollution Control",
+          },
+        ],
+
+        image: [
+          {
+            src: "/kapmix products/tractor mounted.webp",
+            alt: "Tractor Mounted Anti Smog Gun",
+          },
+        ],
+
+        relatedProducts: [
+          "tyre-mounted-anti-smog-gun",
+          "truck-mounted-dust-suppression-cannon",
+          "truck-mounted-spray-cannon",
+        ],
+      },
+      {
+        id: "tractor-mounted-fog-cannon",
+        name: "Tractor Mounted Fog Cannon",
+        metaTitle: "Tractor Mounted Fog Cannon Supplier",
+        metaDescription:
+          "Advanced tractor mounted fog cannon for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Tractor Mounted Fog Cannon supplier offering powerful and mobile dust suppression solutions designed for large-scale outdoor applications.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "The fog cannon uses high-pressure mist atomization technology to produce ultra-fine droplets that bind with airborne dust particles such as PM2.5 and PM10, improving air quality at the site.",
+          },
+          {
+            type: "h3",
+            text: "Tractor-Based Mobility Advantage",
+          },
+          {
+            type: "p",
+            text: "Mounted on a tractor, the system allows easy transportation and flexible deployment across multiple locations, making it ideal for large and dynamic work environments.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & Easy Operation",
+          },
+          {
+            type: "p",
+            text: "The system supports semi-automatic and fully automatic controls with adjustable spray direction, oscillation, and optional remote operation for enhanced efficiency and convenience.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Construction",
+          },
+          {
+            type: "p",
+            text: "Constructed using high-quality materials and robust components, the machine is built to withstand harsh outdoor conditions and ensure long-lasting performance.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Dust Control Solution",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental standards, the system effectively suppresses dust without harming the surroundings, supporting sustainable and compliant operations.",
+          },
+        ],
+
+        features: [
+          "Tractor Mounted Mobility",
+          "High-Performance Fogging System",
+          "Adjustable Spray & Oscillation",
+          "Water & Energy Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Construction and infrastructure projects",
+          "Mining and quarrying operations",
+          "Industrial plants",
+          "Road construction and maintenance",
+          "Municipal dust control",
+        ],
+
+        whyChoose: [
+          "Proven Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "Tractor Mounted" },
+          {
+            label: "Operation",
+            value: "Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Dust Suppression & Air Pollution Control",
+          },
+        ],
+
+        image: [
+          {
+            src: "/kapmix products/tractor mounted2.webp",
+            alt: "Tractor Mounted Fog Cannon",
+          },
+        ],
+
+        relatedProducts: [
+          "tractor-mounted-anti-smog-gun",
+          "truck-mounted-dust-suppression-cannon",
+          "truck-mounted-spray-cannon",
+        ],
+      },
+      {
+        id: "tractor-operated-fog-cannon",
+        name: "Tractor Operated Fog Cannon",
+        metaTitle: "Tractor Operated Fog Cannon Supplier",
+        metaDescription:
+          "Advanced tractor operated fog cannon for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Tractor Operated Fog Cannon supplier providing advanced and efficient dust suppression solutions designed for large-scale outdoor operations.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "The fog cannon uses high-pressure mist atomization technology to generate ultra-fine droplets that bind with airborne dust particles such as PM2.5 and PM10, improving air quality on-site.",
+          },
+          {
+            type: "h3",
+            text: "Tractor Operated Flexibility",
+          },
+          {
+            type: "p",
+            text: "Powered and operated through a tractor system, the machine ensures easy deployment and relocation across large and multiple locations without complex setup.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & User-Friendly Operation",
+          },
+          {
+            type: "p",
+            text: "The system supports semi-automatic and fully automatic controls with adjustable spray angle, oscillation, and optional remote operation for efficient and convenient performance.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Construction",
+          },
+          {
+            type: "p",
+            text: "Constructed using high-quality materials and robust components, the machine is built to withstand tough outdoor and industrial environments for long-lasting performance.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Dust Control Solution",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental compliance standards, the system effectively suppresses dust without harming the surroundings, supporting sustainable and regulated operations.",
+          },
+        ],
+
+        features: [
+          "Tractor Operated System",
+          "High-Performance Fogging",
+          "Adjustable Spray & Oscillation",
+          "Energy & Water Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Construction and infrastructure projects",
+          "Mining and quarrying sites",
+          "Industrial plants",
+          "Road construction and maintenance",
+          "Municipal dust suppression",
+        ],
+
+        whyChoose: [
+          "Industry Experience",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "Tractor Operated" },
+          {
+            label: "Operation",
+            value: "Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Dust Suppression & Air Pollution Control",
+          },
+        ],
+
+        image: [
+          {
+            src: "/kapmix products/tractor mounted(1).webp",
+            alt: "Tractor Operated Fog Cannon",
+          },
+        ],
+
+        relatedProducts: [
+          "tractor-mounted-fog-cannon",
+          "tractor-mounted-anti-smog-gun",
+          "truck-mounted-dust-suppression-cannon",
+        ],
       },
     ],
   },
 
   {
-    id: "track-mounted-anti-smog-gun",
-    name: "Track Mounted Anti Smog Gun",
-    metaTitle: "Track Mounted Anti Smog Gun Supplier",
+    id: "truck-mounted-anti-smog-gun",
+    name: "Truck Mounted Anti Smog Gun",
+    metaTitle: "truck Mounted Anti Smog Gun Supplier",
     metaDescription:
-      "Heavy-duty track mounted anti smog gun for efficient dust suppression in rough terrains, mining sites, and large construction projects.",
+      "Heavy-duty truck mounted anti smog gun for efficient dust suppression in rough terrains, mining sites, and large construction projects.",
 
     products: [
       {
@@ -1488,8 +2122,6 @@ export const categories = [
         metaTitle: "Tyre-Mounted Anti Smog Gun Supplier",
         metaDescription:
           "Mobile tyre-mounted anti smog gun for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
-
-  
 
         description: [
           {
@@ -1576,13 +2208,325 @@ export const categories = [
         ],
 
         image: [
-          { src: "/prodtest.webp", alt: "Tyre-Mounted Anti Smog Gun Machine" },
+          {
+            src: "/nav/category-4-nav.webp",
+            alt: "Tyre-Mounted Anti Smog Gun Machine",
+          },
         ],
 
         relatedProducts: [
           "tractor-operated-anti-smog-gun",
-          "track-mounted-anti-smog-gun",
+          "truck-mounted-anti-smog-gun",
           "roof-mounted-anti-smog-gun",
+        ],
+      },
+      {
+        id: "truck-mounted-dust-control-machine",
+        name: "truck Mounted Dust Control Machine",
+        metaTitle: "truck Mounted Dust Control Machine Supplier",
+        metaDescription:
+          "Advanced truck mounted dust control machine for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted truck Mounted Dust Control Machine supplier offering advanced dust suppression solutions designed for mobility, efficiency, and high-performance operations across construction and industrial environments.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "The machine uses advanced mist atomization technology to capture and suppress airborne particles such as PM2.5 and PM10, significantly improving air quality at the worksite.",
+          },
+          {
+            type: "h3",
+            text: "High Mobility with truck System",
+          },
+          {
+            type: "p",
+            text: "Equipped with crawler trucks, the machine ensures smooth movement across rough and uneven terrain, making it ideal for mining zones, demolition sites, and large infrastructure projects.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & Easy Operation",
+          },
+          {
+            type: "p",
+            text: "The system supports semi-automatic and fully automatic controls, including adjustable spray angles, oscillation, and remote operation for enhanced efficiency and ease of use.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Construction",
+          },
+          {
+            type: "p",
+            text: "Manufactured using premium-grade materials, the machine is built to withstand harsh industrial environments and ensures long-lasting performance even under continuous operation.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental regulations, the system provides effective dust suppression without harming the surroundings, supporting sustainable industrial operations.",
+          },
+        ],
+
+        features: [
+          "truck Mounted Mobility",
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Oscillation",
+          "Energy & Water Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Construction sites",
+          "Mining & quarrying",
+          "Industrial plants",
+          "Road & infrastructure projects",
+          "Demolition zones",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "truck Mounted (Crawler Based)" },
+          {
+            label: "Operation",
+            value: "Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Dust Suppression & Air Pollution Control",
+          },
+        ],
+
+        image: [
+          {
+            src: "/kapmix products/truck mounted 3 (13).webp",
+            alt: "truck Mounted Dust Control Machine",
+          },
+        ],
+
+        relatedProducts: [
+          "tyre-mounted-anti-smog-gun",
+          "tractor-operated-anti-smog-gun",
+          "roof-mounted-anti-smog-gun",
+        ],
+      },
+      {
+        id: "truck-mounted-dust-suppression-cannon",
+        name: "truck Mounted Dust Suppression Cannon",
+        metaTitle: "truck Mounted Dust Suppression Cannon Supplier",
+        metaDescription:
+          "Advanced truck mounted dust suppression cannon for efficient dust control and air pollution management across construction, mining, and industrial sites.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted truck Mounted Dust Suppression Cannon supplier delivering advanced and highly mobile dust control solutions for demanding industrial and construction environments.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "The cannon utilizes high-pressure mist atomization technology to suppress airborne dust particles such as PM2.5 and PM10, ensuring a cleaner and safer working environment.",
+          },
+          {
+            type: "h3",
+            text: "truck Mounted Mobility Advantage",
+          },
+          {
+            type: "p",
+            text: "Equipped with a robust crawler truck system, the machine moves smoothly across rough, muddy, and uneven terrains, making it ideal for mining, construction, and demolition sites.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & User-Friendly Operation",
+          },
+          {
+            type: "p",
+            text: "The system features semi-automatic and fully automatic controls with adjustable spray direction, oscillation, and optional remote operation for enhanced efficiency and ease of use.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Construction",
+          },
+          {
+            type: "p",
+            text: "Built with high-quality materials and industrial-grade components, the machine ensures long-lasting durability and reliable performance in harsh working conditions.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Dust Control Solution",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental compliance standards, the system effectively controls dust without harming the surroundings, promoting sustainable industrial operations.",
+          },
+        ],
+
+        features: [
+          "Crawler truck Mobility",
+          "High-Performance Fog Cannon",
+          "Adjustable Spray & Oscillation",
+          "Water & Energy Efficient",
+          "Low Maintenance Design",
+        ],
+
+        applications: [
+          "Construction sites",
+          "Mining and quarry operations",
+          "Industrial plants",
+          "Road construction projects",
+          "Demolition and excavation zones",
+        ],
+
+        whyChoose: [
+          "Proven Industry Experience",
+          "Strict Quality Standards",
+          "Advanced Engineering & Technology",
+          "End-to-End Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "truck Mounted (Crawler Based)" },
+          {
+            label: "Operation",
+            value: "Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Dust Suppression & Air Pollution Control",
+          },
+        ],
+
+        image: [
+          {
+            src: "/kapmix products/truck mounted a.webp",
+            alt: "truck Mounted Dust Suppression Cannon",
+          },
+        ],
+
+        relatedProducts: [
+          "truck-mounted-dust-control-machine",
+          "tyre-mounted-anti-smog-gun",
+          "tractor-operated-anti-smog-gun",
+        ],
+      },
+      {
+        id: "truck-mounted-spray-cannon",
+        name: "truck Mounted Spray Cannon",
+        metaTitle: "truck Mounted Spray Cannon Supplier",
+        metaDescription:
+          "Advanced truck mounted spray cannon for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted truck Mounted Spray Cannon supplier offering advanced and highly mobile dust suppression solutions designed for efficient performance in challenging environments.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Control Performance",
+          },
+          {
+            type: "p",
+            text: "The spray cannon uses fine mist atomization technology to capture and suppress airborne dust particles such as PM2.5 and PM10, improving air quality at construction and industrial sites.",
+          },
+          {
+            type: "h3",
+            text: "Superior Mobility with truck System",
+          },
+          {
+            type: "p",
+            text: "Equipped with a crawler truck mechanism, the machine ensures smooth movement across uneven, muddy, and rugged terrains, making it ideal for mining and large infrastructure projects.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & Easy Operation",
+          },
+          {
+            type: "p",
+            text: "The system supports semi-automatic and fully automatic controls, including adjustable spray angles, oscillation, and optional remote operation for efficient and user-friendly performance.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Build",
+          },
+          {
+            type: "p",
+            text: "Constructed using high-quality materials and robust components, the machine is designed to withstand harsh environmental conditions and continuous industrial usage.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Dust Suppression",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental standards, the system controls dust effectively without harming the surroundings, supporting sustainable and compliant operations.",
+          },
+        ],
+
+        features: [
+          "truck Mounted Mobility",
+          "High-Efficiency Spray System",
+          "Adjustable Spray & Oscillation",
+          "Water & Energy Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Construction sites",
+          "Mining & quarrying",
+          "Industrial plants",
+          "Road and infrastructure projects",
+          "Demolition areas",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "truck Mounted (Crawler Based)" },
+          {
+            label: "Operation",
+            value: "Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Dust Suppression & Air Pollution Control",
+          },
+        ],
+
+        image: [
+          {
+            src: "/kapmix products/truck mountedc.webp",
+            alt: "truck Mounted Spray Cannon",
+          },
+        ],
+
+        relatedProducts: [
+          "truck-mounted-dust-suppression-cannon",
+          "truck-mounted-dust-control-machine",
+          "tyre-mounted-anti-smog-gun",
         ],
       },
     ],
