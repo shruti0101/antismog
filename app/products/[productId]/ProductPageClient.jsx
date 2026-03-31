@@ -13,7 +13,6 @@ export default function ProductPage({ params }) {
   const allProducts = categories.flatMap((c) => c.products);
   const product = allProducts.find((p) => p.id === productId);
 
-  console.log(product?.features, "product");
 
   const [activeImage, setActiveImage] = useState(
     product?.image?.[0]
@@ -139,6 +138,8 @@ export default function ProductPage({ params }) {
                       height={80}
                       className="object-cover w-full h-full"
                     />
+
+                   
                   </button>
                 ))}
 
@@ -175,7 +176,7 @@ export default function ProductPage({ params }) {
                       src={`https://img.youtube.com/vi/${
                         product.videoUrl.includes("youtu.be/")
                           ? product.videoUrl.split("youtu.be/")[1].split("?")[0]
-                          : product.videoUrl.split("v=")[1].split("&")[0]
+                          : product.videoUrl.split("v=")[1]?.split("&")[0] || ""
                       }/hqdefault.jpg`}
                       alt="video thumbnail"
                       width={80}

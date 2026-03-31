@@ -14,7 +14,8 @@ export const categories = [
         metaTitle: "Anti Smog Gun 75/100 Meter Machine Supplier",
         metaDescription:
           "Long range anti smog gun machine for large-scale dust suppression with up to 100 meter spray.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
         description: [
           {
             type: "p",
@@ -90,6 +91,8 @@ export const categories = [
         specs: [
           { label: "Range", value: "75–100 Meters" },
           { label: "Application", value: "Large Industrial Sites" },
+          { label: "Automation Grade", value: "Semi Automatic" },
+          { label: "Material", value: "Mild Steel" },
         ],
 
         image: [
@@ -105,7 +108,8 @@ export const categories = [
         metaTitle: "Anti Smog Gun 30/100 MTR Machine Supplier",
         metaDescription:
           "Advanced anti smog gun machine for medium and large-scale dust suppression with 30m and 100m range options.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         description: [
           {
             type: "p",
@@ -180,10 +184,15 @@ export const categories = [
         specs: [
           { label: "Range Options", value: "30 Meters / 100 Meters" },
           { label: "Application", value: "Medium to Large Industrial Sites" },
+          { label: "Mounting", value: "Trolley" },
+          { label: "Water Tank Capacity", value: "1500 Ltr." },
         ],
 
         image: [
-          { src: "/kapmix products/roof mounted a8.webp", alt: "30–100 Meter Anti Smog Gun Machine" },
+          {
+            src: "/kapmix products/roof mounted a8.webp",
+            alt: "30–100 Meter Anti Smog Gun Machine",
+          },
         ],
       },
       {
@@ -192,7 +201,8 @@ export const categories = [
         metaTitle: "Anti Smog Gun Without Water Tank Supplier",
         metaDescription:
           "High-performance anti smog gun without water tank for continuous dust suppression with external water connection.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/OdoPdgHx83Y?si=jgk9xaQQqh_FThP6",
         description: [
           {
             type: "p",
@@ -276,6 +286,10 @@ export const categories = [
             label: "Application",
             value: "Continuous Industrial Dust Suppression",
           },
+          {
+            label: "Rotation Angle",
+            value: "300",
+          },
         ],
 
         image: [
@@ -291,7 +305,8 @@ export const categories = [
         metaTitle: "Anti-Pollution Control Gun Supplier",
         metaDescription:
           "Advanced anti-pollution control gun for efficient dust suppression and air quality improvement across industrial and construction sites.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/D5kpo6z1ExY?si=D1rGGIefvzDNTGOQ",
         description: [
           {
             type: "p",
@@ -373,118 +388,28 @@ export const categories = [
             label: "Application",
             value: "Industrial Dust & Pollution Control",
           },
+          {
+            label: "Elevation Angle",
+            value: "60",
+          },
         ],
 
         image: [
-          { src: "/kapmix products/roof top .webp", alt: "Anti-Pollution Control Gun Machine" },
+          {
+            src: "/kapmix products/roof top .webp",
+            alt: "Anti-Pollution Control Gun Machine",
+          },
         ],
       },
-      {
-        id: "anti-pollution-control-gun",
-        name: "Anti-Pollution Control Gun",
-        metaTitle: "Anti-Pollution Control Gun Supplier",
-        metaDescription:
-          "Advanced anti-pollution control gun for efficient dust suppression and air quality improvement across industrial and construction sites.",
 
-        category: "anti-smog-gun",
-        type: "general",
-
-        description: [
-          {
-            type: "p",
-            text: "Kapmix Machinery Pvt. Ltd. is a trusted Anti-Pollution Control Gun supplier offering advanced and efficient solutions for controlling air pollution and airborne dust across various industries. These high-performance systems are designed to improve air quality and ensure compliance with environmental standards.",
-          },
-          {
-            type: "h3",
-            text: "Advanced Dust & Pollution Control Technology",
-          },
-          {
-            type: "p",
-            text: "The system uses fine mist atomization technology to capture and suppress airborne particles such as PM2.5 and PM10, preventing them from spreading and significantly reducing pollution levels.",
-          },
-          {
-            type: "h3",
-            text: "Wide Coverage & High Efficiency",
-          },
-          {
-            type: "p",
-            text: "Designed for large-area coverage, the Anti-Pollution Control Gun features adjustable spray angle and oscillation, ensuring effective dust suppression for both small and large-scale projects.",
-          },
-          {
-            type: "h3",
-            text: "User-Friendly & Flexible Operation",
-          },
-          {
-            type: "p",
-            text: "Available in manual, semi-automatic, and fully automatic variants, the system allows easy control and efficient operation with minimal manual effort.",
-          },
-          {
-            type: "h3",
-            text: "Durable & Heavy-Duty Construction",
-          },
-          {
-            type: "p",
-            text: "Manufactured using high-quality materials and robust components, the machine ensures long-lasting performance even in harsh industrial environments.",
-          },
-          {
-            type: "h3",
-            text: "Eco-Friendly Solution",
-          },
-          {
-            type: "p",
-            text: "The system provides environmentally safe dust control, helping industries meet pollution control norms and maintain compliance with regulatory standards.",
-          },
-        ],
-
-        features: [
-          "High Dust Suppression Efficiency",
-          "Adjustable Spray & Oscillation",
-          "Energy & Water Efficient",
-          "Low Maintenance & Long Life",
-          "Multiple Application Use",
-        ],
-
-        applications: [
-          "Construction sites",
-          "Mining & quarrying",
-          "Industrial plants",
-          "Road and infrastructure projects",
-          "Demolition zones",
-        ],
-
-        whyChoose: [
-          "Proven Industry Experience",
-          "Strict Quality Standards",
-          "Advanced Engineering & Technology",
-          "Complete Customer Support",
-          "Trusted Supplier Across India",
-        ],
-
-        specs: [
-          { label: "Technology", value: "Fine Mist Atomization" },
-          {
-            label: "Operation Type",
-            value: "Manual / Semi-Automatic / Fully Automatic",
-          },
-          { label: "Application", value: "Air Pollution & Dust Control" },
-          { label: "Throw Range	30 Meter", value: "Material	Mild Steel" },
-          { label: "Automation Grade", value: "Semi Automatic" },
-          { label: "Colour", value: "Red" },
-          { label: "Warranty", value: "2 Years" },
-          { label: "Brand	", value: "2 Years" },
-        ],
-
-        image: [
-          { src: "/kapmix products/roof mounted a8.webp", alt: "Anti-Pollution Control Gun Machine" },
-        ],
-      },
       {
         id: "semi-automatic-anti-smog-gun-without-autoswing",
         name: "Semi-Automatic Anti Smog Gun Without Autoswing",
         metaTitle: "Semi-Automatic Anti Smog Gun Without Autoswing Supplier",
         metaDescription:
           "Cost-effective semi-automatic anti smog gun without autoswing for targeted dust suppression and controlled air pollution management.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/1HNrs_bWCCc?si=x13CXVzMCGPHsKzs",
         category: "anti-smog-gun",
         type: "no-autoswing",
 
@@ -568,6 +493,7 @@ export const categories = [
             value: "Not Available (Manual Direction Control)",
           },
           { label: "Application", value: "Targeted Dust Suppression" },
+          { label: "Colour", value: "As per buyers choice" },
         ],
 
         image: [
@@ -583,7 +509,8 @@ export const categories = [
         metaTitle: "Fog Cannon Spray Machine Supplier",
         metaDescription:
           "High-performance fog cannon spray machine for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/6wH80r6QqfQ?si=CC3XebZGusBMjS6Y",
         category: "anti-smog-gun",
         type: "range",
 
@@ -666,9 +593,34 @@ export const categories = [
             label: "Mounting Type",
             value: "Fixed / Trolley / Vehicle Mounted",
           },
+          {
+            label: "Throw Range",
+            value: "> 50 metres",
+          },
+          {
+            label: "Automation Grade",
+            value: "Semi Automatic",
+          },
+          {
+            label: "Material",
+            value: "Mild Steel",
+          },
+          {
+            label: "Mounting",
+            value: "Trolley",
+          },
+          {
+            label: "Water Tank Capacity",
+            value: "1500 Ltr.",
+          },
         ],
 
-        image: [{ src: "/kapmix products/aNTI smog gun(1).webp", alt: "Fog Cannon Spray Machine" }],
+        image: [
+          {
+            src: "/kapmix products/aNTI smog gun(1).webp",
+            alt: "Fog Cannon Spray Machine",
+          },
+        ],
       },
       {
         id: "fog-cannon-machine",
@@ -676,7 +628,8 @@ export const categories = [
         metaTitle: "Fog Cannon Machine Supplier",
         metaDescription:
           "Advanced fog cannon machine for efficient dust suppression and air pollution control across construction, mining, and industrial environments.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/rF_tCX1fN6A?si=ERaY2mQmbBSE6Ju3",
         category: "anti-smog-gun",
         type: "range",
 
@@ -760,9 +713,18 @@ export const categories = [
             label: "Mounting Type",
             value: "Fixed / Trolley / Tyre / Truck Mounted",
           },
+          {
+            label: "Warranty",
+            value: "2 Year",
+          },
         ],
 
-        image: [{ src: "/kapmix products/anti smog gun.webp", alt: "Fog Cannon Machine" }],
+        image: [
+          {
+            src: "/kapmix products/anti smog gun.webp",
+            alt: "Fog Cannon Machine",
+          },
+        ],
       },
       {
         id: "air-pollution-control-cannon",
@@ -770,7 +732,8 @@ export const categories = [
         metaTitle: "Air Pollution Control Cannon Supplier",
         metaDescription:
           "High-performance air pollution control cannon for effective dust suppression and air quality management across industrial, construction, and mining environments.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/5zO28zZHz_g?si=a_HsjOOXVdSar733",
         category: "anti-smog-gun",
         type: "range",
 
@@ -855,6 +818,18 @@ export const categories = [
             label: "Mounting Type",
             value: "Fixed / Skid / Tyre / Truck Mounted",
           },
+          {
+            label: "Throw Range",
+            value: "30 Metre",
+          },
+          {
+            label: "Water Tank Capacity",
+            value: "1500 L",
+          },
+          {
+            label: "Automation Grade",
+            value: "Fully Automatic",
+          },
         ],
 
         image: [
@@ -870,7 +845,8 @@ export const categories = [
         metaTitle: "Industrial Fogging Machine Supplier",
         metaDescription:
           "High-performance industrial fogging machine for dust suppression, air pollution control, and environmental management across industrial sectors.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         category: "anti-smog-gun",
         type: "range",
 
@@ -955,9 +931,18 @@ export const categories = [
             label: "Mounting Type",
             value: "Fixed / Trolley / Tyre / Truck Mounted",
           },
+          {
+            label: "Water Flow",
+            value: "30lpm",
+          },
         ],
 
-        image: [{ src: "/kapmix products/anti smog ginn.webp", alt: "Industrial Fogging Machine" }],
+        image: [
+          {
+            src: "/kapmix products/anti smog ginn.webp",
+            alt: "Industrial Fogging Machine",
+          },
+        ],
       },
       {
         id: "spray-cannon-machine",
@@ -965,7 +950,8 @@ export const categories = [
         metaTitle: "Spray Cannon Machine Supplier",
         metaDescription:
           "High-performance spray cannon machine for efficient dust suppression and air pollution control across construction, mining, and industrial environments.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
         category: "anti-smog-gun",
         type: "range",
 
@@ -1049,6 +1035,10 @@ export const categories = [
             label: "Mounting Type",
             value: "Fixed / Trolley / Tyre / Truck Mounted",
           },
+          {
+            label: "Water Pump Power",
+            value: "3hp",
+          },
         ],
 
         image: [{ src: "/prodtest.webp", alt: "Spray Cannon Machine" }],
@@ -1070,7 +1060,8 @@ export const categories = [
         metaTitle: "Roof-Mounted Anti Smog Gun Supplier",
         metaDescription:
           "Advanced roof-mounted anti smog gun for effective dust suppression and air pollution control in urban, industrial, and high-density areas.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
         description: [
           {
             type: "p",
@@ -1161,6 +1152,10 @@ export const categories = [
             label: "Operation",
             value: "Manual / Semi-Automatic / Fully Automatic",
           },
+          {
+            label: "Throw Range",
+            value: "30 metre",
+          },
         ],
 
         image: [
@@ -1176,7 +1171,8 @@ export const categories = [
         metaTitle: "Terrace Anti Smog Gun Supplier",
         metaDescription:
           "Compact terrace anti smog gun for efficient dust suppression and air pollution control in urban, residential, and rooftop applications.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         description: [
           {
             type: "p",
@@ -1256,9 +1252,15 @@ export const categories = [
             value: "Manual / Semi-Automatic / Fully Automatic",
           },
           { label: "Application", value: "Urban & Confined Area Dust Control" },
+          { label: "Throw Range", value: "30 metre" },
         ],
 
-        image: [{ src: "/kapmix products/roof mounted a8.webp", alt: "Terrace Anti Smog Gun" }],
+        image: [
+          {
+            src: "/kapmix products/roof mounted a8.webp",
+            alt: "Terrace Anti Smog Gun",
+          },
+        ],
       },
       {
         id: "roof-mounted-fog-cannon",
@@ -1266,7 +1268,8 @@ export const categories = [
         metaTitle: "Roof Mounted Fog Cannon Supplier",
         metaDescription:
           "Advanced roof mounted fog cannon for efficient dust suppression and air pollution control across industrial, warehouse, and urban environments.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         description: [
           {
             type: "p",
@@ -1348,6 +1351,10 @@ export const categories = [
             label: "Application",
             value: "Dust Suppression & Air Pollution Control",
           },
+          {
+            label: "Country of Origin",
+            value: "Made in India",
+          },
         ],
 
         image: [
@@ -1369,7 +1376,8 @@ export const categories = [
         metaTitle: "Rooftop Anti Smog Gun Supplier",
         metaDescription:
           "Advanced rooftop anti smog gun for efficient dust suppression and air pollution control across industrial, commercial, and urban environments.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/D5kpo6z1ExY?si=D1rGGIefvzDNTGOQ",
         description: [
           {
             type: "p",
@@ -1442,14 +1450,18 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Mounting Type", value: "Rooftop Mounted" },
+          { label: "Mounting Type", value: "30 metre" },
           {
-            label: "Operation",
-            value: "Semi-Automatic / Fully Automatic",
+            label: "Water Tank Capacity",
+            value: "1500 L",
           },
           {
-            label: "Application",
-            value: "Dust Suppression & Air Pollution Control",
+            label: "Automation Grade",
+            value: "Fully Automatic",
+          },
+          {
+            label: "Country of Origin",
+            value: "Made in India",
           },
         ],
 
@@ -1472,7 +1484,8 @@ export const categories = [
         metaTitle: "Roof Mounted Dust Suppression Cannon Supplier",
         metaDescription:
           "Advanced roof mounted dust suppression cannon for efficient dust control and air pollution management across industrial, commercial, and urban environments.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/1HNrs_bWCCc?si=x13CXVzMCGPHsKzs",
         description: [
           {
             type: "p",
@@ -1554,6 +1567,10 @@ export const categories = [
             label: "Application",
             value: "Dust Suppression & Air Pollution Control",
           },
+          {
+            label: "Mounting",
+            value: "Truck",
+          },
         ],
 
         image: [
@@ -1586,7 +1603,8 @@ export const categories = [
         metaTitle: "Tractor Operated Anti Smog Gun Supplier",
         metaDescription:
           "High-performance tractor operated anti smog gun for mobile dust suppression and air pollution control across construction, mining, and infrastructure projects.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
         category: "anti-smog-gun",
         type: "mobile",
 
@@ -1706,7 +1724,8 @@ export const categories = [
         metaTitle: "Tyre-Mounted Anti Smog Gun Supplier",
         metaDescription:
           "Mobile tyre-mounted anti smog gun for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         category: "anti-smog-gun",
         type: "mobile",
 
@@ -1792,9 +1811,15 @@ export const categories = [
             value: "Manual / Semi-Automatic / Fully Automatic",
           },
           { label: "Application", value: "Mobile Dust Suppression" },
+          { label: "Material", value: "Mild Steel" },
         ],
 
-        image: [{ src: "/kapmix products/tractor mounted(1).webp", alt: "Tyre-Mounted Anti Smog Gun" }],
+        image: [
+          {
+            src: "/kapmix products/tractor mounted(1).webp",
+            alt: "Tyre-Mounted Anti Smog Gun",
+          },
+        ],
       },
       {
         id: "tractor-mounted-anti-smog-gun",
@@ -1802,7 +1827,8 @@ export const categories = [
         metaTitle: "Tractor Mounted Anti Smog Gun Supplier",
         metaDescription:
           "Advanced tractor mounted anti smog gun for efficient dust suppression and air pollution control across construction, road, and industrial sites.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/5zO28zZHz_g?si=a_HsjOOXVdSar733",
         description: [
           {
             type: "p",
@@ -1884,6 +1910,10 @@ export const categories = [
             label: "Application",
             value: "Dust Suppression & Air Pollution Control",
           },
+          {
+            label: "Operation Mode",
+            value: "Automatic",
+          },
         ],
 
         image: [
@@ -1905,7 +1935,8 @@ export const categories = [
         metaTitle: "Tractor Mounted Fog Cannon Supplier",
         metaDescription:
           "Advanced tractor mounted fog cannon for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         description: [
           {
             type: "p",
@@ -1987,6 +2018,10 @@ export const categories = [
             label: "Application",
             value: "Dust Suppression & Air Pollution Control",
           },
+          {
+            label: "Throw Range",
+            value: "50 m",
+          },
         ],
 
         image: [
@@ -2008,7 +2043,8 @@ export const categories = [
         metaTitle: "Tractor Operated Fog Cannon Supplier",
         metaDescription:
           "Advanced tractor operated fog cannon for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/5zO28zZHz_g?si=a_HsjOOXVdSar733",
         description: [
           {
             type: "p",
@@ -2090,6 +2126,10 @@ export const categories = [
             label: "Application",
             value: "Dust Suppression & Air Pollution Control",
           },
+          {
+            label: "Mounting Type",
+            value: "Truck Mounted",
+          },
         ],
 
         image: [
@@ -2122,7 +2162,8 @@ export const categories = [
         metaTitle: "Tyre-Mounted Anti Smog Gun Supplier",
         metaDescription:
           "Mobile tyre-mounted anti smog gun for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
-
+        videoUrl:
+          "https://www.youtube.com/embed/OdoPdgHx83Y?si=jgk9xaQQqh_FThP6",
         description: [
           {
             type: "p",
@@ -2226,7 +2267,7 @@ export const categories = [
         metaTitle: "truck Mounted Dust Control Machine Supplier",
         metaDescription:
           "Advanced truck mounted dust control machine for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
-
+ videoUrl: "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         description: [
           {
             type: "p",
@@ -2300,6 +2341,7 @@ export const categories = [
 
         specs: [
           { label: "Mounting Type", value: "truck Mounted (Crawler Based)" },
+          { label: "Mounting Type", value: "truck Mounted (Crawler Based)" },
           {
             label: "Operation",
             value: "Semi-Automatic / Fully Automatic",
@@ -2329,7 +2371,7 @@ export const categories = [
         metaTitle: "truck Mounted Dust Suppression Cannon Supplier",
         metaDescription:
           "Advanced truck mounted dust suppression cannon for efficient dust control and air pollution management across construction, mining, and industrial sites.",
-
+ videoUrl: "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
         description: [
           {
             type: "p",
@@ -2411,6 +2453,7 @@ export const categories = [
             label: "Application",
             value: "Dust Suppression & Air Pollution Control",
           },
+          { label: "Material", value: "Mild Steel" },
         ],
 
         image: [
@@ -2432,7 +2475,7 @@ export const categories = [
         metaTitle: "truck Mounted Spray Cannon Supplier",
         metaDescription:
           "Advanced truck mounted spray cannon for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
-
+ videoUrl: "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         description: [
           {
             type: "p",
@@ -2514,6 +2557,7 @@ export const categories = [
             label: "Application",
             value: "Dust Suppression & Air Pollution Control",
           },
+          { label: "Material", value: "Mild Steel" },
         ],
 
         image: [
