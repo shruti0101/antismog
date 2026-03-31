@@ -1,344 +1,1590 @@
-// data.js
 export const categories = [
+  {
+    id: "anti-smog-gun",
+    name: "Anti Smog Gun",
+    metaTitle:
+      "Anti Smog Gun Manufacturer in India | Dust Suppression System | Kapmix Machinery",
+    metaDescription:
+      "Kapmix Machinery is a leading Anti Smog Gun manufacturer in India offering advanced dust suppression systems with long spray range and efficient pollution control.",
 
+    products: [
+      {
+        id: "anti-smog-gun-75-100",
+        name: "Anti Smog Gun 75/100 MTR Machine",
+        metaTitle: "Anti Smog Gun 75/100 Meter Machine Supplier",
+        metaDescription:
+          "Long range anti smog gun machine for large-scale dust suppression with up to 100 meter spray.",
 
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a leading supplier of high-performance Anti Smog Gun 75 MTR and 100 MTR Machines, designed for large-scale dust suppression and effective air pollution control. These advanced fog cannons are ideal for projects requiring long-range coverage and powerful misting capabilities.",
+          },
+          {
+            type: "h3",
+            text: "High-Performance Dust Suppression",
+          },
+          {
+            type: "p",
+            text: "The 75/100 MTR Anti Smog Gun is engineered to control airborne dust particles such as PM2.5 and PM10 over large areas. With its long throw distance and fine mist technology, it efficiently captures dust and improves air quality in challenging environments.",
+          },
+          {
+            type: "h3",
+            text: "Long Range Coverage for Large Areas",
+          },
+          {
+            type: "p",
+            text: "With a spray range of 75 to 100 meters, this machine is suitable for large construction sites, mining zones, industrial plants, and infrastructure projects, ensuring maximum coverage with minimal repositioning.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & User-Friendly Operation",
+          },
+          {
+            type: "p",
+            text: "Equipped with semi-automatic or fully automatic controls, the system allows easy adjustment of spray direction, oscillation, and intensity, ensuring precise and efficient dust control.",
+          },
+          {
+            type: "h3",
+            text: "Robust & Heavy-Duty Construction",
+          },
+          {
+            type: "p",
+            text: "Manufactured using high-grade materials and durable components, the Anti Smog Gun is built to perform reliably in harsh outdoor and industrial conditions, offering long service life.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control Solution",
+          },
+          {
+            type: "p",
+            text: "The system provides effective dust suppression without harming the environment, helping industries comply with pollution control regulations and maintain safe working conditions.",
+          },
+        ],
 
-  //   category 3 biodegradable garbage bags
+        features: [
+          "Long Throw Distance (75–100 Meters)",
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Oscillation",
+          "Durable & Low-Maintenance Design",
+          "Energy & Water Efficient",
+          "Versatile Applications",
+        ],
+
+        applications: [
+          "Large construction projects",
+          "Mining & quarrying",
+          "Cement plants",
+          "Industrial zones",
+          "Demolition sites",
+        ],
+
+        whyChoose: [
+          "Proven Industry Experience",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted by Industry Professionals",
+        ],
+
+        specs: [
+          { label: "Range", value: "75–100 Meters" },
+          { label: "Application", value: "Large Industrial Sites" },
+        ],
+
+        image: [
+          { src: "/prodtest.webp", alt: "75–100 Meter Anti Smog Gun Machine" },
+        ],
+      },
+      {
+        id: "anti-smog-gun-30-100",
+        name: "Anti Smog Gun 30/100 MTR Machine",
+        metaTitle: "Anti Smog Gun 30/100 MTR Machine Supplier",
+        metaDescription:
+          "Advanced anti smog gun machine for medium and large-scale dust suppression with 30m and 100m range options.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted supplier of Anti Smog Gun 30 MTR and 100 MTR Machines, offering advanced dust suppression solutions for medium and large-scale applications. These machines deliver efficient air pollution control with powerful mist technology and reliable performance.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "The machines use fine mist atomization technology to bind dust particles such as PM2.5 and PM10, bringing them down and significantly improving air quality across job sites.",
+          },
+          {
+            type: "h3",
+            text: "Dual Range Options for Flexible Use",
+          },
+          {
+            type: "p",
+            text: "The 30 MTR model is suitable for small to medium areas like building construction and road work, while the 100 MTR model is ideal for large-scale applications such as mining, demolition, and industrial zones. This flexibility allows users to choose based on project requirements.",
+          },
+          {
+            type: "h3",
+            text: "Advanced & Easy Operation",
+          },
+          {
+            type: "p",
+            text: "Equipped with semi-automatic or fully automatic control systems, the Anti Smog Guns ensure easy handling, adjustable spray direction, and efficient dust control with minimal manual effort.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Construction",
+          },
+          {
+            type: "p",
+            text: "Manufactured using high-quality materials and robust components, these machines are built to withstand harsh outdoor and industrial conditions, ensuring long service life.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental standards, the system provides effective dust suppression without harming the environment, helping industries comply with pollution control norms.",
+          },
+        ],
+
+        features: [
+          "Multiple Range Options (30M & 100M)",
+          "High Dust Control Efficiency",
+          "Adjustable Spray & Oscillation",
+          "Energy & Water Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Construction sites",
+          "Mining & quarrying",
+          "Industrial plants",
+          "Road & infrastructure projects",
+          "Demolition zones",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Technology & Engineering",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Range Options", value: "30 Meters / 100 Meters" },
+          { label: "Application", value: "Medium to Large Industrial Sites" },
+        ],
+
+        image: [
+          { src: "/prodtest.webp", alt: "30–100 Meter Anti Smog Gun Machine" },
+        ],
+      },
+      {
+        id: "anti-smog-gun-without-water-tank",
+        name: "Anti Smog Gun Without Water Tank",
+        metaTitle: "Anti Smog Gun Without Water Tank Supplier",
+        metaDescription:
+          "High-performance anti smog gun without water tank for continuous dust suppression with external water connection.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted supplier of Anti Smog Guns Without Water Tank, offering advanced dust suppression solutions for projects where an external water source is available. These systems are ideal for continuous operations with flexible water supply arrangements.",
+          },
+          {
+            type: "h3",
+            text: "Continuous Water Supply for Long Operations",
+          },
+          {
+            type: "p",
+            text: "Unlike tank-mounted models, this system connects directly to external water sources such as pipelines, tankers, or overhead tanks, ensuring uninterrupted dust suppression without frequent refilling.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "Equipped with advanced fine mist atomization technology, the system effectively captures airborne dust particles such as PM2.5 and PM10, improving air quality in real time.",
+          },
+          {
+            type: "h3",
+            text: "Lightweight & Easy Installation",
+          },
+          {
+            type: "p",
+            text: "Without an inbuilt water tank, the machine is lighter, more compact, and easier to install, making it suitable for fixed or semi-mobile setups.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage with Adjustable Spray",
+          },
+          {
+            type: "p",
+            text: "The Anti Smog Gun features adjustable spray angle and oscillation, providing effective coverage over large areas with precise dust control.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental standards, the system ensures effective dust suppression without harming the surroundings, supporting compliance with pollution control norms.",
+          },
+        ],
+
+        features: [
+          "No Inbuilt Water Tank",
+          "High Dust Suppression Efficiency",
+          "Lightweight & Compact Design",
+          "Adjustable Spray System",
+          "Energy & Water Efficient",
+          "Low Maintenance & Long Life",
+        ],
+
+        applications: [
+          "Construction sites",
+          "Industrial plants",
+          "Mining & quarrying",
+          "Road and infrastructure projects",
+          "Cement factories",
+          "Demolition areas",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Technology & Engineering",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          {
+            label: "Water Source",
+            value: "External (Pipeline / Tanker / Overhead Tank)",
+          },
+          { label: "Design", value: "Without Inbuilt Water Tank" },
+          {
+            label: "Application",
+            value: "Continuous Industrial Dust Suppression",
+          },
+        ],
+
+        image: [
+          {
+            src: "/prodtest.webp",
+            alt: "Anti Smog Gun Without Water Tank Machine",
+          },
+        ],
+      },
+      {
+        id: "anti-pollution-control-gun",
+        name: "Anti-Pollution Control Gun",
+        metaTitle: "Anti-Pollution Control Gun Supplier",
+        metaDescription:
+          "Advanced anti-pollution control gun for efficient dust suppression and air quality improvement across industrial and construction sites.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted supplier of Anti-Pollution Control Guns, offering advanced and efficient solutions for controlling air pollution and airborne dust across various industries. These high-performance systems are designed to improve air quality and ensure compliance with environmental standards.",
+          },
+          {
+            type: "h3",
+            text: "Advanced Dust & Pollution Control Technology",
+          },
+          {
+            type: "p",
+            text: "The system uses fine mist atomization technology to capture and suppress airborne particles such as PM2.5 and PM10, preventing them from spreading and significantly reducing pollution levels.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage & High Efficiency",
+          },
+          {
+            type: "p",
+            text: "Designed for large-area coverage, the Anti-Pollution Control Gun features adjustable spray angle and oscillation, ensuring effective dust suppression for both small and large-scale projects.",
+          },
+          {
+            type: "h3",
+            text: "User-Friendly & Flexible Operation",
+          },
+          {
+            type: "p",
+            text: "Available in manual, semi-automatic, and fully automatic variants, the system allows easy control and efficient operation with minimal manual effort.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Heavy-Duty Construction",
+          },
+          {
+            type: "p",
+            text: "Manufactured using high-quality materials and robust components, the machine ensures long-lasting performance even in harsh industrial environments.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Solution",
+          },
+          {
+            type: "p",
+            text: "The system provides environmentally safe dust control, helping industries meet pollution control norms and maintain compliance with regulatory standards.",
+          },
+        ],
+
+        features: [
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Oscillation",
+          "Energy & Water Efficient",
+          "Low Maintenance & Long Life",
+          "Multiple Application Use",
+        ],
+
+        applications: [
+          "Construction sites",
+          "Mining & quarrying",
+          "Industrial plants",
+          "Road and infrastructure projects",
+          "Demolition zones",
+        ],
+
+        whyChoose: [
+          "Proven Industry Experience",
+          "Strict Quality Standards",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Technology", value: "Fine Mist Atomization" },
+          {
+            label: "Operation Type",
+            value: "Manual / Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Industrial Dust & Pollution Control",
+          },
+        ],
+
+        image: [
+          { src: "/prodtest.webp", alt: "Anti-Pollution Control Gun Machine" },
+        ],
+      },
+      {
+        id: "anti-pollution-control-gun",
+        name: "Anti-Pollution Control Gun",
+        metaTitle: "Anti-Pollution Control Gun Supplier",
+        metaDescription:
+          "Advanced anti-pollution control gun for efficient dust suppression and air quality improvement across industrial and construction sites.",
+
+        category: "anti-smog-gun",
+        type: "general",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Anti-Pollution Control Gun supplier offering advanced and efficient solutions for controlling air pollution and airborne dust across various industries. These high-performance systems are designed to improve air quality and ensure compliance with environmental standards.",
+          },
+          {
+            type: "h3",
+            text: "Advanced Dust & Pollution Control Technology",
+          },
+          {
+            type: "p",
+            text: "The system uses fine mist atomization technology to capture and suppress airborne particles such as PM2.5 and PM10, preventing them from spreading and significantly reducing pollution levels.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage & High Efficiency",
+          },
+          {
+            type: "p",
+            text: "Designed for large-area coverage, the Anti-Pollution Control Gun features adjustable spray angle and oscillation, ensuring effective dust suppression for both small and large-scale projects.",
+          },
+          {
+            type: "h3",
+            text: "User-Friendly & Flexible Operation",
+          },
+          {
+            type: "p",
+            text: "Available in manual, semi-automatic, and fully automatic variants, the system allows easy control and efficient operation with minimal manual effort.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Heavy-Duty Construction",
+          },
+          {
+            type: "p",
+            text: "Manufactured using high-quality materials and robust components, the machine ensures long-lasting performance even in harsh industrial environments.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Solution",
+          },
+          {
+            type: "p",
+            text: "The system provides environmentally safe dust control, helping industries meet pollution control norms and maintain compliance with regulatory standards.",
+          },
+        ],
+
+        features: [
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Oscillation",
+          "Energy & Water Efficient",
+          "Low Maintenance & Long Life",
+          "Multiple Application Use",
+        ],
+
+        applications: [
+          "Construction sites",
+          "Mining & quarrying",
+          "Industrial plants",
+          "Road and infrastructure projects",
+          "Demolition zones",
+        ],
+
+        whyChoose: [
+          "Proven Industry Experience",
+          "Strict Quality Standards",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Technology", value: "Fine Mist Atomization" },
+          {
+            label: "Operation Type",
+            value: "Manual / Semi-Automatic / Fully Automatic",
+          },
+          { label: "Application", value: "Air Pollution & Dust Control" },
+        ],
+
+        image: [
+          { src: "/prodtest.webp", alt: "Anti-Pollution Control Gun Machine" },
+        ],
+      },
+      {
+        id: "semi-automatic-anti-smog-gun-without-autoswing",
+        name: "Semi-Automatic Anti Smog Gun Without Autoswing",
+        metaTitle: "Semi-Automatic Anti Smog Gun Without Autoswing Supplier",
+        metaDescription:
+          "Cost-effective semi-automatic anti smog gun without autoswing for targeted dust suppression and controlled air pollution management.",
+
+        category: "anti-smog-gun",
+        type: "no-autoswing",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted supplier of Semi-Automatic Anti Smog Guns Without Autoswing, offering efficient and cost-effective dust suppression solutions for controlled and targeted pollution management. These machines are ideal for applications where fixed-direction spraying is required.",
+          },
+          {
+            type: "h3",
+            text: "Fixed Direction Spray for Targeted Control",
+          },
+          {
+            type: "p",
+            text: "Unlike autoswing models, this system provides fixed or manually adjustable spray direction, allowing precise dust control in specific areas where oscillation is not required.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "Equipped with fine mist atomization technology, the machine captures and suppresses airborne particles such as PM2.5 and PM10, improving air quality and reducing pollution levels.",
+          },
+          {
+            type: "h3",
+            text: "Semi-Automatic Operation",
+          },
+          {
+            type: "p",
+            text: "The system offers semi-automatic functionality, ensuring easy operation with minimal manual effort while maintaining effective performance.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Heavy-Duty Construction",
+          },
+          {
+            type: "p",
+            text: "Manufactured using high-quality materials and robust components, the machine ensures long-lasting performance even in harsh working conditions.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "Designed to meet environmental standards, the system provides effective dust suppression without harming the surroundings, helping maintain compliance with pollution norms.",
+          },
+        ],
+
+        features: [
+          "Without Autoswing Mechanism",
+          "High Dust Suppression Efficiency",
+          "Adjustable Manual Angle",
+          "Energy & Water Efficient",
+          "Low Maintenance",
+          "Cost-Effective Solution",
+        ],
+
+        applications: [
+          "Construction sites",
+          "Industrial plants",
+          "Warehouses",
+          "Material handling areas",
+          "Road work zones",
+          "Demolition sites",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Operation Type", value: "Semi-Automatic" },
+          {
+            label: "Autoswing",
+            value: "Not Available (Manual Direction Control)",
+          },
+          { label: "Application", value: "Targeted Dust Suppression" },
+        ],
+
+        image: [
+          {
+            src: "/prodtest.webp",
+            alt: "Semi-Automatic Anti Smog Gun Without Autoswing",
+          },
+        ],
+      },
+      {
+        id: "fog-cannon-spray-machine",
+        name: "Fog Cannon Spray Machine",
+        metaTitle: "Fog Cannon Spray Machine Supplier",
+        metaDescription:
+          "High-performance fog cannon spray machine for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
+
+        category: "anti-smog-gun",
+        type: "range",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Fog Cannon Spray Machine supplier offering advanced dust suppression systems designed to control air pollution and improve air quality across construction, mining, and industrial environments.",
+          },
+          {
+            type: "h3",
+            text: "Advanced Fogging Technology",
+          },
+          {
+            type: "p",
+            text: "The system uses high-pressure pumps and powerful fans to generate ultra-fine mist droplets that bind with airborne particles such as PM2.5 and PM10, effectively reducing pollution and improving air quality.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage & Long Throw Range",
+          },
+          {
+            type: "p",
+            text: "Available in multiple variants (30M, 50M, 75M, 100M+), the machine offers extensive coverage with minimal repositioning, making it ideal for large-scale operations.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Control Performance",
+          },
+          {
+            type: "p",
+            text: "The Fog Cannon Spray Machine ensures high-efficiency dust suppression by targeting airborne dust at the source, widely used in construction, mining, and cement industries.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Industrial-Grade Construction",
+          },
+          {
+            type: "p",
+            text: "Built using robust materials and reliable components, the system ensures long service life even in harsh outdoor and industrial environments.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "The machine provides chemical-free dust control using water-based mist, helping industries meet environmental safety standards and pollution control norms.",
+          },
+        ],
+
+        features: [
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Oscillation",
+          "Energy & Water Efficient",
+          "Heavy-Duty Build Quality",
+          "Multiple Mounting Options",
+          "Low Maintenance",
+        ],
+
+        applications: [
+          "Construction & infrastructure projects",
+          "Mining & quarrying operations",
+          "Cement plants & material handling",
+          "Demolition sites",
+          "Industrial plants & factories",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Range Options", value: "30M / 50M / 75M / 100M+" },
+          { label: "Technology", value: "Fine Mist Atomization" },
+          {
+            label: "Mounting Type",
+            value: "Fixed / Trolley / Vehicle Mounted",
+          },
+        ],
+
+        image: [{ src: "/prodtest.webp", alt: "Fog Cannon Spray Machine" }],
+      },
+      {
+        id: "fog-cannon-machine",
+        name: "Fog Cannon Machine",
+        metaTitle: "Fog Cannon Machine Supplier",
+        metaDescription:
+          "Advanced fog cannon machine for efficient dust suppression and air pollution control across construction, mining, and industrial environments.",
+
+        category: "anti-smog-gun",
+        type: "range",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Fog Cannon Machine supplier providing advanced dust suppression systems designed to control air pollution and improve air quality across construction, mining, and industrial environments. These machines are engineered for high efficiency, durability, and wide-area coverage.",
+          },
+          {
+            type: "h3",
+            text: "Advanced Dust Suppression Technology",
+          },
+          {
+            type: "p",
+            text: "The machine produces micro-sized water droplets (10–150 microns) that match dust particle size, ensuring effective binding and fast settling of airborne pollutants such as PM2.5 and PM10.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage & Long Throw Range",
+          },
+          {
+            type: "p",
+            text: "Available in multiple ranges (30M, 50M, 75M, 100M+), fog cannons cover large industrial areas with minimal repositioning, ensuring efficient dust control.",
+          },
+          {
+            type: "h3",
+            text: "Efficient & Reliable Operation",
+          },
+          {
+            type: "p",
+            text: "Designed for continuous operation, these machines deliver consistent performance, making them suitable for heavy-duty industrial and infrastructure applications.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Industrial-Grade Build",
+          },
+          {
+            type: "p",
+            text: "Manufactured using high-quality materials and robust components, the machine ensures long service life even in harsh outdoor and industrial conditions.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "Fog cannon machines use water-based mist technology without chemicals, making them environmentally safe and compliant with pollution control standards.",
+          },
+        ],
+
+        features: [
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Autoswing",
+          "Long-Range Performance",
+          "Energy & Water Efficient",
+          "Low Maintenance",
+          "Multiple Mounting Options",
+        ],
+
+        applications: [
+          "Construction & infrastructure projects",
+          "Mining & quarrying operations",
+          "Cement plants & material handling",
+          "Industrial zones & factories",
+          "Demolition sites",
+          "Ports & logistics hubs",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Range Options", value: "30M / 50M / 75M / 100M+" },
+          { label: "Droplet Size", value: "10–150 Microns" },
+          {
+            label: "Mounting Type",
+            value: "Fixed / Trolley / Tyre / Truck Mounted",
+          },
+        ],
+
+        image: [{ src: "/prodtest.webp", alt: "Fog Cannon Machine" }],
+      },
+      {
+        id: "air-pollution-control-cannon",
+        name: "Air Pollution Control Cannon",
+        metaTitle: "Air Pollution Control Cannon Supplier",
+        metaDescription:
+          "High-performance air pollution control cannon for effective dust suppression and air quality management across industrial, construction, and mining environments.",
+
+        category: "anti-smog-gun",
+        type: "range",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Air Pollution Control Cannon supplier offering advanced solutions designed to reduce airborne dust and harmful pollutants across construction, mining, industrial, and infrastructure environments. These systems are engineered for high efficiency, wide coverage, and reliable performance.",
+          },
+          {
+            type: "h3",
+            text: "Advanced Dust & Pollution Control Technology",
+          },
+          {
+            type: "p",
+            text: "The system produces micro-sized water droplets (10–150 microns) that match dust particle size, enabling maximum absorption and faster settling of airborne pollutants such as PM2.5 and PM10.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage & Long Throw Range",
+          },
+          {
+            type: "p",
+            text: "Available in multiple configurations (30M, 50M, 75M, 100M+), the cannon provides extensive coverage with minimal repositioning, making it ideal for large-scale industrial applications.",
+          },
+          {
+            type: "h3",
+            text: "Efficient & Continuous Operation",
+          },
+          {
+            type: "p",
+            text: "Designed for continuous 24/7 industrial use, these machines ensure consistent and reliable dust suppression performance even in high-pollution environments.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Construction",
+          },
+          {
+            type: "p",
+            text: "Built with industrial-grade materials, the system is resistant to corrosion, weather conditions, and heavy-duty usage, ensuring long operational life.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Solution",
+          },
+          {
+            type: "p",
+            text: "The machine uses water-based mist technology without harmful chemicals, making it environmentally safe and compliant with pollution control standards.",
+          },
+        ],
+
+        features: [
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Autoswing System",
+          "Long-Range Projection",
+          "Energy & Water Efficient",
+          "Low Maintenance Design",
+          "Multiple Mounting Options",
+        ],
+
+        applications: [
+          "Construction & infrastructure projects",
+          "Mining & quarrying industries",
+          "Cement plants & material handling units",
+          "Industrial manufacturing facilities",
+          "Demolition & excavation sites",
+          "Ports, logistics hubs & warehouses",
+          "Power plants & energy sector",
+        ],
+
+        whyChoose: [
+          "Proven Industry Experience",
+          "Strict Quality Standards",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Across Industries",
+        ],
+
+        specs: [
+          { label: "Range Options", value: "30M / 50M / 75M / 100M+" },
+          { label: "Droplet Size", value: "10–150 Microns" },
+          {
+            label: "Mounting Type",
+            value: "Fixed / Skid / Tyre / Truck Mounted",
+          },
+        ],
+
+        image: [
+          {
+            src: "/prodtest.webp",
+            alt: "Air Pollution Control Cannon Machine",
+          },
+        ],
+      },
+      {
+        id: "industrial-fogging-machine",
+        name: "Industrial Fogging Machine",
+        metaTitle: "Industrial Fogging Machine Supplier",
+        metaDescription:
+          "High-performance industrial fogging machine for dust suppression, air pollution control, and environmental management across industrial sectors.",
+
+        category: "anti-smog-gun",
+        type: "range",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Industrial Fogging Machine supplier providing advanced fogging solutions for effective dust suppression, air pollution control, and environmental management across industrial and commercial sectors. These machines are engineered for high efficiency, durability, and wide-area coverage.",
+          },
+          {
+            type: "h3",
+            text: "Advanced Fogging Technology",
+          },
+          {
+            type: "p",
+            text: "The machine produces micro-sized droplets (10–150 microns) that match dust particle size, enabling maximum absorption and rapid settling of airborne pollutants such as PM2.5 and PM10.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage & High Throw Range",
+          },
+          {
+            type: "p",
+            text: "Available in multiple configurations (30M, 50M, 75M, 100M+), the system provides extensive coverage across large industrial areas with minimal repositioning.",
+          },
+          {
+            type: "h3",
+            text: "Continuous & Reliable Performance",
+          },
+          {
+            type: "p",
+            text: "Designed for heavy-duty industrial use, these machines ensure consistent fogging performance for long operational hours in demanding environments.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Industrial-Grade Construction",
+          },
+          {
+            type: "p",
+            text: "Built using high-quality materials, the machine offers excellent resistance to corrosion, weather conditions, and wear, ensuring long service life.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Operation",
+          },
+          {
+            type: "p",
+            text: "The system uses water-based mist technology without harmful chemicals, making it environmentally safe and compliant with pollution control regulations.",
+          },
+        ],
+
+        features: [
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray Angle & Autoswing",
+          "Long-Range Fog Projection",
+          "Energy & Water Efficient",
+          "Low Maintenance",
+          "Flexible Mounting Options",
+        ],
+
+        applications: [
+          "Industrial plants & factories",
+          "Construction & infrastructure sites",
+          "Mining & quarry operations",
+          "Warehouses & logistics hubs",
+          "Cement and material handling industries",
+          "Demolition and excavation zones",
+          "Power plants and energy sector",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Across Industries",
+        ],
+
+        specs: [
+          { label: "Range Options", value: "30M / 50M / 75M / 100M+" },
+          { label: "Droplet Size", value: "10–150 Microns" },
+          {
+            label: "Mounting Type",
+            value: "Fixed / Trolley / Tyre / Truck Mounted",
+          },
+        ],
+
+        image: [{ src: "/prodtest.webp", alt: "Industrial Fogging Machine" }],
+      },
+      {
+        id: "spray-cannon-machine",
+        name: "Spray Cannon Machine",
+        metaTitle: "Spray Cannon Machine Supplier",
+        metaDescription:
+          "High-performance spray cannon machine for efficient dust suppression and air pollution control across construction, mining, and industrial environments.",
+
+        category: "anti-smog-gun",
+        type: "range",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Spray Cannon Machine supplier providing advanced dust suppression systems designed to control air pollution and improve air quality across construction, mining, and industrial environments. These machines are engineered for high efficiency, durability, and wide-area coverage.",
+          },
+          {
+            type: "h3",
+            text: "Advanced Dust Suppression Technology",
+          },
+          {
+            type: "p",
+            text: "The machine produces micro-sized water droplets (10–150 microns) that match dust particle size, ensuring effective binding and fast settling of airborne pollutants such as PM2.5 and PM10.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage & Long Throw Range",
+          },
+          {
+            type: "p",
+            text: "Available in multiple ranges (30M, 50M, 75M, 100M+), the system provides extensive coverage across large industrial areas with minimal repositioning.",
+          },
+          {
+            type: "h3",
+            text: "Efficient & Reliable Operation",
+          },
+          {
+            type: "p",
+            text: "Designed for continuous use, these machines ensure consistent dust suppression performance, making them suitable for heavy-duty industrial applications.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Industrial-Grade Build",
+          },
+          {
+            type: "p",
+            text: "Manufactured using high-quality materials and robust components, the machine ensures long service life even in harsh outdoor and industrial conditions.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "The system uses water-based mist technology without chemicals, making it environmentally safe and compliant with pollution control standards.",
+          },
+        ],
+
+        features: [
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Autoswing",
+          "Long-Range Performance",
+          "Energy & Water Efficient",
+          "Low Maintenance",
+          "Multiple Mounting Options",
+        ],
+
+        applications: [
+          "Construction & infrastructure projects",
+          "Mining & quarrying operations",
+          "Cement plants & material handling",
+          "Industrial zones & factories",
+          "Demolition sites",
+          "Ports & logistics hubs",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Range Options", value: "30M / 50M / 75M / 100M+" },
+          { label: "Droplet Size", value: "10–150 Microns" },
+          {
+            label: "Mounting Type",
+            value: "Fixed / Trolley / Tyre / Truck Mounted",
+          },
+        ],
+
+        image: [{ src: "/prodtest.webp", alt: "Spray Cannon Machine" }],
+      },
+    ],
+  },
+
+  {
+    id: "roof-mounted-anti-smog-gun",
+    name: "Roof Mounted Anti Smog Gun",
+    metaTitle: "Roof Mounted Anti Smog Gun Supplier",
+    metaDescription:
+      "High-performance roof mounted anti smog gun for mobile dust suppression and air pollution control in construction and industrial applications.",
+
+    products: [
+      {
+        id: "roof-mounted-anti-smog-gun",
+        name: "Roof-Mounted Anti Smog Gun",
+        metaTitle: "Roof-Mounted Anti Smog Gun Supplier",
+        metaDescription:
+          "Advanced roof-mounted anti smog gun for effective dust suppression and air pollution control in urban, industrial, and high-density areas.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Roof-Mounted Anti Smog Gun supplier offering advanced pollution control solutions designed for rooftop installations. These systems are ideal for controlling airborne dust and smog in urban, industrial, and high-density areas where ground space is limited.",
+          },
+          {
+            type: "h3",
+            text: "Designed for Rooftop & Elevated Installations",
+          },
+          {
+            type: "p",
+            text: "These systems are specially engineered for installation on building rooftops, industrial sheds, commercial complexes, warehouses, and urban construction sites, ensuring efficient use of vertical space and wider coverage.",
+          },
+          {
+            type: "h3",
+            text: "Advanced Pollution Control Technology",
+          },
+          {
+            type: "p",
+            text: "The machine produces micro-sized droplets (10–150 microns) that match dust particle size, enabling maximum absorption and faster settling of airborne pollutants such as PM2.5 and PM10.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage from Elevated Position",
+          },
+          {
+            type: "p",
+            text: "Installed at elevated positions, the system provides extended spray reach and improved air circulation coverage, making it highly effective in dense urban and industrial environments.",
+          },
+          {
+            type: "h3",
+            text: "Continuous & Reliable Operation",
+          },
+          {
+            type: "p",
+            text: "Designed for long operational hours, the machine ensures consistent performance even in high pollution conditions.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Weather-Resistant Construction",
+          },
+          {
+            type: "p",
+            text: "Built with industrial-grade materials and protective coatings, the system is resistant to sunlight, rain, corrosion, and harsh outdoor conditions, ensuring long service life.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Solution",
+          },
+          {
+            type: "p",
+            text: "The system uses water-based mist technology without harmful chemicals, making it environmentally safe and compliant with pollution control norms.",
+          },
+        ],
+
+        features: [
+          "Roof-Mounted Design",
+          "High Dust & Smog Suppression Efficiency",
+          "Wide Spray Coverage",
+          "Adjustable Spray & Autoswing",
+          "Energy & Water Efficient",
+          "Low Maintenance",
+        ],
+
+        applications: [
+          "Urban buildings & residential complexes",
+          "Industrial rooftops & factories",
+          "Warehouses & logistics hubs",
+          "Construction projects in city areas",
+          "Pollution control in high-density zones",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Across India",
+        ],
+
+        specs: [
+          {
+            label: "Mounting Type",
+            value: "Roof / Elevated Structure Mounted",
+          },
+          { label: "Droplet Size", value: "10–150 Microns" },
+          {
+            label: "Operation",
+            value: "Manual / Semi-Automatic / Fully Automatic",
+          },
+        ],
+
+        image: [{ src: "/prodtest.webp", alt: "Roof-Mounted Anti Smog Gun" }],
+      },
+      {
+        id: "terrace-anti-smog-gun",
+        name: "Terrace Anti Smog Gun",
+        metaTitle: "Terrace Anti Smog Gun Supplier",
+        metaDescription:
+          "Compact terrace anti smog gun for efficient dust suppression and air pollution control in urban, residential, and rooftop applications.",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Terrace Anti Smog Gun supplier offering compact and efficient dust suppression solutions designed for rooftop and terrace installations. These systems are ideal for controlling air pollution in urban environments and confined spaces.",
+          },
+          {
+            type: "h3",
+            text: "Designed for Terrace & Rooftop Use",
+          },
+          {
+            type: "p",
+            text: "The compact and lightweight design allows easy installation on terraces, residential complexes, commercial buildings, and industrial rooftops, ensuring effective pollution control in limited spaces.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust & Pollution Control",
+          },
+          {
+            type: "p",
+            text: "Using advanced fine mist atomization technology, the system captures airborne particles such as PM2.5 and PM10, reducing pollution levels and improving air quality.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage from Elevated Position",
+          },
+          {
+            type: "p",
+            text: "Mounted at height, the Anti Smog Gun provides enhanced dispersion and wider coverage, making it effective in controlling dust across surrounding areas.",
+          },
+          {
+            type: "h3",
+            text: "User-Friendly & Flexible Operation",
+          },
+          {
+            type: "p",
+            text: "Available in manual, semi-automatic, and automatic variants, the system allows easy adjustment of spray angle, direction, and oscillation.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Weather-Resistant Build",
+          },
+          {
+            type: "p",
+            text: "Constructed with high-quality materials and weather-resistant coating, the system is built to withstand heat, dust, rain, and outdoor conditions.",
+          },
+        ],
+
+        features: [
+          "Compact & Terrace-Friendly Design",
+          "High Dust Suppression Efficiency",
+          "Wide Spray Coverage",
+          "Energy & Water Efficient",
+          "Low Maintenance",
+          "Noise-Controlled Operation",
+        ],
+
+        applications: [
+          "Residential societies",
+          "Commercial buildings",
+          "Industrial rooftops",
+          "Construction sites in urban areas",
+          "Warehouses & factories",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          { label: "Mounting Type", value: "Terrace / Rooftop Mounted" },
+          {
+            label: "Operation",
+            value: "Manual / Semi-Automatic / Fully Automatic",
+          },
+          { label: "Application", value: "Urban & Confined Area Dust Control" },
+        ],
+
+        image: [{ src: "/prodtest.webp", alt: "Terrace Anti Smog Gun" }],
+      },
+    ],
+  },
+
+  {
+    id: "tractor-operated-anti-smog-gun",
+    name: "Tractor Operated Anti Smog Gun",
+    metaTitle: "Tractor Operated Anti Smog Gun Supplier",
+    metaDescription:
+      "High-performance tractor operated anti smog gun for mobile dust suppression and air pollution control across large construction, mining, and road projects.",
+
+    products: [
+      {
+        id: "tractor-operated-anti-smog-gun",
+        name: "Tractor Operated Anti Smog Gun",
+        metaTitle: "Tractor Operated Anti Smog Gun Supplier",
+        metaDescription:
+          "High-performance tractor operated anti smog gun for mobile dust suppression and air pollution control across construction, mining, and infrastructure projects.",
+
+        category: "anti-smog-gun",
+        type: "mobile",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Tractor Operated Anti Smog Gun supplier offering advanced and mobile dust suppression solutions for large-scale outdoor applications. These machines are ideal for construction sites, mining areas, road projects, and agricultural zones where mobility and wide coverage are essential.",
+          },
+          {
+            type: "h3",
+            text: "Designed for Mobility & Large Areas",
+          },
+          {
+            type: "p",
+            text: "Mounted on tractors, the system allows easy transportation, quick repositioning, and efficient operation across large, remote, and uneven terrains.",
+          },
+          {
+            type: "h3",
+            text: "Advanced Dust Suppression Technology",
+          },
+          {
+            type: "p",
+            text: "The machine produces micro-sized droplets (10–150 microns) that match dust particle size, ensuring effective absorption and faster settling of airborne pollutants such as PM2.5 and PM10.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage & Long Throw Range",
+          },
+          {
+            type: "p",
+            text: "Available in multiple ranges (30M, 50M, 75M, 100M+), the system covers large open areas efficiently, reducing the need for multiple machines.",
+          },
+          {
+            type: "h3",
+            text: "Efficient & Continuous Operation",
+          },
+          {
+            type: "p",
+            text: "Designed for long working hours, the machine delivers consistent dust control performance even in high-dust environments.",
+          },
+          {
+            type: "h3",
+            text: "Durable & Heavy-Duty Construction",
+          },
+          {
+            type: "p",
+            text: "Built with industrial-grade materials, the system ensures high durability, resistance to harsh weather conditions, and long service life.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Solution",
+          },
+          {
+            type: "p",
+            text: "Uses water-based mist technology without harmful chemicals, making it environmentally safe and compliant with pollution control standards.",
+          },
+        ],
+
+        features: [
+          "Tractor-Mounted Mobility",
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Autoswing",
+          "Long-Range Performance",
+          "Energy & Water Efficient",
+          "Low Maintenance",
+        ],
+
+        applications: [
+          "Road construction & highway projects",
+          "Mining & quarry operations",
+          "Large infrastructure projects",
+          "Agricultural fields & rural areas",
+          "Industrial zones & open yards",
+          "Dust control on unpaved roads",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Across India",
+        ],
+
+        specs: [
+          { label: "Capacity", value: "30M / 50M / 75M / 100M (Customizable)" },
+          {
+            label: "Cannon Material",
+            value: "Mild Steel / Stainless Steel (SS 202 / SS 304)",
+          },
+          {
+            label: "Water Feed Pump",
+            value:
+              "2 HP – 5 HP, High Pressure, 3 Phase (Lubi / CRI or Equivalent)",
+          },
+          {
+            label: "Water Tank Capacity",
+            value: "500 – 5000 Litres (Optional)",
+          },
+          { label: "Water Consumption", value: "10 – 100 Litres/Minute" },
+          {
+            label: "Mounting Type",
+            value: "Tractor Mounted (PTO Driven / Engine Based)",
+          },
+        ],
+
+        image: [
+          { src: "/prodtest.webp", alt: "Tractor Operated Anti Smog Gun" },
+        ],
+      },
+      {
+        id: "tyre-mounted-anti-smog-gun",
+        name: "Tyre-Mounted Anti Smog Gun",
+        metaTitle: "Tyre-Mounted Anti Smog Gun Supplier",
+        metaDescription:
+          "Mobile tyre-mounted anti smog gun for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
+
+        category: "anti-smog-gun",
+        type: "mobile",
+
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Tyre-Mounted Anti Smog Gun supplier offering advanced and mobile dust suppression solutions designed for easy movement and efficient air pollution control. These machines are ideal for projects where portability and flexibility are essential.",
+          },
+          {
+            type: "h3",
+            text: "Easy Mobility & Flexible Operation",
+          },
+          {
+            type: "p",
+            text: "The tyre-mounted design allows quick relocation of the machine without complex installation, making it suitable for large and continuously changing project sites.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "Equipped with fine mist atomization technology, the system effectively captures airborne particles such as PM2.5 and PM10, ensuring cleaner and safer air.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage with Adjustable Spray",
+          },
+          {
+            type: "p",
+            text: "The machine features adjustable spray angles and oscillation, enabling wide-area coverage and precise dust control.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Build",
+          },
+          {
+            type: "p",
+            text: "Constructed using high-quality materials, the system is designed to withstand harsh industrial and outdoor conditions while ensuring long-lasting performance.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "The system provides environmentally safe dust suppression using water-based mist technology, helping industries comply with pollution control standards.",
+          },
+        ],
+
+        features: [
+          "Tyre-Mounted Design for Mobility",
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Rotation",
+          "Energy & Water Efficient",
+          "Low Maintenance & Long Life",
+          "Flexible Positioning",
+        ],
+
+        applications: [
+          "Construction sites",
+          "Mining & quarrying",
+          "Road and highway projects",
+          "Industrial plants",
+          "Demolition zones",
+        ],
+
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
+
+        specs: [
+          {
+            label: "Mounting Type",
+            value: "Tyre Mounted (Towable / Mobile Unit)",
+          },
+          {
+            label: "Operation",
+            value: "Manual / Semi-Automatic / Fully Automatic",
+          },
+          { label: "Application", value: "Mobile Dust Suppression" },
+        ],
+
+        image: [{ src: "/prodtest.webp", alt: "Tyre-Mounted Anti Smog Gun" }],
+      },
+    ],
+  },
+
+  {
+    id: "track-mounted-anti-smog-gun",
+    name: "Track Mounted Anti Smog Gun",
+    metaTitle: "Track Mounted Anti Smog Gun Supplier",
+    metaDescription:
+      "Heavy-duty track mounted anti smog gun for efficient dust suppression in rough terrains, mining sites, and large construction projects.",
+
+    products: [
+      {
+        id: "tyre-mounted-anti-smog-gun",
+        name: "Tyre-Mounted Anti Smog Gun",
+        metaTitle: "Tyre-Mounted Anti Smog Gun Supplier",
+        metaDescription:
+          "Mobile tyre-mounted anti smog gun for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
+
   
-{
-  id: "AntiSmogGunMachine",
-  name: "Anti Smog Gun",
-  metaTitle: "Anti Smog Gun Manufacturer in India | Dust Suppression System | Kapmix Machinery",
-  metaDescription:
-    "Kapmix Machinery is a leading Anti Smog Gun manufacturer in India offering high-performance dust suppression systems with long spray range, durable construction, and efficient air pollution control solutions.",
 
-  products: [
+        description: [
+          {
+            type: "p",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Tyre-Mounted Anti Smog Gun supplier offering advanced and mobile dust suppression solutions designed for easy movement and efficient air pollution control. These machines are ideal for projects where portability and flexibility are essential.",
+          },
+          {
+            type: "h3",
+            text: "Easy Mobility & Flexible Operation",
+          },
+          {
+            type: "p",
+            text: "The tyre-mounted design allows quick relocation of the machine without complex installation, making it suitable for large and continuously changing project sites.",
+          },
+          {
+            type: "h3",
+            text: "Efficient Dust Suppression Performance",
+          },
+          {
+            type: "p",
+            text: "Equipped with fine mist atomization technology, the system effectively captures airborne particles such as PM2.5 and PM10, ensuring cleaner and safer air.",
+          },
+          {
+            type: "h3",
+            text: "Wide Coverage with Adjustable Spray",
+          },
+          {
+            type: "p",
+            text: "The machine features adjustable spray angles and oscillation, enabling wide-area coverage and precise dust control.",
+          },
+          {
+            type: "h3",
+            text: "Heavy-Duty & Durable Build",
+          },
+          {
+            type: "p",
+            text: "Constructed using high-quality materials, the system is designed to withstand harsh industrial and outdoor conditions while ensuring long-lasting performance.",
+          },
+          {
+            type: "h3",
+            text: "Eco-Friendly Pollution Control",
+          },
+          {
+            type: "p",
+            text: "The system uses water-based mist technology without harmful chemicals, helping industries comply with pollution control standards.",
+          },
+        ],
 
-    {
-      id: "anti-smog-gun",
-      name: "Anti Smog Gun Machine",
-      metaTitle: "Anti Smog Gun Machine | Dust Suppression System Manufacturer",
-      metaDescription:
-        "High-performance Anti Smog Gun Machine designed for dust suppression at construction sites, mining areas, and industrial zones with long spray range and efficient mist technology.",
-videoUrl: "https://youtu.be/OdoPdgHx83Y",
+        features: [
+          "Tyre-Mounted Design for Mobility",
+          "High Dust Suppression Efficiency",
+          "Adjustable Spray & Rotation",
+          "Energy & Water Efficient",
+          "Low Maintenance & Long Life",
+          "Flexible Positioning",
+        ],
 
-      description: [
+        applications: [
+          "Construction sites",
+          "Mining & quarrying",
+          "Road and highway projects",
+          "Industrial plants",
+          "Demolition zones",
+        ],
 
-        {
-          type: "h2",
-          text: "Product Overview – Anti Smog Gun Machine",
-        },
-        {
-          type: "ul",
-          items: [
-            "The Anti Smog Gun Machine by Kapmix Machinery Pvt. Ltd. is a high-performance dust suppression system designed to control airborne dust and reduce air pollution at construction and industrial sites.",
-            "Engineered with advanced mist technology, the machine sprays fine water droplets that effectively bind with dust particles such as PM2.5 and PM10.",
-            "This system ensures improved air quality, better visibility, and a safer working environment.",
-            "Widely used across construction projects, mining areas, demolition sites, and industrial zones.",
-            "Built for continuous operation with reliable performance even in harsh working conditions."
-          ]
-        },
+        whyChoose: [
+          "Industry Expertise",
+          "Strict Quality Assurance",
+          "Advanced Engineering & Technology",
+          "Complete Customer Support",
+          "Trusted Supplier Across India",
+        ],
 
-        {
-          type: "h2",
-          text: "Product Details",
-        },
-        {
-          type: "ul",
-          items: [
-            "Spray Range – 30 to 50 Meters: Long-distance dust suppression capability for wide coverage areas.",
-            "Motor Power – High Performance Motor: Ensures efficient and continuous operation.",
-            "Pump Type – High Pressure Pump: Generates fine mist for effective dust particle capture.",
-            "Mounting Type – Trolley / Truck / Fixed: Available in multiple configurations based on project needs.",
-            "Control System – Manual / Remote Operated: Easy operation with flexible control options.",
-            "Application – Construction, Mining, Industrial: Suitable for various dust-prone environments."
-          ]
-        },
+        specs: [
+          { label: "Mounting Type", value: "Tyre Mounted (Towable Unit)" },
+          {
+            label: "Operation",
+            value: "Manual / Semi-Automatic / Fully Automatic",
+          },
+          {
+            label: "Application",
+            value: "Mobile Dust Suppression & Pollution Control",
+          },
+        ],
 
-        {
-          type: "h2",
-          text: "Key Features",
-        },
-        {
-          type: "ul",
-          items: [
-            "Advanced mist technology ensures effective dust suppression and pollution control.",
-            "Long spray range provides wide area coverage with minimal water consumption.",
-            "Heavy-duty construction ensures durability in tough working conditions.",
-            "Easy mobility and installation with multiple mounting options.",
-            "Low maintenance design for long operational life.",
-            "Environment-friendly solution for controlling airborne dust."
-          ]
-        },
+        image: [
+          { src: "/prodtest.webp", alt: "Tyre-Mounted Anti Smog Gun Machine" },
+        ],
 
-        {
-          type: "h2",
-          text: "Why Choose Kapmix Machinery Pvt. Ltd. as Your Anti Smog Gun Manufacturer?",
-        },
-        {
-          type: "ul",
-          items: [
-            "Trusted Anti Smog Gun manufacturer in India with proven industry experience.",
-            "High-quality machines designed for long-lasting performance.",
-            "Advanced manufacturing setup ensuring precision and reliability.",
-            "Customization options available as per project requirements.",
-            "Competitive pricing with PAN India supply capability.",
-            "Strong after-sales support including installation, service, and spare parts."
-          ]
-        }
-
-      ],
-
-      specs: [
-        { label: "Spray Range", value: "30–50 Meters" },
-        { label: "Motor Type", value: "Electric / Diesel" },
-        { label: "Pump Type", value: "High Pressure Pump" },
-        { label: "Mounting Options", value: "Trolley / Truck / Fixed" },
-        { label: "Application", value: "Construction, Mining, Industrial" },
-        { label: "Control System", value: "Manual / Remote" },
-        { label: "Brand", value: "Kapmix Machinery" }
-      ],
-
-      image: [
-        {
-          src: "/prodtest.webp",
-          alt: "Anti Smog Gun Machine",
-        },
-      ],
-    },
-
-
-
-    {
-  id: "truck-mounted-anti-smog-gun",
-  name: "Truck Mounted Anti Smog Gun",
-
-  metaTitle:
-    "Truck Mounted Anti Smog Gun Manufacturer in India | Mobile Dust Suppression System | Kapmix Machinery",
-
-  metaDescription:
-    "Kapmix Machinery offers high-performance Truck Mounted Anti Smog Gun for mobile dust suppression. Ideal for construction sites, roads, mining & urban areas with long spray range and efficient pollution control.",
-
-  videoUrl: "https://youtu.be/OdoPdgHx83Y",
-
-  description: [
-
-    {
-      type: "h2",
-      text: "Product Overview – Truck Mounted Anti Smog Gun",
-    },
-    {
-      type: "ul",
-      items: [
-        "The Truck Mounted Anti Smog Gun by Kapmix Machinery Pvt. Ltd. is a highly efficient mobile dust suppression system designed for large-scale outdoor applications.",
-        "Mounted on a truck chassis, this machine offers excellent mobility and flexibility to control dust across multiple locations.",
-        "It uses advanced mist technology to release ultra-fine water droplets that bind with airborne dust particles such as PM2.5 and PM10.",
-        "Ideal for road construction, highways, mining sites, demolition zones, and urban pollution control.",
-        "Ensures improved air quality, reduced dust pollution, and enhanced worker safety."
-      ]
-    },
-
-    {
-      type: "h2",
-      text: "Product Details",
-    },
-    {
-      type: "ul",
-      items: [
-        "Spray Range – 40 to 100 Meters: Covers large areas efficiently with long-distance mist projection.",
-        "Mounting Type – Truck Mounted: Fully mobile unit for flexible operation across multiple sites.",
-        "Tank Capacity – 2000 to 10000 Liters: Large water storage for extended operation time.",
-        "Motor Type – Diesel Engine Driven: High-performance engine ensures reliable working in remote areas.",
-        "Rotation Angle – 0° to 360°: Wide horizontal rotation for maximum area coverage.",
-        "Elevation Angle – Adjustable: Allows vertical adjustment for targeted spraying.",
-        "Control System – Remote Operated: Easy and safe operation from a distance."
-      ]
-    },
-
-    {
-      type: "h2",
-      text: "Key Features",
-    },
-    {
-      type: "ul",
-      items: [
-        "Fully mobile dust suppression system mounted on a truck for on-site flexibility.",
-        "High-pressure mist technology ensures effective capture of fine dust particles.",
-        "Wide spray coverage reduces manpower and operational time.",
-        "Heavy-duty build suitable for harsh construction and mining environments.",
-        "360° rotation with adjustable elevation for precise dust control.",
-        "Low water consumption with maximum efficiency.",
-        "Environment-friendly solution for air pollution control."
-      ]
-    },
-
-    {
-      type: "h2",
-      text: "Applications",
-    },
-    {
-      type: "ul",
-      items: [
-        "Road Construction & Highways Dust Control",
-        "Mining & Quarry Sites",
-        "Demolition & Infrastructure Projects",
-        "Urban Pollution Control & Municipal Use",
-        "Industrial Plants & Material Handling Areas",
-        "Thermal Power Plants & Cement Industries"
-      ]
-    },
-
-    {
-      type: "h2",
-      text: "Why Choose Kapmix Machinery Pvt. Ltd.?",
-    },
-    {
-      type: "ul",
-      items: [
-        "Leading Truck Mounted Anti Smog Gun manufacturer in India.",
-        "Advanced technology with proven performance in real-world conditions.",
-        "Customization available as per project requirements.",
-        "Strong build quality ensuring long service life.",
-        "PAN India supply with fast delivery.",
-        "Reliable after-sales service and spare parts support."
-      ]
-    }
-
-  ],
-
-  specs: [
-    { label: "Spray Range", value: "40–100 Meters" },
-    { label: "Mounting Type", value: "Truck Mounted" },
-    { label: "Tank Capacity", value: "2000–10000 Liters" },
-    { label: "Motor Type", value: "Diesel Engine" },
-    { label: "Rotation", value: "0°–360°" },
-    { label: "Control System", value: "Remote Operated" },
-    { label: "Application", value: "Roads, Mining, Industrial, Urban" },
-    { label: "Brand", value: "Kapmix Machinery" }
-  ],
-
-  image: [
-    {
-      src: "/prodtest.webp",
-      alt: "Truck Mounted Anti Smog Gun Machine",
-    },
-  ],
-}
-
-
-
-
-
-  ],
-},
-
-
-
-
-
-
-
+        relatedProducts: [
+          "tractor-operated-anti-smog-gun",
+          "track-mounted-anti-smog-gun",
+          "roof-mounted-anti-smog-gun",
+        ],
+      },
+    ],
+  },
 ];
-
-// export const serviceLocations = [
-//   { "href": "/garbage-bag-manufacturer-in-delhi", "label": "Delhi", "id": 1 },
-//   { "href": "/garbage-bag-manufacturer-in-mumbai", "label": "Mumbai", "id": 2 },
-//   { "href": "/garbage-bag-manufacturer-in-kolkata", "label": "Kolkata", "id": 3 },
-//   { "href": "/garbage-bag-manufacturer-in-chennai", "label": "Chennai", "id": 4 },
-//   { "href": "/garbage-bag-manufacturer-in-bangalore", "label": "Bangalore", "id": 5 },
-//   { "href": "/garbage-bag-manufacturer-in-hyderabad", "label": "Hyderabad", "id": 6 },
-//   { "href": "/garbage-bag-manufacturer-in-pune", "label": "Pune", "id": 7 },
-//   { "href": "/garbage-bag-manufacturer-in-ahmedabad", "label": "Ahmedabad", "id": 8 },
-//   { "href": "/garbage-bag-manufacturer-in-jaipur", "label": "Jaipur", "id": 9 },
-//   { "href": "/garbage-bag-manufacturer-in-lucknow", "label": "Lucknow", "id": 10 },
-//   { "href": "/garbage-bag-manufacturer-in-surat", "label": "Surat", "id": 11 },
-//   { "href": "/garbage-bag-manufacturer-in-kanpur", "label": "Kanpur", "id": 12 },
-//   { "href": "/garbage-bag-manufacturer-in-nagpur", "label": "Nagpur", "id": 13 },
-//   { "href": "/garbage-bag-manufacturer-in-indore", "label": "Indore", "id": 14 },
-//   { "href": "/garbage-bag-manufacturer-in-thane", "label": "Thane", "id": 15 },
-//   { "href": "/garbage-bag-manufacturer-in-bhopal", "label": "Bhopal", "id": 16 },
-//   { "href": "/garbage-bag-manufacturer-in-visakhapatnam", "label": "Visakhapatnam", "id": 17 },
-//   { "href": "/garbage-bag-manufacturer-in-pimpri-chinchwad", "label": "Pimpri-Chinchwad", "id": 18 },
-//   { "href": "/garbage-bag-manufacturer-in-patna", "label": "Patna", "id": 19 },
-//   { "href": "/garbage-bag-manufacturer-in-vadodara", "label": "Vadodara", "id": 20 },
-//   { "href": "/garbage-bag-manufacturer-in-ghaziabad", "label": "Ghaziabad", "id": 21 },
-//   { "href": "/garbage-bag-manufacturer-in-ludhiana", "label": "Ludhiana", "id": 22 },
-//   { "href": "/garbage-bag-manufacturer-in-agra", "label": "Agra", "id": 23 },
-//   { "href": "/garbage-bag-manufacturer-in-nashik", "label": "Nashik", "id": 24 },
-//   { "href": "/garbage-bag-manufacturer-in-faridabad", "label": "Faridabad", "id": 25 },
-//   { "href": "/garbage-bag-manufacturer-in-meerut", "label": "Meerut", "id": 26 },
-//   { "href": "/garbage-bag-manufacturer-in-rajkot", "label": "Rajkot", "id": 27 },
-//   { "href": "/garbage-bag-manufacturer-in-kalyan-dombivli", "label": "Kalyan-Dombivli", "id": 28 },
-//   { "href": "/garbage-bag-manufacturer-in-vasai-virar", "label": "Vasai-Virar", "id": 29 },
-//   { "href": "/garbage-bag-manufacturer-in-varanasi", "label": "Varanasi", "id": 30 },
-//   { "href": "/garbage-bag-manufacturer-in-srinagar", "label": "Srinagar", "id": 31 },
-//   { "href": "/garbage-bag-manufacturer-in-aurangabad", "label": "Aurangabad", "id": 32 },
-//   { "href": "/garbage-bag-manufacturer-in-dhanbad", "label": "Dhanbad", "id": 33 },
-//   { "href": "/garbage-bag-manufacturer-in-amritsar", "label": "Amritsar", "id": 34 },
-//   { "href": "/garbage-bag-manufacturer-in-navi-mumbai", "label": "Navi Mumbai", "id": 35 },
-//   { "href": "/garbage-bag-manufacturer-in-prayagraj", "label": "Allahabad (Prayagraj)", "id": 36 },
-//   { "href": "/garbage-bag-manufacturer-in-howrah", "label": "Howrah", "id": 37 },
-//   { "href": "/garbage-bag-manufacturer-in-ranchi", "label": "Ranchi", "id": 38 },
-//   { "href": "/garbage-bag-manufacturer-in-gwalior", "label": "Gwalior", "id": 39 },
-//   { "href": "/garbage-bag-manufacturer-in-jabalpur", "label": "Jabalpur", "id": 40 },
-//   { "href": "/garbage-bag-manufacturer-in-coimbatore", "label": "Coimbatore", "id": 41 },
-//   { "href": "/garbage-bag-manufacturer-in-vijayawada", "label": "Vijayawada", "id": 42 },
-//   { "href": "/garbage-bag-manufacturer-in-jodhpur", "label": "Jodhpur", "id": 43 },
-//   { "href": "/garbage-bag-manufacturer-in-madurai", "label": "Madurai", "id": 44 },
-//   { "href": "/garbage-bag-manufacturer-in-raipur", "label": "Raipur", "id": 45 },
-//   { "href": "/garbage-bag-manufacturer-in-kota", "label": "Kota", "id": 46 },
-//   { "href": "/garbage-bag-manufacturer-in-guwahati", "label": "Guwahati", "id": 47 },
-//   { "href": "/garbage-bag-manufacturer-in-chandigarh", "label": "Chandigarh", "id": 48 },
-//   { "href": "/garbage-bag-manufacturer-in-solapur", "label": "Solapur", "id": 49 },
-//   { "href": "/garbage-bag-manufacturer-in-hubli-dharwad", "label": "Hubli-Dharwad", "id": 50 },
-//   { "href": "/garbage-bag-manufacturer-in-mysore", "label": "Mysore", "id": 51 },
-//   { "href": "/garbage-bag-manufacturer-in-bareilly", "label": "Bareilly", "id": 52 },
-//   { "href": "/garbage-bag-manufacturer-in-moradabad", "label": "Moradabad", "id": 53 },
-//   { "href": "/garbage-bag-manufacturer-in-gurgaon", "label": "Gurgaon", "id": 54 },
-//   { "href": "/garbage-bag-manufacturer-in-aligarh", "label": "Aligarh", "id": 55 },
-//   { "href": "/garbage-bag-manufacturer-in-jalandhar", "label": "Jalandhar", "id": 56 },
-//   { "href": "/garbage-bag-manufacturer-in-tiruchirappalli", "label": "Tiruchirappalli", "id": 57 },
-//   { "href": "/garbage-bag-manufacturer-in-bhubaneswar", "label": "Bhubaneswar", "id": 58 },
-//   { "href": "/garbage-bag-manufacturer-in-salem", "label": "Salem", "id": 59 },
-//   { "href": "/garbage-bag-manufacturer-in-mira-bhayandar", "label": "Mira-Bhayandar", "id": 60 },
-//   { "href": "/garbage-bag-manufacturer-in-thiruvananthapuram", "label": "Thiruvananthapuram", "id": 61 },
-//   { "href": "/garbage-bag-manufacturer-in-bhiwandi", "label": "Bhiwandi", "id": 62 },
-//   { "href": "/garbage-bag-manufacturer-in-saharanpur", "label": "Saharanpur", "id": 63 },
-//   { "href": "/garbage-bag-manufacturer-in-gorakhpur", "label": "Gorakhpur", "id": 64 },
-//   { "href": "/garbage-bag-manufacturer-in-bikaner", "label": "Bikaner", "id": 65 },
-//   { "href": "/garbage-bag-manufacturer-in-amravati", "label": "Amravati", "id": 66 },
-//   { "href": "/garbage-bag-manufacturer-in-noida", "label": "Noida", "id": 67 },
-//   { "href": "/garbage-bag-manufacturer-in-jamshedpur", "label": "Jamshedpur", "id": 68 },
-//   { "href": "/garbage-bag-manufacturer-in-bhilai", "label": "Bhilai", "id": 69 },
-//   { "href": "/garbage-bag-manufacturer-in-cuttack", "label": "Cuttack", "id": 70 },
-//   { "href": "/garbage-bag-manufacturer-in-firozabad", "label": "Firozabad", "id": 71 },
-//   { "href": "/garbage-bag-manufacturer-in-kochi", "label": "Kochi", "id": 72 },
-//   { "href": "/garbage-bag-manufacturer-in-bhavnagar", "label": "Bhavnagar", "id": 73 },
-//   { "href": "/garbage-bag-manufacturer-in-dehradun", "label": "Dehradun", "id": 74 },
-//   { "href": "/garbage-bag-manufacturer-in-durgapur", "label": "Durgapur", "id": 75 },
-//   { "href": "/garbage-bag-manufacturer-in-asansol", "label": "Asansol", "id": 76 },
-//   { "href": "/garbage-bag-manufacturer-in-nanded", "label": "Nanded", "id": 77 },
-//   { "href": "/garbage-bag-manufacturer-in-kolhapur", "label": "Kolhapur", "id": 78 },
-//   { "href": "/garbage-bag-manufacturer-in-ajmer", "label": "Ajmer", "id": 79 },
-//   { "href": "/garbage-bag-manufacturer-in-akola", "label": "Akola", "id": 80 },
-//   { "href": "/garbage-bag-manufacturer-in-gulbarga", "label": "Gulbarga", "id": 81 },
-//   { "href": "/garbage-bag-manufacturer-in-jamnagar", "label": "Jamnagar", "id": 82 },
-//   { "href": "/garbage-bag-manufacturer-in-ujjain", "label": "Ujjain", "id": 83 },
-//   { "href": "/garbage-bag-manufacturer-in-latur", "label": "Latur", "id": 84 },
-//   { "href": "/garbage-bag-manufacturer-in-dhule", "label": "Dhule", "id": 85 },
-//   { "href": "/garbage-bag-manufacturer-in-panipat", "label": "Panipat", "id": 86 },
-//   { "href": "/garbage-bag-manufacturer-in-ambala", "label": "Ambala", "id": 87 },
-//   { "href": "/garbage-bag-manufacturer-in-tirunelveli", "label": "Tirunelveli", "id": 88 },
-//   { "href": "/garbage-bag-manufacturer-in-alwar", "label": "Alwar", "id": 89 },
-//   { "href": "/garbage-bag-manufacturer-in-jagraon", "label": "Jagraon", "id": 90 },
-//   { "href": "/garbage-bag-manufacturer-in-siliguri", "label": "Siliguri", "id": 91 },
-//   { "href": "/garbage-bag-manufacturer-in-muzaffarpur", "label": "Muzaffarpur", "id": 92 },
-//   { "href": "/garbage-bag-manufacturer-in-guntur", "label": "Guntur", "id": 93 },
-//   { "href": "/garbage-bag-manufacturer-in-warangal", "label": "Warangal", "id": 94 },
-//   { "href": "/garbage-bag-manufacturer-in-jhansi", "label": "Jhansi", "id": 95 },
-//   { "href": "/garbage-bag-manufacturer-in-satara", "label": "Satara", "id": 96 },
-//   { "href": "/garbage-bag-manufacturer-in-karnal", "label": "Karnal", "id": 97 },
-//   { "href": "/garbage-bag-manufacturer-in-shimla", "label": "Shimla", "id": 98 },
-//   { "href": "/garbage-bag-manufacturer-in-anand", "label": "Anand", "id": 99 },
-//   { "href": "/garbage-bag-manufacturer-in-rewari", "label": "Rewari", "id": 100 }
-// ];

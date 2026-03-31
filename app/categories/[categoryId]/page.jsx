@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export async function generateMetadata({ params }) {
-  const { categoryId } = params;
+  const { categoryId } = await params;
   const category = categories.find((c) => c.id === categoryId);
 
   if (!category) {
