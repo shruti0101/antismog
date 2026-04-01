@@ -9,7 +9,6 @@ export default function Footer() {
 
   return (
     <footer className="relative w-full text-white overflow-hidden">
-
       {/* BG IMAGE */}
       <div className="absolute inset-0">
         <Image
@@ -29,7 +28,6 @@ export default function Footer() {
 
       {/* ================= MAIN ================= */}
       <div className="relative max-w-[1400px] mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-
         {/* ===== ABOUT ===== */}
         <div>
           <div className="bg-white rounded-xl inline-block  mb-6">
@@ -47,7 +45,9 @@ export default function Footer() {
 
         {/* ===== PRODUCTS ===== */}
         <div>
-          <h3 className="text-lg font-semibold cursor-pointer mb-5">Product Range</h3>
+          <h3 className="text-lg font-semibold cursor-pointer mb-5">
+            Product Range
+          </h3>
 
           <ul className="space-y-3 text-sm">
             {[
@@ -57,7 +57,10 @@ export default function Footer() {
               "Industrial Mist Cannon",
               "Trailer Mounted",
             ].map((item, i) => (
-              <li key={i} className="group flex items-center gap-2 text-white hover:text-white transition">
+              <li
+                key={i}
+                className="group flex items-center gap-2 text-white hover:text-white transition"
+              >
                 <span className="text-red-500 group-hover:translate-x-1 transition">
                   →
                 </span>
@@ -74,13 +77,16 @@ export default function Footer() {
           <ul className="space-y-3 text-sm">
             {["Home", "About", "Products", "Blogs", "Contact"].map(
               (item, i) => (
-                <li key={i} className="group flex cursor-pointer items-center gap-2 text-white hover:text-white transition ">
+                <li
+                  key={i}
+                  className="group flex cursor-pointer items-center gap-2 text-white hover:text-white transition "
+                >
                   <span className="text-red-500 group-hover:translate-x-1 transition">
                     →
                   </span>
                   {item}
                 </li>
-              )
+              ),
             )}
           </ul>
         </div>
@@ -90,22 +96,23 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-5">Contact Info</h3>
 
           <div className="space-y-4 text-sm text-white">
-
-            <div className="flex items-center gap-3">
+            <a href="tel:+919999926558" className="flex items-center gap-3">
               <Phone size={16} />
-              +91-88820-57687
-            </div>
+              +91-9999926558
+            </a>
 
-            <div className="flex items-center gap-3">
+            <a
+              href="mailto:kapmixmachinery@gmail.com"
+              className="flex items-center gap-3"
+            >
               <Mail size={16} />
-              info@antismoggunmanufacturer.com
-            </div>
+              kapmixmachinery@gmail.com
+            </a>
 
             <div className="flex items-start gap-3">
               <MapPin size={16} className="mt-1" />
               New Delhi, India
             </div>
-
           </div>
         </div>
 
@@ -134,7 +141,6 @@ export default function Footer() {
             trusted industrial solutions.
           </p>
         </div>
-
       </div>
 
       {/* ===== BOTTOM ===== */}
@@ -167,7 +173,7 @@ export default function Footer() {
 
             {/* IMAGE */}
             <Image
-              src="/cert.webp"
+              src="/trust Elite certificate (20).png"
               alt="Certificate"
               width={800}
               height={500}

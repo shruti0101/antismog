@@ -101,7 +101,7 @@ Contact: ${phone}`;
                 href="tel:+919999926558"
                 className="text-lg hover:underline transition"
               >
-                +91-99999-26558
+                +91-9999926558
               </a>
               <a
                 href="tel:+918851620018"

@@ -59,19 +59,19 @@ export default function Navbar() {
     <header className="w-full fixed top-0 left-0 z-50 font-semibold">
       {/* ===== TOP BAR (SLIM + CLEAN) ===== */}
       <div
-        className={`bg-[#c8102e]/95 backdrop-blur-md text-white transition-all duration-500 hidden lg:flex overflow-hidden ${
+        className={`bg-[#c8102e]/95 backdrop-blur-md text-white transition-all duration-500 hidden lg:flex lg:items-center lg:justify-between overflow-hidden ${
           showTopBar ? "h-[50px]" : "h-0"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto flex items-center justify-between h-[55px] px-6 text-[16px]">
+        <div className=" flex items-center justify-between h-[55px] px-6 text-[16px]">
           {/* LEFT INFO */}
-          <div className="flex items-center gap-6 ">
+          <div className="flex justify-between items-center gap-6 ">
             <span className="flex items-center gap-2 ">
-              <Phone size={13} /> +91-88820-57687
+              <Phone size={13} /> +91 9999926558
             </span>
-            <span className="flex items-center gap-2 ">
-              <Mail size={13} /> vandsengg@gmail.com
-            </span>
+            <a  href="mailto:kapmixmachinery@gmail.com" className="flex items-center gap-2 ">
+              <Mail size={13} />  kapmixmachinery@gmail.com
+            </a>
             <span className="flex items-center gap-2 ">
               <MapPin size={13} /> New Delhi
             </span>
@@ -287,7 +287,7 @@ export default function Navbar() {
 
             {/* WHATSAPP BUTTON */}
             <a
-              href="https://wa.me/918882057687"
+              href="https://wa.me/919999926558"
               target="_blank"
               className="flex items-center gap-2 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-full transition text-md"
             >
@@ -299,10 +299,7 @@ export default function Navbar() {
       </div>
 
       {/* ENQUIRY MODAL */}
-      <EnquiryForm 
-        isOpen={enquiry} 
-        onClose={() => setEnquiry(false)} 
-      />
+      <EnquiryForm isOpen={enquiry} onClose={() => setEnquiry(false)} />
     </header>
   );
 }
