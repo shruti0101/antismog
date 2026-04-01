@@ -59,42 +59,46 @@ export default function Navbar() {
     <header className="w-full fixed top-0 left-0 z-50 font-semibold">
       {/* ===== TOP BAR (SLIM + CLEAN) ===== */}
       <div
-        className={`bg-[#c8102e]/95 backdrop-blur-md text-white transition-all duration-500 hidden lg:flex lg:items-center lg:justify-between overflow-hidden ${
+        className={`bg-[#c8102e]/95 backdrop-blur-md text-white transition-all duration-500 hidden lg:flex lg:items-center  overflow-hidden ${
           showTopBar ? "h-[50px]" : "h-0"
         }`}
       >
-        <div className=" flex items-center justify-between h-[55px] px-6 text-[16px]">
-          {/* LEFT INFO */}
-          <div className="flex justify-between items-center gap-6 ">
-            <span className="flex items-center gap-2 ">
-              <Phone size={13} /> +91 9999926558
-            </span>
-            <a  href="mailto:kapmixmachinery@gmail.com" className="flex items-center gap-2 ">
-              <Mail size={13} />  kapmixmachinery@gmail.com
-            </a>
-            <span className="flex items-center gap-2 ">
-              <MapPin size={13} /> New Delhi
-            </span>
+  <div className="w-full max-w-[1400px] mx-auto flex items-center h-[55px] px-6 text-[16px]">
 
-            <span className="flex items-center gap-2 ">
-              <CheckCircle size={13} /> GST No. 09AAHCK4088Q1ZM
-            </span>
-          </div>
+  {/* LEFT INFO */}
+  <div className="flex flex-1 items-center gap-6">
 
-          {/* SOCIAL */}
-          <div className="flex items-center gap-2">
-            {[Facebook, Twitter, Instagram, Youtube, Linkedin].map(
-              (Icon, i) => (
-                <div
-                  key={i}
-                  className="p-2 rounded-full hover:bg-white/20 transition cursor-pointer"
-                >
-                  <Icon size={16} />
-                </div>
-              ),
-            )}
-          </div>
-        </div>
+    <span className="flex items-center gap-2">
+      <Phone size={13} /> +91 9999926558
+    </span>
+
+    <a href="mailto:kapmixmachinery@gmail.com" className="flex items-center gap-2">
+      <Mail size={13} /> kapmixmachinery@gmail.com
+    </a>
+
+    <span className="flex items-center gap-2">
+      <MapPin size={13} /> New Delhi
+    </span>
+
+    <span className="flex items-center gap-2">
+      <CheckCircle size={13} /> GST No. 09AAHCK4088Q1ZM
+    </span>
+
+  </div>
+
+  {/* SOCIAL */}
+  <div className="flex items-center gap-2 ml-auto">
+    {[Facebook, Twitter, Instagram, Youtube, Linkedin].map((Icon, i) => (
+      <div
+        key={i}
+        className="p-2 rounded-full hover:bg-white/20 transition cursor-pointer"
+      >
+        <Icon size={16} />
+      </div>
+    ))}
+  </div>
+
+</div>
       </div>
 
       {/* ===== MAIN NAV (GLASS FLOATING) ===== */}
