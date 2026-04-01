@@ -25,27 +25,28 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setStatus("Sending...");
+    setStatus(null);
 
     try {
-      const formData = {
-        platform: "Sangam Garbage Bag popup Form",
-        platformEmail: "info@polywell.co.in",
+      const formDataPayload = {
+        platform: "Kapmix Machinery Contact Form",
+        platformEmail: "kapmixmachinery@gmail.com",
         name,
         phone,
         email,
         product,
+        place: "Na",
         message,
-        place: "N/A",
       };
 
-      const { data } = await axios.post(
+
+      const res = await axios.post(
         "https://brandbnalo.com/api/form/add",
-        formData
+        formDataPayload,
       );
 
-      if (data?.success) {
-        setStatus("✅ Your enquiry has been submitted successfully!");
+      if (res?.data?.success) {
+        setStatus("success");
 
         const whatsappText = `Hi, I am ${name}.
 Email: ${email}
@@ -53,42 +54,34 @@ Product: ${product}
 Message: ${message}
 Contact: ${phone}`;
 
-        setTimeout(() => {
-          window.open(
-            `https://wa.me/919810057441?text=${encodeURIComponent(
-              whatsappText
-            )}`,
-            "_blank"
-          );
-        }, 1000);
+        window.open(
+          `https://wa.me/919810057441?text=${encodeURIComponent(whatsappText)}`,
+          "_blank",
+        );
 
         setName("");
         setPhone("");
         setEmail("");
+        setCity("");
         setProduct("");
         setMessage("");
-
-        setTimeout(() => setIsOpen(false), 3000);
       } else {
-        setStatus("❌ Failed to send. Please try again.");
+        setStatus("error");
       }
     } catch (error) {
-      console.error(error);
-      setStatus("❌ Server error. Try again later.");
+      console.log(error, "error");
+      setStatus("error");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black/40 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/70 z-50">
       <div
         className="relative rounded-3xl shadow-2xl p-10 max-w-sm md:max-w-2xl text-white bg-cover bg-center"
-        style={{ backgroundImage: "url(/bag/try2.webp)" }}
+        style={{ backgroundImage: "url(/cat1_1.webp)" }}
       >
-
-
-
         {/* Close button */}
         <button
           className="absolute cursor-pointer top-4 right-4 text-white hover:text-red-500 text-xl"
@@ -109,28 +102,32 @@ Contact: ${phone}`;
               type="text"
               placeholder="Your Name"
               name="name"
-              className="w-1/2 p-3 rounded-md text-black text-sm border border-black border-2 bg-blue-50 focus:outline-none"
+              className="w-1/2 p-3 rounded-md text-black text-sm border-black border-2 bg-blue-50 focus:outline-none"
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
               disabled={loading}
             />
-     <select
-                  name="products"
-                  required
-                  disabled={loading}
-                  defaultValue=""
-                  className="w-1/2 p-3 rounded-md text-black text-sm border-2 focus:outline-none bg-blue-50"
-                >
-                  <option value="">Select Product</option>
-              <option value="Black Garbage Bags">Biodegradable Garbage Bags</option>
-                  <option value="Green Garbage Bags">Disposable Garbage Bags</option>
-                  <option value="Biomedical Waste Bags">Biomedical garbage bags</option>
-                </select>
+            <select
+              name="products"
+              required
+              disabled={loading}
+              defaultValue=""
+              onChange={(e)=>setProduct(e.target.value)}
+              className="w-1/2 p-3 rounded-md text-black text-sm border-2 focus:outline-none bg-blue-50"
+            >
+              <option value="">Select Product</option>
+              <option value="Anti Smog Gun">Anti Smog Gun</option>
+              <option value="Truck Mounted Smog Gun">
+                Truck Mounted Smog Gun
+              </option>
+              <option value="Industrial Dust Suppression">
+                Dust Suppression System
+              </option>
+            </select>
           </div>
 
-          <div className="flex items-center bg-white rounded-md border border-black border-2 overflow-hidden">
-            
+          <div className="flex items-center bg-white rounded-md border-black border-2 overflow-hidden">
             <span className="text-lg">🇮🇳</span>
             <input
               type="tel"

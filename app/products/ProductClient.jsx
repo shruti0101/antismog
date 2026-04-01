@@ -13,7 +13,7 @@ const Page = () => {
   );
 
   return (
-    <div>
+    <div className="">
       {/* Hero Section */}
       <section
         style={{ backgroundImage: "url('/Anti-smog-gun-copy.jpg')" }}

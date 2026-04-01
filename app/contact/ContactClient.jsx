@@ -21,23 +21,24 @@ export default function ContactPage() {
     setStatus(null);
 
     try {
-      const formData = {
+      const formDataPayload = {
         platform: "Kapmix Machinery Contact Form",
-        platformEmail: "info@kapmix.com",
+        platformEmail: "kapmixmachinery@gmail.com",
         name,
         phone,
         email,
-        city,
         product: requirement,
+        place: "Na",
         message,
       };
 
-      const { data } = await axios.post(
+      const res = await axios.post(
         "https://brandbnalo.com/api/form/add",
-        formData,
+        formDataPayload,
       );
 
-      if (data?.success) {
+  
+      if (res?.data?.success) {
         setStatus("success");
 
         const whatsappText = `Hi, I am ${name}.
@@ -62,6 +63,7 @@ Contact: ${phone}`;
         setStatus("error");
       }
     } catch (error) {
+      console.log(error, "error");
       setStatus("error");
     } finally {
       setLoading(false);
@@ -94,8 +96,20 @@ Contact: ${phone}`;
           <div className="bg-gradient-to-br from-red-600 to-red-800 text-white p-8 rounded-3xl shadow-xl text-center hover:scale-105 transition">
             <Phone size={38} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-            <p className="text-lg">+91-9810057441</p>
-            <p className="text-lg">+91-9810026034</p>
+            <div className="flex flex-col gap-1">
+              <a
+                href="tel:+919999926558"
+                className="text-lg hover:underline transition"
+              >
+                +91-99999-26558
+              </a>
+              <a
+                href="tel:+918851620018"
+                className="text-lg hover:underline transition"
+              >
+                +91-88516-20018
+              </a>
+            </div>
           </div>
 
           {/* Email */}
@@ -104,7 +118,12 @@ Contact: ${phone}`;
             <h3 className="text-xl font-semibold text-red-600 mb-2">
               Email Address
             </h3>
-            <p className="text-gray-800 text-lg">info@kapmix.com</p>
+            <a
+              href="mailto:kapmixmachinery@gmail.com"
+              className="text-gray-800 text-lg"
+            >
+              kapmixmachinery@gmail.com
+            </a>
           </div>
 
           {/* Address */}
@@ -216,9 +235,13 @@ Contact: ${phone}`;
           {/* MAP */}
           <div className="rounded-3xl overflow-hidden shadow-2xl border">
             <iframe
-              src="https://www.google.com/maps?q=Wazirpur%20Industrial%20Area%20Delhi&output=embed"
-              className="w-full h-[500px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.0073179103633!2d77.4346515!3d28.6894277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf16ea2458c77%3A0x4d56fe83237cceec!2sKapmix%20Machinery%20Private%20Limited!5e0!3m2!1sen!2sin!4v1775042874515!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

@@ -73,7 +73,7 @@ export default function ProductPage({ params }) {
 
       <section
         style={{ backgroundImage: "url(/Anti-smog-gun-copy.jpg)" }}
-        className="w-full bg-cover bg-center h-[50vh] md:h-[90vh] relative"
+        className="w-full bg-cover bg-center h-[50vh] md:h-[90vh] relative mt-10"
       >
         <div className="px-5 absolute inset-0 text-center flex items-center justify-center ">
           <h2 className=" text-emerald-700 bg-white p-3 text-2xl md:text-6xl font-bold z-10">

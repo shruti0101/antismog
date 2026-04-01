@@ -14,15 +14,13 @@ export default function ClienteleSlider() {
     "/brand4.jpeg",
     "/brand9.jpeg",
     "/brand6.jpeg",
-     "/brand7.jpeg",
-      "/brand8.jpeg",
+    "/brand7.jpeg",
+    "/brand8.jpeg",
   ];
 
   return (
-    <section className="mt-7 bg-white">
-
+    <section className="bg-white md:my-10">
       <div className="w-full mx-auto px-4">
-
         {/* HEADING */}
         <h2 className="text-center text-2xl md:text-4xl font-semibold text-black mb-10">
           Trusted by Leading Clients
@@ -34,13 +32,13 @@ export default function ClienteleSlider() {
           spaceBetween={40}
           slidesPerView={2}
           loop={true}
-          speed={4000} 
+          speed={4000}
           freeMode={true}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
           }}
-          allowTouchMove={false} 
+          allowTouchMove={false}
           breakpoints={{
             640: { slidesPerView: 3 },
             768: { slidesPerView: 4 },
@@ -50,7 +48,6 @@ export default function ClienteleSlider() {
           {clients.map((logo, index) => (
             <SwiperSlide key={index}>
               <div className="flex items-center justify-center h-[90px]  transition">
-
                 <Image
                   src={logo}
                   alt="client"
@@ -58,12 +55,10 @@ export default function ClienteleSlider() {
                   height={260}
                   className="object-cover"
                 />
-
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
       </div>
     </section>
   );

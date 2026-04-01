@@ -2,76 +2,72 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function ContactForm({ isOpen, onClose }) {
-
+export default function Enquiry({ isOpen, onClose }) {
   const [submitted, setSubmitted] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
+  const [status, setStatus] = useState(null);
   const [loading, setLoading] = useState(false);
+
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [city, setCity] = useState("");
+  const [requirement, setRequirement] = useState("");
+  const [message, setMessage] = useState("");
 
   if (!isOpen) return null;
 
   const handleClose = () => onClose();
 
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const form = e.target;
-
-    const name = form.name.value;
-    const phone = form.phone.value;
-    const email = form.email.value;
-    const product = form.products.value;
-    const message = form.message.value;
-
     setLoading(true);
-    setSuccessMessage("Sending...");
+    setStatus(null);
 
     try {
-      const { data } = await axios.post(
-        "https://brandbnalo.com/api/form/add",
-        {
-          platform: "Sangam Garbage Bag enquiry Form",
-          platformEmail: "info@polywell.co.in",
-          name,
-          phone,
-          email,
-          place: "N/A",
-          product,
-          message,
-        }
-      );
+      const formDataPayload = {
+        platform: "Kapmix Machinery Contact Form",
+        platformEmail: "kapmixmachinery@gmail.com",
+        name,
+        phone,
+        email,
+        product: requirement,
+        place: "Na",
+        message,
+      };
 
-      if (data?.success) {
-        setSubmitted(true);
-        setSuccessMessage("✅ Your enquiry has been submitted successfully!");
 
-        const whatsappText = `Hi, I am ${name}.
-Email: ${email}
-Product: ${product}
-Message: ${message}
-Contact: ${phone}`;
+            const res = await axios.post(
+              "https://brandbnalo.com/api/form/add",
+              formDataPayload,
+            );
 
-        setTimeout(() => {
-          window.open(
-            `https://wa.me/+919810057441?text=${encodeURIComponent(
-              whatsappText
-            )}`,
-            "_blank"
-          );
-        }, 1000);
+            if (res?.data?.success) {
+              setStatus("success");
 
-        form.reset();
+              const whatsappText = `Hi, I am ${name}.
+      Email: ${email}
+      Product: ${requirement}
+      City: ${city}
+      Message: ${message}
+      Contact: ${phone}`;
 
-        setTimeout(() => {
-          setSubmitted(false);
-          setIsOpen(false);
-        }, 4000);
-      } else {
-        setSuccessMessage("❌ Failed to send. Please try again.");
-      }
+              window.open(
+                `https://wa.me/919810057441?text=${encodeURIComponent(whatsappText)}`,
+                "_blank",
+              );
+
+              setName("");
+              setPhone("");
+              setEmail("");
+              setCity("");
+              setRequirement("");
+              setMessage("");
+            } else {
+              setStatus("error");
+            }
     } catch (error) {
-      console.error(error);
-      setSuccessMessage("❌ Server error. Try again later.");
+      console.log(error, "error");
+      setStatus("error");
     } finally {
       setLoading(false);
     }
@@ -81,16 +77,16 @@ Contact: ${phone}`;
     <div className="fixed inset-0 flex items-center justify-center bg-black/70 z-50">
       <div
         className="relative rounded-3xl shadow-2xl p-10 w-[350px] md:w-[570px] text-white bg-cover bg-center"
-        style={{ backgroundImage: "url(/bag/descbg.png)" }}
+        style={{ backgroundImage: "url(/cat3_3.avif)" }}
       >
-        <div className="absolute inset-0 bg-black/10 rounded-3xl"></div>
+        <div className="absolute inset-0 bg-black/70 rounded-3xl"></div>
 
         <div className="relative z-10">
           <button
             className="absolute cursor-pointer top-4 right-4 text-white hover:text-red-500 text-xl"
             onClick={handleClose}
           >
-            ✕ 
+            ✕
           </button>
 
           <h2 className="text-center text-white text-xl md:text-3xl font-semibold">
@@ -104,30 +100,39 @@ Contact: ${phone}`;
                 <input
                   type="text"
                   name="name"
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
                   placeholder="Your Name"
                   required
                   disabled={loading}
-                  className="w-1/2 p-3 placeholder-white rounded-md text-white border-2 border-white bg-transparent focus:outline-none"
+                  className="w-1/2 p-3 placeholder-white rounded-md text-white border-2 border-white focus:outline-none"
                 />
 
                 <select
                   name="products"
                   required
+                  value={requirement}
+                  onChange={(e) => setRequirement(e.target.value)}
                   disabled={loading}
                   defaultValue=""
                   className="w-1/2 p-3 rounded-md text-black text-sm border-2 focus:outline-none bg-blue-50"
                 >
                   <option value="">Select Product</option>
-              <option value="Black Garbage Bags">Biodegradable Garbage Bags</option>
-                  <option value="Green Garbage Bags">Disposable Garbage Bags</option>
-                  <option value="Biomedical Waste Bags">Biomedical garbage bags</option>
+                  <option value="Anti Smog Gun">Anti Smog Gun</option>
+                  <option value="Truck Mounted Smog Gun">
+                    Truck Mounted Smog Gun
+                  </option>
+                  <option value="Industrial Dust Suppression">
+                    Dust Suppression System
+                  </option>
                 </select>
               </div>
 
               <div className="flex items-center rounded-md border-2 border-white overflow-hidden">
-            
                 <span className="ml-1">🇮🇳</span>
                 <input
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   type="tel"
                   name="phone"
                   maxLength={10}
@@ -135,25 +140,29 @@ Contact: ${phone}`;
                   required
                   disabled={loading}
                   placeholder="08123456789"
-                  className="w-full p-3 bg-transparent text-white focus:outline-none"
+                  className="w-full p-3 text-white focus:outline-none"
                 />
               </div>
 
               <input
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 required
                 disabled={loading}
                 placeholder="Email"
-                className="w-full p-3 rounded-md border-2 border-white bg-transparent text-white focus:outline-none"
+                className="w-full p-3 rounded-md border-2 border-white text-white focus:outline-none"
               />
 
               <textarea
                 name="message"
                 required
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 disabled={loading}
                 placeholder="Message"
-                className="w-full p-3 rounded-md border-2 border-white bg-transparent text-white h-28 resize-none"
+                className="w-full p-3 rounded-md border-2 border-white text-white h-28 resize-none"
               ></textarea>
 
               <button

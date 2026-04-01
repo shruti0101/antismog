@@ -15,13 +15,19 @@ import {
   Youtube,
   Linkedin,
   CheckCircle,
+  Menu,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import EnquiryForm from "../Enquiry";
 
 export default function Navbar() {
   const [showTopBar, setShowTopBar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [phoneNavbar, setPhoneNavbar] = useState(false);
+
+  const [enquiry, setEnquiry] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
@@ -53,7 +59,7 @@ export default function Navbar() {
     <header className="w-full fixed top-0 left-0 z-50 font-semibold">
       {/* ===== TOP BAR (SLIM + CLEAN) ===== */}
       <div
-        className={`bg-[#c8102e]/95 backdrop-blur-md text-white transition-all duration-500 overflow-hidden ${
+        className={`bg-[#c8102e]/95 backdrop-blur-md text-white transition-all duration-500 hidden lg:flex overflow-hidden ${
           showTopBar ? "h-[50px]" : "h-0"
         }`}
       >
@@ -106,8 +112,74 @@ export default function Navbar() {
             />
           </Link>
 
+          <button
+            className="lg:hidden"
+            onClick={() => setPhoneNavbar((prev) => !prev)}
+          >
+            <Menu />
+          </button>
+
+          {/* phone navbar  */}
+
+          {phoneNavbar && (
+            <div className="absolute top-[85px] left-0 w-full bg-white flex flex-col p-6 gap-4 shadow-xl border-t lg:hidden">
+              <Link
+                href="/"
+                onClick={() => setPhoneNavbar(false)}
+                className="hover:text-red-600 transition"
+              >
+                HOME
+              </Link>
+              <Link
+                href="/about"
+                onClick={() => setPhoneNavbar(false)}
+                className="hover:text-red-600 transition"
+              >
+                ABOUT US
+              </Link>
+              <Link
+                href="/products"
+                onClick={() => setPhoneNavbar(false)}
+                className="hover:text-red-600 transition"
+              >
+                OUR PRODUCTS
+              </Link>
+              <Link
+                href="/blogs"
+                onClick={() => setPhoneNavbar(false)}
+                className="hover:text-red-600 transition"
+              >
+                BLOGS
+              </Link>
+              <Link
+                href="/contact"
+                onClick={() => setPhoneNavbar(false)}
+                className="hover:text-red-600 transition"
+              >
+                CONTACT US
+              </Link>
+
+              <div className="flex flex-col gap-3 mt-4">
+                <Link
+                  href="/contact"
+                  onClick={() => setPhoneNavbar(false)}
+                  className="w-full py-3 text-center border border-red-500 text-black rounded-lg hover:bg-red-500 hover:text-white transition font-bold"
+                >
+                  Request a Quote
+                </Link>
+                <a
+                  href="https://wa.me/918882057687"
+                  target="_blank"
+                  className="flex items-center justify-center gap-2 bg-green-500 text-white py-3 rounded-lg font-bold"
+                >
+                  <FaWhatsapp size={20} /> Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+          )}
+
           {/* NAV LINKS */}
-          <nav className="flex items-center gap-8 text-[18px] uppercase tracking-wide">
+          <nav className="lg:flex items-center gap-8 text-[18px] uppercase tracking-wide hidden">
             {/* HOME */}
             <Link href="/" className="relative group">
               <span className="text-black group-hover:text-yellow-500 transition">
@@ -200,12 +272,15 @@ export default function Navbar() {
             </Link>
           </nav>
           {/* RIGHT SIDE */}
-          <div className="flex items-center gap-5">
+          <div className=" items-center gap-5 hidden lg:flex">
             <button className="group relative px-6 py-2.5 rounded-full text-lg font-medium border border-red-500 text-black overflow-hidden transition">
               {/* animated bg fill */}
               <span className="absolute inset-0 bg-red-500 translate-y-full group-hover:translate-y-0 transition duration-300"></span>
 
-              <span className="relative z-10 group-hover:text-white transition">
+              <span
+                className="relative z-10 group-hover:text-white transition"
+                onClick={() => setEnquiry(true)}
+              >
                 Request a Quote
               </span>
             </button>
@@ -222,6 +297,12 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      {/* ENQUIRY MODAL */}
+      <EnquiryForm 
+        isOpen={enquiry} 
+        onClose={() => setEnquiry(false)} 
+      />
     </header>
   );
 }

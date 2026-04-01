@@ -73,7 +73,6 @@ const Productcategory = () => {
         "Application: Factories",
       ],
     },
- 
   ];
 
   return (
@@ -81,7 +80,6 @@ const Productcategory = () => {
       {/* ================= SECTION ================= */}
       <section className="bg-white">
         <div className="w-full mx-auto px-6 md:px-30 py-16">
-
           {/* HEADING */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-14 gap-6">
             <div>
@@ -109,12 +107,12 @@ const Productcategory = () => {
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={24}
-            slidesPerView={2}
+            slidesPerView={1}
             loop
             navigation
             autoplay={{ delay: 2500 }}
             breakpoints={{
-              768: { slidesPerView: 2 },
+              768: { slidesPerView: 1 },
               1024: { slidesPerView: 3 },
             }}
           >
@@ -126,46 +124,45 @@ const Productcategory = () => {
                   className="group relative rounded-2xl bg-white border border-red-500 shadow-md hover:shadow-xl  flex flex-col items-center text-center overflow-hidden"
                 >
                   {/* IMAGE */}
-               <div className="relative w-full h-[420px] flex items-center justify-center overflow-hidden rounded-xl">
+                  <div className="relative w-full h-[420px] flex items-center justify-center overflow-hidden rounded-xl">
+                    {/* MAIN IMAGE */}
+                    <Image
+                      src={cat.img}
+                      alt={cat.name}
+                      fill
+                      className={`object-contain transition duration-500 ${
+                        activeIndex === i
+                          ? "opacity-0 scale-110"
+                          : "opacity-100 group-hover:opacity-0 group-hover:scale-110"
+                      }`}
+                    />
 
-  {/* MAIN IMAGE */}
-  <Image
-    src={cat.img}
-    alt={cat.name}
-    fill
-    className={`object-contain transition duration-500 ${
-      activeIndex === i
-        ? "opacity-0 scale-110"
-        : "opacity-100 group-hover:opacity-0 group-hover:scale-110"
-    }`}
-  />
+                    {/* HOVER IMAGE */}
+                    <Image
+                      src={cat.hoverImg}
+                      alt={cat.name}
+                      fill
+                      className={`object-contain transition duration-500 ${
+                        activeIndex === i
+                          ? "opacity-100 scale-105"
+                          : "opacity-0 group-hover:opacity-100 group-hover:scale-105"
+                      }`}
+                    />
 
-  {/* HOVER IMAGE */}
-  <Image
-    src={cat.hoverImg}
-    alt={cat.name}
-    fill
-    className={`object-contain transition duration-500 ${
-      activeIndex === i
-        ? "opacity-100 scale-105"
-        : "opacity-0 group-hover:opacity-100 group-hover:scale-105"
-    }`}
-  />
-
-  {/* OVERLAY */}
-  <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-    <button
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setModalData(cat);
-      }}
-      className="bg-red-500 p-3 rounded-full shadow-lg hover:scale-110 transition"
-    >
-      <Eye className="w-5 h-5 text-white" />
-    </button>
-  </div>
-</div>
+                    {/* OVERLAY */}
+                    <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                      <button
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setModalData(cat);
+                        }}
+                        className="bg-red-500 p-3 rounded-full shadow-lg hover:scale-110 transition"
+                      >
+                        <Eye className="w-5 h-5 text-white" />
+                      </button>
+                    </div>
+                  </div>
 
                   {/* TEXT */}
                   <div className="mt-4">
@@ -209,7 +206,6 @@ const Productcategory = () => {
 
             {/* CONTENT */}
             <div className="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-between">
-
               <div>
                 <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">
                   {modalData.name}
@@ -227,10 +223,7 @@ const Productcategory = () => {
 
                   <ul className="space-y-2">
                     {modalData.specs.map((spec, i) => (
-                      <li
-                        key={i}
-                        className="text-sm text-gray-700 flex gap-2"
-                      >
+                      <li key={i} className="text-sm text-gray-700 flex gap-2">
                         <span className="w-2 h-2 mt-2 bg-red-500 rounded-full"></span>
                         {spec}
                       </li>

@@ -21,8 +21,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: " anti smog gun",
-  description:
-    "anti smog gun",
+  description: "anti smog gun",
   icons: {
     icon: "/logo.png",
   },
@@ -30,29 +29,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-
-
     <html lang="en">
-
-
-<head>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
-</head>
-
-
-  
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+          rel="stylesheet"
+        />
+      </head>
 
       <body className={`${roboto.variable} ${poppins.variable} antialiased`}>
-     
-    <Whatsapp/>
+        <Whatsapp />
 
-    <SplashCursor/>
-        <LayoutWrapper>
-        
-      
-          {children}
-        </LayoutWrapper>
+        <SplashCursor />
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );
