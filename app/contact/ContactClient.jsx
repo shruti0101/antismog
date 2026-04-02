@@ -130,9 +130,10 @@ Contact: ${phone}`;
             <MapPin size={38} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Factory Address</h3>
             <p className="text-sm leading-relaxed">
-              Kapmix Machinery Private Limited <br /> Khasra Number: 1132, opp. DPS, <br />
-              Saraswati Vihar, Harbans Nagar,<br /> Ghukna, Ghaziabad, Uttar Pradesh
-              201003 <br />
+              Kapmix Machinery Private Limited <br /> Khasra Number: 1132, opp.
+              DPS, <br />
+              Saraswati Vihar, Harbans Nagar,
+              <br /> Ghukna, Ghaziabad, Uttar Pradesh 201003 <br />
             </p>
           </div>
         </div>
@@ -184,11 +185,14 @@ Contact: ${phone}`;
                 >
                   <option value="">Select Product</option>
                   <option value="Anti Smog Gun">Anti Smog Gun</option>
-                  <option value="Truck Mounted Smog Gun">
-                    Truck Mounted Smog Gun
+                  <option value="Roof Mounted Anti Smog Gun">
+                    Roof Mounted Anti Smog Gun
                   </option>
-                  <option value="Industrial Dust Suppression">
-                    Dust Suppression System
+                  <option value="Tractor Operated Anti Smog Gun">
+                    Tractor Operated Anti Smog Gun
+                  </option>
+                  <option value="Truck Mounted Anti Smog Gun">
+                    Truck Mounted Anti Smog Gun
                   </option>
                 </select>
               </div>

@@ -35,36 +35,35 @@ export default function Enquiry({ isOpen, onClose }) {
         message,
       };
 
+      const res = await axios.post(
+        "https://brandbnalo.com/api/form/add",
+        formDataPayload,
+      );
 
-            const res = await axios.post(
-              "https://brandbnalo.com/api/form/add",
-              formDataPayload,
-            );
+      if (res?.data?.success) {
+        setStatus("success");
 
-            if (res?.data?.success) {
-              setStatus("success");
-
-              const whatsappText = `Hi, I am ${name}.
+        const whatsappText = `Hi, I am ${name}.
       Email: ${email}
       Product: ${requirement}
       City: ${city}
       Message: ${message}
       Contact: ${phone}`;
 
-              window.open(
-                `https://wa.me/919810057441?text=${encodeURIComponent(whatsappText)}`,
-                "_blank",
-              );
+        window.open(
+          `https://wa.me/919810057441?text=${encodeURIComponent(whatsappText)}`,
+          "_blank",
+        );
 
-              setName("");
-              setPhone("");
-              setEmail("");
-              setCity("");
-              setRequirement("");
-              setMessage("");
-            } else {
-              setStatus("error");
-            }
+        setName("");
+        setPhone("");
+        setEmail("");
+        setCity("");
+        setRequirement("");
+        setMessage("");
+      } else {
+        setStatus("error");
+      }
     } catch (error) {
       console.log(error, "error");
       setStatus("error");
@@ -119,11 +118,14 @@ export default function Enquiry({ isOpen, onClose }) {
                 >
                   <option value="">Select Product</option>
                   <option value="Anti Smog Gun">Anti Smog Gun</option>
-                  <option value="Truck Mounted Smog Gun">
-                    Truck Mounted Smog Gun
+                  <option value="Roof Mounted Anti Smog Gun">
+                    Roof Mounted Anti Smog Gun
                   </option>
-                  <option value="Industrial Dust Suppression">
-                    Dust Suppression System
+                  <option value="Tractor Operated Anti Smog Gun">
+                    Tractor Operated Anti Smog Gun
+                  </option>
+                  <option value="Truck Mounted Anti Smog Gun">
+                    Truck Mounted Anti Smog Gun
                   </option>
                 </select>
               </div>

@@ -2139,6 +2139,7 @@ export const categories = [
             label: "Operation",
             value: "Manual / Semi-Automatic / Fully Automatic",
           },
+          { label: "Throw", value: "Range	50 m" },
           {
             label: "Application",
             value: "Mobile Dust Suppression & Pollution Control",
@@ -2239,7 +2240,7 @@ export const categories = [
 
         specs: [
           { label: "Mounting Type", value: "truck Mounted (Crawler Based)" },
-          { label: "Mounting Type", value: "truck Mounted (Crawler Based)" },
+          { label: "Throw", value: "Range	50 m" },
           {
             label: "Operation",
             value: "Semi-Automatic / Fully Automatic",

@@ -72,7 +72,7 @@ export default function ProductPage({ params }) {
 
       <section
         style={{ backgroundImage: "url(/Anti-smog-gun-copy.jpg)" }}
-        className="w-full bg-cover bg-center h-[50vh] md:h-[90vh] relative mt-10"
+        className="w-full bg-cover bg-center h-[50vh] md:h-[90vh] relative mt-10 "
       >
         <div className="px-5 absolute inset-0 text-center flex items-center justify-center ">
           <h2 className=" text-emerald-700 bg-white p-3 text-2xl md:text-6xl font-bold z-10">
@@ -82,13 +82,13 @@ export default function ProductPage({ params }) {
       </section>
 
       {/* ================= PRODUCT ================= */}
-      <section className="px-6 md:px-16  bg-[#fafafa]">
+      <section className="px-6 md:px-16 lg:py-16 bg-[#fafafa]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* ================= IMAGE ================= */}
-          <div className="sticky top-24">
+          <div className="lg:sticky top-24">
             <div className="bg-white rounded-3xl p-2 md:p-6 shadow-[0_20px_60px_rgba(0,0,0,0.08)] border mt-4">
               <div
-                className="relative w-full h-[300px] rounded-2xl overflow-hidden bg-gray-50"
+                className="relative w-full h-[300px] md:h-[550px] lg:h-[500px] rounded-2xl overflow-hidden bg-gray-50"
                 onMouseEnter={() => setIsZoomed(true)}
                 onMouseLeave={() => setIsZoomed(false)}
                 onMouseMove={handleMouseMove}

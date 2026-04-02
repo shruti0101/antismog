@@ -8,14 +8,19 @@ import Image from "next/image";
 
 export default function ClienteleSlider() {
   const clients = [
-    "/brand1.png",
-    "/brand2.png",
-    "/brand3.jpeg",
-    "/brand4.jpeg",
-    "/brand9.jpeg",
-    "/brand6.jpeg",
-    "/brand7.jpeg",
-    "/brand8.jpeg",
+    "/client-tails/96dd26_f89673d1381148efa518c05a02f8296e~mv2.png",
+    "/client-tails/a76f999d268cf61fe3c941292f6826d2.jpg",
+    "/client-tails/Ashiana-logo.jpg",
+    "/client-tails/assotech_limited_logo.jpg",
+    "/client-tails/Gaurs_Green_With_Black_(2)_(3).png",
+    "/client-tails/Jaypee_Group_Logo.svg.png",
+    "/client-tails/K_Raheja_Corp.svg.png",
+    "/client-tails/kalyan-toll-infrastructure-limited-karegaon-nanded-construction-contractors-ypc4hbdpbp.avif",
+    "/client-tails/Larsen-Toubro.jpg",
+    "/client-tails/Marathon_Group.webp",
+    "/client-tails/Opulent-Asthetics-Favicon.png",
+    "/client-tails/Supertech-New-Logo.webp",
+    "/client-tails/ultratech-super-cement.jpg"
   ];
 
   return (

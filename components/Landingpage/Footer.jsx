@@ -65,8 +65,8 @@ export default function Footer() {
                 link: "/products/tractor-operated-anti-smog-gun",
               },
               {
-                name: "Tyre-Mounted Anti Smog Gun",
-                link: "/products/tyre-mounted-anti-smog-gun",
+                name: "Truck Mounted Anti Smog Gun",
+                link: "/products/truck-mounted-anti-smog-gun",
               },
             ].map((item, i) => (
               <Link
