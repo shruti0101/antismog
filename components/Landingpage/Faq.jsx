@@ -108,7 +108,7 @@ Kapmix experts can guide you in selecting the best model.`,
       </div>
 
       {/* GRID */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 gap-6 max-w-7xl mx-auto">
 
         {faqs.map((item, i) => (
           <div
@@ -133,11 +133,11 @@ Kapmix experts can guide you in selecting the best model.`,
 
             {/* ANSWER */}
             <div
-              className={`px-5 transition-all duration-300 overflow-hidden ${
+              className={`px-5 transition-all duration-300 overflow-hidden bg-red-50 ${
                 openIndex === i ? "max-h-[500px] py-4" : "max-h-0"
               }`}
             >
-              <p className="text-black text-sm leading-relaxed whitespace-pre-line">
+              <p className="text-black text-sm leading-relaxed bg-red-50 whitespace-pre-line">
                 {item.a}
               </p>
             </div>

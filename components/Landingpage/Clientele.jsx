@@ -47,7 +47,7 @@ export default function ClienteleSlider() {
         >
           {clients.map((logo, index) => (
             <SwiperSlide key={index}>
-              <div className="flex items-center justify-center h-[90px]  transition">
+              <div className="flex items-center justify-center h-[90px] transition">
                 <Image
                   src={logo}
                   alt="client"

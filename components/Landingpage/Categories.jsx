@@ -18,11 +18,11 @@ const Productcategory = () => {
   // ✅ MOCK DATA (REALISTIC INDUSTRIAL SPECS)
   const categories = [
     {
-      name: "Tractor Operated Anti Smog Gun",
-      products: 30,
+      name: "Anti Smog Gun",
+      products: 10,
       img: "/cat1.png",
       hoverImg: "/cat1_1.webp",
-      link: "/productsg",
+      link: "/categories/anti-smog-gun",
       specs: [
         "Tank Capacity: 2000 Litres",
         "Spray Range: 40–50 meters",
@@ -31,12 +31,26 @@ const Productcategory = () => {
         "Application: Dust Suppression",
       ],
     },
+     {
+      name: "Roof Mounted Anti Smog Gun",
+      products: 5,
+      img: "/cat4.png",
+      hoverImg: "/cat4_4.avif",
+      link: "/categories/roof-mounted-anti-smog-gun",
+      specs: [
+        "Installation: Rooftop",
+        "Spray Range: 50 meters",
+        "Wind Resistance: High Stability",
+        "Auto Oscillation",
+        "Application: Factories",
+      ],
+    },
     {
       name: "Truck Mounted Anti Smog Gun",
-      products: 24,
+      products: 4,
       img: "/cat2.png",
       hoverImg: "/cat2_2.avif",
-      link: "/productsr",
+      link: "/categories/truck-mounted-anti-smog-gun",
       specs: [
         "Tank Capacity: 5000 Litres",
         "Spray Range: 60 meters",
@@ -46,11 +60,11 @@ const Productcategory = () => {
       ],
     },
     {
-      name: "Portable Anti Smog Gun",
-      products: 21,
-      img: "/cat3.png",
-      hoverImg: "/cat3_3.avif",
-      link: "/productst",
+      name: "Tractor Operated Anti Smog Gun",
+      products: 5,
+      img: "/category-image.webp",
+      hoverImg: "/nav/category-3-nav.webp",
+      link: "/categories/tractor-operated-anti-smog-gun",
       specs: [
         "Compact Design",
         "Spray Range: 20–30 meters",
@@ -59,20 +73,7 @@ const Productcategory = () => {
         "Application: Small Sites",
       ],
     },
-    {
-      name: "Roof Mounted Anti Smog Gun",
-      products: 26,
-      img: "/cat4.png",
-      hoverImg: "/cat4_4.avif",
-      link: "/productst",
-      specs: [
-        "Installation: Rooftop",
-        "Spray Range: 50 meters",
-        "Wind Resistance: High Stability",
-        "Auto Oscillation",
-        "Application: Factories",
-      ],
-    },
+   
   ];
 
   return (

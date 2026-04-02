@@ -36,7 +36,7 @@ const Hero = () => {
     <>
       <section className="">
         {/* ✅ Desktop Hero */}
-        <section className="relative mt-30 md:mt-20  hidden md:flex justify-end w-full h-[100vh] overflow-hidden">
+        <section className="relative mt-30 md:mt-36 md:h-[70vh] hidden md:flex justify-end w-full h-[100vh] xl:mt-30 xl:h-[90vh] overflow-hidden">
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={`desktop-${currentIndex}`}
@@ -60,7 +60,7 @@ const Hero = () => {
         </section>
 
         {/* ✅ Mobile Hero */}
-        <section className="relative block md:hidden w-full mt-20 h-[50vh]  overflow-hidden">
+        <section className="relative block md:hidden lg:hidden w-full mt-20 h-[35vh]  overflow-hidden">
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={`mobile-${currentIndex}`}

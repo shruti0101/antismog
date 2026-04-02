@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Phone, Mail, MapPin, X } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,8 +31,8 @@ export default function Footer() {
       <div className="relative max-w-[1400px] mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
         {/* ===== ABOUT ===== */}
         <div>
-          <div className="bg-white rounded-xl inline-block  mb-6">
-            <Image src="/logoo.png" alt="logo" width={120} height={50} />
+          <div className="bg-white rounded-xl h-50 w-50 mb-5 md:w-60 md:h-auto lg:w-50 lg:h-auto">
+            <Image src="/logoo.png" alt="logo" width={1000} height={1000} />
           </div>
 
           <h3 className="text-lg font-semibold mb-4">About Company</h3>
@@ -51,21 +52,33 @@ export default function Footer() {
 
           <ul className="space-y-3 text-sm">
             {[
-              "Anti Smog Gun 30 Meter",
-              "Anti Smog Gun 50 Meter",
-              "Dust Suppression System",
-              "Industrial Mist Cannon",
-              "Trailer Mounted",
+              {
+                name: "Anti Smog Gun 30 Meter",
+                link: "/products/anti-smog-gun-30-100",
+              },
+              {
+                name: "Terrace Anti Smog Gun",
+                link: "/products/terrace-anti-smog-gun",
+              },
+              {
+                name: "Tractor Operated Anti Smog Gun",
+                link: "/products/tractor-operated-anti-smog-gun",
+              },
+              {
+                name: "Tyre-Mounted Anti Smog Gun",
+                link: "/products/tyre-mounted-anti-smog-gun",
+              },
             ].map((item, i) => (
-              <li
+              <Link
+                href={item?.link}
                 key={i}
                 className="group flex items-center gap-2 text-white hover:text-white transition"
               >
                 <span className="text-red-500 group-hover:translate-x-1 transition">
                   →
                 </span>
-                {item}
-              </li>
+                {item?.name}
+              </Link>
             ))}
           </ul>
         </div>
@@ -75,19 +88,24 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-5">Quick Links</h3>
 
           <ul className="space-y-3 text-sm">
-            {["Home", "About", "Products", "Blogs", "Contact"].map(
-              (item, i) => (
-                <li
-                  key={i}
-                  className="group flex cursor-pointer items-center gap-2 text-white hover:text-white transition "
-                >
-                  <span className="text-red-500 group-hover:translate-x-1 transition">
-                    →
-                  </span>
-                  {item}
-                </li>
-              ),
-            )}
+            {[
+              { name: "Home", link: "/" },
+              { name: "About", link: "/about" },
+              { name: "Products", link: "/products" },
+              { name: "Blogs", link: "/" },
+              { name: "Contact", link: "/contact" },
+            ].map((item, i) => (
+              <Link
+                href={item?.link}
+                key={i}
+                className="group flex cursor-pointer items-center gap-2 text-white hover:text-white transition "
+              >
+                <span className="text-red-500 group-hover:translate-x-1 transition">
+                  →
+                </span>
+                {item?.name}
+              </Link>
+            ))}
           </ul>
         </div>
 
@@ -137,8 +155,7 @@ export default function Footer() {
           </div>
 
           <p className="text-white text-sm mt-4 leading-relaxed">
-            Certified for excellence in customer service, reliability, and
-            trusted industrial solutions.
+            We are proud to present the TrustElite Certificate of Excellence to Kapmix Machinery. recognizing their commitment to exceptional customer service, outstanding business practices, and a dedication to building trust with their customers.
           </p>
         </div>
       </div>
@@ -147,10 +164,8 @@ export default function Footer() {
       <div className="relative border-t border-white/10" />
 
       <div className="relative flex flex-col md:flex-row justify-between items-center px-6 py-6 text-white text-sm">
-        <p>© 2026 Anti Smog Gun. All Rights Reserved</p>
-        <p className="mt-2 md:mt-0">
-          Developed by <span className="text-red-500">Promozione Branding</span>
-        </p>
+        <p>© 2026 Kapmix Machinery. All Rights Reserved</p>
+       
       </div>
 
       {/* ================= MODAL ================= */}

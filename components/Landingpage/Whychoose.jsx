@@ -86,21 +86,18 @@ Their machines help maintain environmental compliance and worker safety.`,
 
   return (
     <section className="w-full bg-white py-20 px-6 md:px-16">
-
       {/* HEADING */}
       <div className="max-w-6xl mx-auto text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-semibold text-black leading-tight">
-          Why Choose{" "}
-          <span className="text-red-600">Kapmix Machinery</span> as Your Anti Smog Gun Manufacturer?
+          Why Choose <span className="text-red-600">Kapmix Machinery</span> as
+          Your Anti Smog Gun Manufacturer?
         </h2>
       </div>
 
       {/* MAIN GRID */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-start">
-
         {/* LEFT CONTENT */}
         <div className="space-y-6 max-h-[700px] overflow-y-auto pr-2">
-
           {points.map((item, i) => (
             <motion.div
               key={i}
@@ -119,12 +116,10 @@ Their machines help maintain environmental compliance and worker safety.`,
               </p>
             </motion.div>
           ))}
-
         </div>
 
         {/* RIGHT IMAGE SLIDER */}
-        <div className="sticky top-24">
-
+        <div className="sticky top-5 lg:top-24">
           <Swiper
             modules={[Autoplay]}
             autoplay={{ delay: 2500 }}
@@ -136,23 +131,20 @@ Their machines help maintain environmental compliance and worker safety.`,
               "/cat2_2.avif",
               "/cta.webp",
               "/cat4_4.avif",
-              "/slider.webp"
             ].map((img, i) => (
               <SwiperSlide key={i}>
-                <div className="relative w-full h-[500px]">
+                <div className="relative w-full h-[300px] md:h-[500px]">
                   <Image
                     src={img}
                     alt="machine"
                     fill
-                    className="object-contain bg-white p-6"
+                    className="object-contain bg-white md:p-6"
                   />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-
         </div>
-
       </div>
     </section>
   );

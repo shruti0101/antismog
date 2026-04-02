@@ -40,7 +40,7 @@ export default function Home() {
       {/* <CityPage /> */}
 
       <TestimonialSlider></TestimonialSlider>
-      <Faq></Faq>
+      <Faq/>
     </>
   );
 }

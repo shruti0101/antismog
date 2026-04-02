@@ -13,7 +13,6 @@ export default function ProductPage({ params }) {
   const allProducts = categories.flatMap((c) => c.products);
   const product = allProducts.find((p) => p.id === productId);
 
-
   const [activeImage, setActiveImage] = useState(
     product?.image?.[0]
       ? {
@@ -83,13 +82,13 @@ export default function ProductPage({ params }) {
       </section>
 
       {/* ================= PRODUCT ================= */}
-      <section className="px-6 md:px-16 py-20 bg-[#fafafa]">
+      <section className="px-6 md:px-16  bg-[#fafafa]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* ================= IMAGE ================= */}
           <div className="sticky top-24">
-            <div className="bg-white rounded-3xl p-6 shadow-[0_20px_60px_rgba(0,0,0,0.08)] border">
+            <div className="bg-white rounded-3xl p-2 md:p-6 shadow-[0_20px_60px_rgba(0,0,0,0.08)] border mt-4">
               <div
-                className="relative w-full h-[520px] rounded-2xl overflow-hidden bg-gray-50"
+                className="relative w-full h-[300px] rounded-2xl overflow-hidden bg-gray-50"
                 onMouseEnter={() => setIsZoomed(true)}
                 onMouseLeave={() => setIsZoomed(false)}
                 onMouseMove={handleMouseMove}
@@ -138,8 +137,6 @@ export default function ProductPage({ params }) {
                       height={80}
                       className="object-cover w-full h-full"
                     />
-
-                   
                   </button>
                 ))}
 
@@ -303,7 +300,7 @@ export default function ProductPage({ params }) {
             )}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-3 mt-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-3 gap-5">
             <div className="space-y-6 text-gray-70 px-4 py-5 border rounded-lg shadow hover:shadow-2xl duration-200">
               <h3 className="text-2xl font-semibold text-red-600">
                 Key Features
@@ -341,7 +338,7 @@ export default function ProductPage({ params }) {
             </div>
           </div>
 
-          <div className="mt-16 lg:w-1/2">
+          <div className="mt-16 lg:w-1/2 mb-5">
             <h3 className="text-2xl font-semibold text-red-600 mb-6">
               Detailed Technical Specifications
             </h3>
@@ -349,8 +346,12 @@ export default function ProductPage({ params }) {
               <table className="w-full text-left border-separate border-spacing-0">
                 <thead>
                   <tr className="bg-gray-50">
-                    <th className="px-6 py-4 text-sm font-semibold text-gray-900 border-b border-r">Parameter</th>
-                    <th className="px-6 py-4 text-sm font-semibold text-gray-900 border-b">Value</th>
+                    <th className="px-6 py-4 text-sm font-semibold text-gray-900 border-b border-r">
+                      Parameter
+                    </th>
+                    <th className="px-6 py-4 text-sm font-semibold text-gray-900 border-b">
+                      Value
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -376,28 +377,28 @@ export default function ProductPage({ params }) {
         )}
       </section>
 
-      <section className="relative w-full overflow-hidden bg-[#712a09] py-18 px-6">
+      <section className="relative w-full overflow-hidden bg-[#712a09] py-5 md:py-18 px-6">
         {/* Dotted Grid Background */}
         <div className="absolute inset-0 bg-[radial-gradient(rgba(255,200,0,0.08)_1px,transparent_1px)] [background-size:30px_30px] opacity-20"></div>
 
         {/* Subtle Radial Glow */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,200,0,0.08),transparent_70%)]"></div>
 
-        <div className="relative max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 text-center">
+        <div className="relative max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-16 text-center">
           {features.map((item, index) => (
             <div key={index} className="flex flex-col items-center">
               {/* Icon Circle */}
-              <div className="w-20 h-20 flex items-center justify-center rounded-full border border-yellow-500/40 text-yellow-400 bg-yellow-500/5 shadow-[0_0_25px_rgba(255,200,0,0.1)]">
+              <div className="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center rounded-full border border-yellow-500/40 text-yellow-400 bg-yellow-500/5 shadow-[0_0_25px_rgba(255,200,0,0.1)]">
                 {item.icon}
               </div>
 
               {/* Title */}
-              <h3 className="mt-6 text-xl tracking-[2px] font-semibold text-white">
+              <h3 className="mt-6 text-lg md:text-xl tracking-[2px] font-semibold text-white">
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className="mt-4 text-md text-white max-w-xs leading-relaxed">
+              <p className=" mt-1 md:mt-4 text-sm md:text-md text-white max-w-xs leading-relaxed">
                 {item.desc}
               </p>
             </div>
@@ -419,7 +420,7 @@ export default function ProductPage({ params }) {
               href={`/products/${item.id}`}
               className="group block bg-white border rounded-2xl shadow hover:shadow-xl transition p-4 text-center"
             >
-              <div className="w-full h-60 flex items-center justify-center overflow-hidden">
+              <div className="w-full h-40 md:h-60 flex items-center justify-center overflow-hidden">
                 <Image
                   src={item.image?.[0]?.src}
                   alt={item.name}

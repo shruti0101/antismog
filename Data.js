@@ -711,7 +711,7 @@ export const categories = [
           { label: "Droplet Size", value: "10–150 Microns" },
           {
             label: "Mounting Type",
-            value: "Fixed / Trolley / Tyre / Truck Mounted",
+            value: "Fixed / Trolley / Truck / Truck Mounted",
           },
           {
             label: "Warranty",
@@ -816,7 +816,7 @@ export const categories = [
           { label: "Droplet Size", value: "10–150 Microns" },
           {
             label: "Mounting Type",
-            value: "Fixed / Skid / Tyre / Truck Mounted",
+            value: "Fixed / Skid / Truck / Truck Mounted",
           },
           {
             label: "Throw Range",
@@ -929,7 +929,7 @@ export const categories = [
           { label: "Droplet Size", value: "10–150 Microns" },
           {
             label: "Mounting Type",
-            value: "Fixed / Trolley / Tyre / Truck Mounted",
+            value: "Fixed / Trolley / Truck / Truck Mounted",
           },
           {
             label: "Water Flow",
@@ -1033,7 +1033,7 @@ export const categories = [
           { label: "Droplet Size", value: "10–150 Microns" },
           {
             label: "Mounting Type",
-            value: "Fixed / Trolley / Tyre / Truck Mounted",
+            value: "Fixed / Trolley / Truck / Truck Mounted",
           },
           {
             label: "Water Pump Power",
@@ -1719,11 +1719,11 @@ export const categories = [
         ],
       },
       {
-        id: "tyre-mounted-anti-smog-gun",
-        name: "Tyre-Mounted Anti Smog Gun",
-        metaTitle: "Tyre-Mounted Anti Smog Gun Supplier",
+        id: "Truck-mounted-anti-smog-gun",
+        name: "Truck-Mounted Anti Smog Gun",
+        metaTitle: "Truck-Mounted Anti Smog Gun Supplier",
         metaDescription:
-          "Mobile tyre-mounted anti smog gun for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
+          "Mobile Truck-mounted anti smog gun for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
         videoUrl:
           "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         category: "anti-smog-gun",
@@ -1732,7 +1732,7 @@ export const categories = [
         description: [
           {
             type: "p",
-            text: "Kapmix Machinery Pvt. Ltd. is a trusted Tyre-Mounted Anti Smog Gun supplier offering advanced and mobile dust suppression solutions designed for easy movement and efficient air pollution control. These machines are ideal for projects where portability and flexibility are essential.",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Truck-Mounted Anti Smog Gun supplier offering advanced and mobile dust suppression solutions designed for easy movement and efficient air pollution control. These machines are ideal for projects where portability and flexibility are essential.",
           },
           {
             type: "h3",
@@ -1740,7 +1740,7 @@ export const categories = [
           },
           {
             type: "p",
-            text: "The tyre-mounted design allows quick relocation of the machine without complex installation, making it suitable for large and continuously changing project sites.",
+            text: "The Truck-mounted design allows quick relocation of the machine without complex installation, making it suitable for large and continuously changing project sites.",
           },
           {
             type: "h3",
@@ -1777,7 +1777,7 @@ export const categories = [
         ],
 
         features: [
-          "Tyre-Mounted Design for Mobility",
+          "Truck-Mounted Design for Mobility",
           "High Dust Suppression Efficiency",
           "Adjustable Spray & Rotation",
           "Energy & Water Efficient",
@@ -1804,7 +1804,7 @@ export const categories = [
         specs: [
           {
             label: "Mounting Type",
-            value: "Tyre Mounted (Towable / Mobile Unit)",
+            value: "Truck Mounted (Towable / Mobile Unit)",
           },
           {
             label: "Operation",
@@ -1817,7 +1817,7 @@ export const categories = [
         image: [
           {
             src: "/kapmix products/tractor mounted(1).webp",
-            alt: "Tyre-Mounted Anti Smog Gun",
+            alt: "Truck-Mounted Anti Smog Gun",
           },
         ],
       },
@@ -1924,7 +1924,7 @@ export const categories = [
         ],
 
         relatedProducts: [
-          "tyre-mounted-anti-smog-gun",
+          "Truck-mounted-anti-smog-gun",
           "truck-mounted-dust-suppression-cannon",
           "truck-mounted-spray-cannon",
         ],
@@ -2157,17 +2157,17 @@ export const categories = [
 
     products: [
       {
-        id: "tyre-mounted-anti-smog-gun",
-        name: "Tyre-Mounted Anti Smog Gun",
-        metaTitle: "Tyre-Mounted Anti Smog Gun Supplier",
+        id: "truck-mounted-anti-smog-gun",
+        name: "Truck-Mounted Anti Smog Gun",
+        metaTitle: "truck-Mounted Anti Smog Gun Supplier",
         metaDescription:
-          "Mobile tyre-mounted anti smog gun for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
+          "Mobile truck-mounted anti smog gun for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
         videoUrl:
           "https://www.youtube.com/embed/OdoPdgHx83Y?si=jgk9xaQQqh_FThP6",
         description: [
           {
             type: "p",
-            text: "Kapmix Machinery Pvt. Ltd. is a trusted Tyre-Mounted Anti Smog Gun supplier offering advanced and mobile dust suppression solutions designed for easy movement and efficient air pollution control. These machines are ideal for projects where portability and flexibility are essential.",
+            text: "Kapmix Machinery Pvt. Ltd. is a trusted Truck-Mounted Anti Smog Gun supplier offering advanced and mobile dust suppression solutions designed for easy movement and efficient air pollution control. These machines are ideal for projects where portability and flexibility are essential.",
           },
           {
             type: "h3",
@@ -2175,7 +2175,7 @@ export const categories = [
           },
           {
             type: "p",
-            text: "The tyre-mounted design allows quick relocation of the machine without complex installation, making it suitable for large and continuously changing project sites.",
+            text: "The Truck-mounted design allows quick relocation of the machine without complex installation, making it suitable for large and continuously changing project sites.",
           },
           {
             type: "h3",
@@ -2212,7 +2212,7 @@ export const categories = [
         ],
 
         features: [
-          "Tyre-Mounted Design for Mobility",
+          "Truck-Mounted Design for Mobility",
           "High Dust Suppression Efficiency",
           "Adjustable Spray & Rotation",
           "Energy & Water Efficient",
@@ -2237,7 +2237,7 @@ export const categories = [
         ],
 
         specs: [
-          { label: "Mounting Type", value: "Tyre Mounted (Towable Unit)" },
+          { label: "Mounting Type", value: "Truck Mounted (Towable Unit)" },
           {
             label: "Operation",
             value: "Manual / Semi-Automatic / Fully Automatic",
@@ -2251,7 +2251,7 @@ export const categories = [
         image: [
           {
             src: "/nav/category-4-nav.webp",
-            alt: "Tyre-Mounted Anti Smog Gun Machine",
+            alt: "Truck-Mounted Anti Smog Gun Machine",
           },
         ],
 
@@ -2263,11 +2263,12 @@ export const categories = [
       },
       {
         id: "truck-mounted-dust-control-machine",
-        name: "truck Mounted Dust Control Machine",
+        name: "Truck Mounted Dust Control Machine",
         metaTitle: "truck Mounted Dust Control Machine Supplier",
         metaDescription:
           "Advanced truck mounted dust control machine for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
- videoUrl: "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
+        videoUrl:
+          "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         description: [
           {
             type: "p",
@@ -2360,18 +2361,19 @@ export const categories = [
         ],
 
         relatedProducts: [
-          "tyre-mounted-anti-smog-gun",
+          "Truck-mounted-anti-smog-gun",
           "tractor-operated-anti-smog-gun",
           "roof-mounted-anti-smog-gun",
         ],
       },
       {
         id: "truck-mounted-dust-suppression-cannon",
-        name: "truck Mounted Dust Suppression Cannon",
+        name: "Truck Mounted Dust Suppression Cannon",
         metaTitle: "truck Mounted Dust Suppression Cannon Supplier",
         metaDescription:
           "Advanced truck mounted dust suppression cannon for efficient dust control and air pollution management across construction, mining, and industrial sites.",
- videoUrl: "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
+        videoUrl:
+          "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
         description: [
           {
             type: "p",
@@ -2465,17 +2467,18 @@ export const categories = [
 
         relatedProducts: [
           "truck-mounted-dust-control-machine",
-          "tyre-mounted-anti-smog-gun",
+          "Truck-mounted-anti-smog-gun",
           "tractor-operated-anti-smog-gun",
         ],
       },
       {
         id: "truck-mounted-spray-cannon",
-        name: "truck Mounted Spray Cannon",
+        name: "Truck Mounted Spray Cannon",
         metaTitle: "truck Mounted Spray Cannon Supplier",
         metaDescription:
           "Advanced truck mounted spray cannon for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
- videoUrl: "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
+        videoUrl:
+          "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         description: [
           {
             type: "p",
@@ -2570,7 +2573,7 @@ export const categories = [
         relatedProducts: [
           "truck-mounted-dust-suppression-cannon",
           "truck-mounted-dust-control-machine",
-          "tyre-mounted-anti-smog-gun",
+          "Truck-mounted-anti-smog-gun",
         ],
       },
     ],
