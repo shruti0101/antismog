@@ -60,7 +60,7 @@ const Hero = () => {
         </section>
 
         {/* ✅ Mobile Hero */}
-        <section className="relative block md:hidden lg:hidden w-full mt-20 h-[35vh]  overflow-hidden">
+        <section className="relative block md:hidden lg:hidden w-full mt-20 h-[30vh] overflow-hidden">
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={`mobile-${currentIndex}`}
