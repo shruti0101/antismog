@@ -128,8 +128,9 @@ export default function Footer() {
             </a>
 
             <div className="flex items-start gap-3">
-              <MapPin size={16} className="mt-1" />
-              New Delhi, India
+              <MapPin size={16} className="mt-1 h-20 w-20" />
+              Kapmix Machinery Private Limited Khasra Number: 1132, opp.
+              DPS, Saraswati Vihar, Harbans Nagar, Ghukna, Ghaziabad, Uttar Pradesh 201003 <br />
             </div>
           </div>
         </div>
@@ -155,7 +156,10 @@ export default function Footer() {
           </div>
 
           <p className="text-white text-sm mt-4 leading-relaxed">
-            We are proud to present the TrustElite Certificate of Excellence to Kapmix Machinery. recognizing their commitment to exceptional customer service, outstanding business practices, and a dedication to building trust with their customers.
+            We are proud to present the TrustElite Certificate of Excellence to
+            Kapmix Machinery. recognizing their commitment to exceptional
+            customer service, outstanding business practices, and a dedication
+            to building trust with their customers.
           </p>
         </div>
       </div>
@@ -165,7 +169,6 @@ export default function Footer() {
 
       <div className="relative flex flex-col md:flex-row justify-between items-center px-6 py-6 text-white text-sm">
         <p>© 2026 Kapmix Machinery. All Rights Reserved</p>
-       
       </div>
 
       {/* ================= MODAL ================= */}

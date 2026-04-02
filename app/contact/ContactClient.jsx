@@ -37,7 +37,6 @@ export default function ContactPage() {
         formDataPayload,
       );
 
-  
       if (res?.data?.success) {
         setStatus("success");
 
@@ -131,9 +130,9 @@ Contact: ${phone}`;
             <MapPin size={38} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Factory Address</h3>
             <p className="text-sm leading-relaxed">
-              Kapmix Machinery Pvt. Ltd. <br />
-              Wazirpur Industrial Area, <br />
-              New Delhi – 110052, India
+              Kapmix Machinery Private Limited <br /> Khasra Number: 1132, opp. DPS, <br />
+              Saraswati Vihar, Harbans Nagar,<br /> Ghukna, Ghaziabad, Uttar Pradesh
+              201003 <br />
             </p>
           </div>
         </div>
