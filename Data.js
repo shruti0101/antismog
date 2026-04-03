@@ -2477,3 +2477,828 @@ export const categories = [
     ],
   },
 ];
+
+
+// cites page 
+
+export const serviceLocations = [
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-ajmer",
+    label: "Ajmer",
+    id: 1,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-aligarh",
+    label: "Aligarh",
+    id: 2,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-ambala",
+    label: "Ambala",
+    id: 3,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-ayodhya",
+    label: "Ayodhya",
+    id: 4,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-alwar",
+    label: "Alwar",
+    id: 5,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bahadurgarh",
+    label: "Bahadurgarh",
+    id: 6,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bareilly",
+    label: "Bareilly",
+    id: 7,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bathinda ",
+    label: "Bathinda ",
+    id: 8,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bengaluru",
+    label: "Bengaluru",
+    id: 9,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bharatpur",
+    label: "Bharatpur",
+    id: 10,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bhiwani",
+    label: "Bhiwani",
+    id: 11,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bhiwadi",
+    label: "Bhiwadi",
+    id: 12,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bhopal",
+    label: "Bhopal",
+    id: 13,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bhubaneswar",
+    label: "Bhubaneswar",
+    id: 14,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bihar",
+    label: "Bihar",
+    id: 15,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bikaner",
+    label: "Bikaner",
+    id: 16,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bulandshahr",
+    label: "Bulandshahr",
+    id: 17,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-chandigarh",
+    label: "Chandigarh",
+    id: 18,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-chennai",
+    label: "Chennai",
+    id: 19,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-chhattisgarh",
+    label: "Chhattisgarh",
+    id: 20,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-daman",
+    label: "Daman",
+    id: 21,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-dehradun",
+    label: "Dehradun",
+    id: 22,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-delhi",
+    label: "Delhi",
+    id: 23,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-delhi-ncr",
+    label: "Delhi NCR",
+    id: 24,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-faizabad",
+    label: "Faizabad",
+    id: 25,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-faridabad",
+    label: "Faridabad",
+    id: 26,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-gandhinagar",
+    label: "Gandhinagar",
+    id: 27,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-ghaziabad",
+    label: "Ghaziabad",
+    id: 28,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-goa",
+    label: "Goa",
+    id: 29,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-greater-noida",
+    label: "Greater Noida",
+    id: 30,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-gujarat",
+    label: "Gujarat",
+    id: 31,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-gurdaspur",
+    label: "Gurdaspur",
+    id: 32,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-gurgaon",
+    label: "Gurgaon",
+    id: 33,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-guwahati",
+    label: "Guwahati",
+    id: 34,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-gwalior",
+    label: "Gwalior",
+    id: 35,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-hardoi",
+    label: "Hardoi",
+    id: 36,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-haridwar",
+    label: "Haridwar",
+    id: 37,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-haryana",
+    label: "Haryana",
+    id: 38,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-himachal-pradesh",
+    label: "Himachal Pradesh",
+    id: 39,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-hoshiarpur",
+    label: "Hoshiarpur",
+    id: 40,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-howrah",
+    label: "Howrah",
+    id: 41,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-hooghly",
+    label: "Hooghly",
+    id: 42,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-hyderabad",
+    label: "Hyderabad",
+    id: 43,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-indore",
+    label: "Indore",
+    id: 44,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jabalpur",
+    label: "Jabalpur",
+    id: 45,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jaipur",
+    label: "Jaipur",
+    id: 46,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jammu-and-kashmir",
+    label: "Jammu & Kashmir",
+    id: 47,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jhajjar",
+    label: "Jhajjar",
+    id: 48,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jhansi",
+    label: "Jhansi",
+    id: 49,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jharkhand",
+    label: "Jharkhand",
+    id: 50,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jind",
+    label: "Jind",
+    id: 51,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jodhpur",
+    label: "Jodhpur",
+    id: 52,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kanpur",
+    label: "Kanpur",
+    id: 53,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kapurthala",
+    label: "Kapurthala",
+    id: 54,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-karnal",
+    label: "Karnal",
+    id: 55,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-karnataka",
+    label: "Karnataka",
+    id: 56,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kerala",
+    label: "Kerala",
+    id: 57,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kolkata",
+    label: "Kolkata",
+    id: 58,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kota",
+    label: "Kota",
+    id: 59,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kundli",
+    label: "Kundli",
+    id: 60,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kurukshetra",
+    label: "Kurukshetra",
+    id: 61,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-leh",
+    label: "Leh",
+    id: 62,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-lucknow",
+    label: "Lucknow",
+    id: 63,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-ludhiana",
+    label: "Ludhiana",
+    id: 64,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-madhya-pradesh",
+    label: "Madhya Pradesh",
+    id: 65,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-madurai",
+    label: "Madurai",
+    id: 66,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-maharashtra",
+    label: "Maharashtra",
+    id: 67,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-manali",
+    label: "Manali",
+    id: 68,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-manesar",
+    label: "Manesar",
+    id: 69,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-mathura",
+    label: "Mathura",
+    id: 70,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-meerut",
+    label: "Meerut",
+    id: 71,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-mohali",
+    label: "Mohali",
+    id: 72,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-moradabad",
+    label: "Moradabad",
+    id: 73,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-mumbai",
+    label: "Mumbai",
+    id: 74,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-murshidabad",
+    label: "Murshidabad",
+    id: 75,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-muzaffarpur",
+    label: "Muzaffarpur",
+    id: 76,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-nadia",
+    label: "Nadia",
+    id: 77,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-nagpur",
+    label: "Nagpur",
+    id: 78,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-noida",
+    label: "Noida",
+    id: 79,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-odisha",
+    label: "Odisha",
+    id: 80,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-panipat",
+    label: "Panipat",
+    id: 81,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-panchkula",
+    label: "Panchkula",
+    id: 82,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-patiala",
+    label: "Patiala",
+    id: 83,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-patna",
+    label: "Patna",
+    id: 84,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-puducherry-pondicherry",
+    label: "Puducherry (Pondicherry)",
+    id: 85,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-pune",
+    label: "Pune",
+    id: 86,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-punjab",
+    label: "Punjab",
+    id: 87,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-raipur",
+    label: "Raipur",
+    id: 88,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-rajasthan",
+    label: "Rajasthan",
+    id: 89,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-rajkot",
+    label: "Rajkot",
+    id: 90,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-ranchi",
+    label: "Ranchi",
+    id: 91,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-rewari",
+    label: "Rewari",
+    id: 92,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-rohtak",
+    label: "Rohtak",
+    id: 93,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-roorkee",
+    label: "Roorkee",
+    id: 94,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-rudrapur",
+    label: "Rudrapur",
+    id: 95,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-shahjahanpur",
+    label: "Shahjahanpur",
+    id: 96,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-shimla",
+    label: "Shimla",
+    id: 97,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-sikkim",
+    label: "Sikkim",
+    id: 98,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-sirsa",
+    label: "Sirsa",
+    id: 99,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-sonipat",
+    label: "Sonipat",
+    id: 100,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-srinagar",
+    label: "Srinagar",
+    id: 101,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-surat",
+    label: "Surat",
+    id: 102,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-tamil-nadu",
+    label: "Tamil Nadu",
+    id: 103,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-telangana",
+    label: "Telangana",
+    id: 104,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-thiruvananthapuram",
+    label: "Thiruvananthapuram",
+    id: 105,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-uttar-pradesh",
+    label: "Uttar Pradesh",
+    id: 106,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-uttarakhand",
+    label: "Uttarakhand",
+    id: 107,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-vadodara",
+    label: "Vadodara",
+    id: 108,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-varanasi",
+    label: "Varanasi",
+    id: 109,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-west-bengal",
+    label: "West Bengal",
+    id: 110,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-yamuna-nagar",
+    label: "Yamuna Nagar",
+    id: 111,
+  },
+
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-delhi",
+    label: "Delhi",
+    id: 112,
+  },
+
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-goa",
+    label: "Goa",
+    id: 113,
+  },
+
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-rewari",
+    label: "Rewari ",
+    id: 114,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-ahmedabad",
+    label: "Ahmedabad",
+    id: 115,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-vishakhapatnam",
+    label: "Vishakhapatnam",
+    id: 116,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-agra",
+    label: "Agra",
+    id: 117,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-gurugram",
+    label: "Gurugram",
+    id: 118,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jalandhar",
+    label: "Jalandhar",
+    id: 119,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-amritsar",
+    label: "Amritsar",
+    id: 120,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-coimbatore",
+    label: "Coimbatore",
+    id: 121,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-tiruchirappalli",
+    label: "Tiruchirappalli",
+    id: 122,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kozhikode",
+    label: "Kozhikode",
+    id: 123,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kochi",
+    label: "Kochi",
+    id: 124,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-madgaon",
+    label: "Madgaon",
+    id: 125,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-nashik",
+    label: "Nashik",
+    id: 126,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-aurangabad",
+    label: "Aurangabad",
+    id: 127,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-udaipur",
+    label: "Udaipur",
+    id: 128,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jammu",
+    label: "Jammu",
+    id: 129,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-dhanbad",
+    label: "Dhanbad",
+    id: 130,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jamshedpur",
+    label: "Jamshedpur",
+    id: 131,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-rourkela",
+    label: "Rourkela",
+    id: 132,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bhilai",
+    label: "Bhilai",
+    id: 133,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bokaro",
+    label: "Bokaro",
+    id: 134,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-prayagraj",
+    label: "Prayagraj",
+    id: 135,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-gorakhpur",
+    label: "Gorakhpur",
+    id: 136,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-agartala",
+    label: "Agartala",
+    id: 137,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-shillong",
+    label: "Shillong",
+    id: 138,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-imphal",
+    label: "Imphal",
+    id: 139,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-aizawl",
+    label: "Aizawl",
+    id: 140,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-dimapur",
+    label: "Dimapur",
+    id: 141,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bilaspur",
+    label: "Bilaspur",
+    id: 142,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-ujjain",
+    label: "Ujjain",
+    id: 143,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-rajahmundry",
+    label: "Rajahmundry",
+    id: 144,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-tirupati",
+    label: "Tirupati",
+    id: 145,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-salem",
+    label: "Salem",
+    id: 146,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-warangal",
+    label: "Warangal",
+    id: 147,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-vijayawada",
+    label: "Vijayawada",
+    id: 148,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-amaravati",
+    label: "Amaravati",
+    id: 149,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-mysore",
+    label: "Mysore",
+    id: 150,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-thane",
+    label: "Thane",
+    id: 151,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-navi-mumbai",
+    label: "Navi Mumbai",
+    id: 152,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-panvel",
+    label: "Panvel",
+    id: 153,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kolhapur",
+    label: "Kolhapur",
+    id: 154,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-jalgaon",
+    label: "Jalgaon",
+    id: 155,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bhavnagar",
+    label: "Bhavnagar",
+    id: 156,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-bhiwandi",
+    label: "Bhiwandi",
+    id: 157,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-kalyan",
+    label: "Kalyan",
+    id: 158,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-tirunelveli",
+    label: "Tirunelveli",
+    id: 159,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-sikar",
+    label: "Sikar",
+    id: 160,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-erode",
+    label: "Erode",
+    id: 161,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-hubballi-dharwad",
+    label: "Hubballi-Dharwad",
+    id: 162,
+  },
+  {
+    href: "/Anti-Smog-Gun-Supplier-in-belgaum",
+    label: "Belgaum",
+    id: 163,
+  },
+ 
+];

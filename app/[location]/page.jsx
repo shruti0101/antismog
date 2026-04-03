@@ -12,8 +12,9 @@ export async function generateMetadata({ params }) {
         .join(" ");
 
     return {
-        title: `Garbage Bag Manufacturer in ${city} | Sangam Plastic Industries`,
-        description: `Sangam Plastic Industries is a trusted garbage bag manufacturer in ${city} offering durable, leak-proof garbage bags for homes, hospitals, offices & waste management.`,
+        title: `Anti Smog Gun Supplier in ${city} | Dust Suppression System`,
+        description: `Top Anti Smog Gun Supplier in ${city} offering fog cannons, dust suppression systems & pollution control machines for construction & industrial use.
+`,
     };
 }
 
