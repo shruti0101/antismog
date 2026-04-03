@@ -1,8 +1,8 @@
 import ProductClient from "./ProductClient";
 
 export const metadata = {
-  title: "Our Products – Garbage Bags & Waste Management Solutions | Sangam Plastic Industries",
-  description: "Explore our range of high-quality garbage bags — biodegradable, disposable, biomedical, heavy-duty & eco-friendly waste management solutions from a leading manufacturer.",
+  title: "Our Products | Anti Smog Guns, Fog Cannons & Dust Control Systems",
+  description: "Explore our range of anti smog guns, fog cannons, dust suppression machines, and air pollution control equipment for industrial and construction use.",
 };
 
 export default function AboutUsPage() {

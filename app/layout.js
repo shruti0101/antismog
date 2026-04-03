@@ -20,8 +20,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: " anti smog gun",
-  description: "anti smog gun",
+  title: "Anti Smog Gun Supplier Kapmix Machinery | Dust Suppression Machine",
+  description:
+    "Leading Anti Smog Gun Supplier in India offering dust suppression systems, fog cannons & pollution control machines for construction, mining & industrial use.",
   icons: {
     icon: "/logo.png",
   },

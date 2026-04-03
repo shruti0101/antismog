@@ -1,8 +1,8 @@
 import AboutClient from "./AboutClient";
 
 export const metadata = {
-  title: "About Us – Leading Garbage Bag Manufacturer | Sangam Plastic Industries",
-  description: "Learn more about Sangam Plastic Industries – a trusted manufacturer and bulk supplier of premium quality garbage bags, committed to sustainable waste management and customer satisfaction.",
+  title: "About Us | Anti Smog Gun Supplier Kapmix Machinery",
+  description: "Know more about our company, a trusted manufacturer & supplier of anti smog guns, dust control systems & environmental pollution control solutions in India.",
 };
 
 export default function AboutUsPage() {

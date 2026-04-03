@@ -3,9 +3,9 @@ export const categories = [
     id: "anti-smog-gun",
     name: "Anti Smog Gun",
     metaTitle:
-      "Anti Smog Gun Manufacturer in India | Dust Suppression System | Kapmix Machinery",
+      "Anti Smog Gun Machine Supplier | Dust Suppression Fog Cannon",
     metaDescription:
-      "Kapmix Machinery is a leading Anti Smog Gun manufacturer in India offering advanced dust suppression systems with long spray range and efficient pollution control.",
+      "High-performance anti smog gun machine for dust suppression. Ideal for construction sites, mining, and industrial pollution control applications.",
 
     products: [
       {
@@ -1049,9 +1049,9 @@ export const categories = [
   {
     id: "roof-mounted-anti-smog-gun",
     name: "Roof Mounted Anti Smog Gun",
-    metaTitle: "Roof Mounted Anti Smog Gun Supplier",
+    metaTitle: "Roof Mounted Anti Smog Gun | Pollution Control System",
     metaDescription:
-      "High-performance roof mounted anti smog gun for mobile dust suppression and air pollution control in construction and industrial applications.",
+      "Roof mounted anti smog gun for urban pollution control, ideal for buildings, factories and large infrastructure projects.",
 
     products: [
       {
@@ -1592,9 +1592,9 @@ export const categories = [
   {
     id: "tractor-operated-anti-smog-gun",
     name: "Tractor Operated Anti Smog Gun",
-    metaTitle: "Tractor Operated Anti Smog Gun Supplier",
+    metaTitle: "Tractor Mounted Anti Smog Gun Supplier | Mobile Dust Control Machine",
     metaDescription:
-      "High-performance tractor operated anti smog gun for mobile dust suppression and air pollution control across large construction, mining, and road projects.",
+      "Portable tractor mounted anti smog gun for efficient dust suppression in large outdoor areas like roads, mining sites & construction zones.",
 
     products: [
       {
@@ -2048,9 +2048,9 @@ export const categories = [
   {
     id: "truck-mounted-anti-smog-gun",
     name: "Truck Mounted Anti Smog Gun",
-    metaTitle: "truck Mounted Anti Smog Gun Supplier",
+    metaTitle: "Track Mounted Dust Suppression System | Fog Cannon Manufacturer",
     metaDescription:
-      "Heavy-duty truck mounted anti smog gun for efficient dust suppression in rough terrains, mining sites, and large construction projects.",
+      "Advanced track mounted dust suppression system for heavy-duty industrial and mining applications with high efficiency and mobility.",
 
     products: [
       {
