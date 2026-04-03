@@ -151,7 +151,7 @@ const Location = () => {
         </div>
       </section>
 
-      <section></section>
+    
 
       {/* Workstation  */}
       <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
@@ -183,7 +183,7 @@ const Location = () => {
       </section>
 
       {/* Key features  */}
-      <section className="mx-auto lg:px-15 px-5 py-8">
+      {/* <section className="mx-auto lg:px-15 px-5 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="w-full">
             <img
@@ -234,10 +234,10 @@ const Location = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Industries */}
-      <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
+      {/* <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
         <h2 className="text-center text-2xl md:text-[42px] font-bold mb-5">
           Industries & Applications We Serve
         </h2>
@@ -311,10 +311,10 @@ const Location = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Case Study Card */}
-      <section className="mx-auto lg:px-15 px-5 py-8">
+      {/* <section className="mx-auto lg:px-15 px-5 py-8">
         <div className="text-center max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-[42px] font-bold">
             Case Study: Garbage Bag Supply for Commercial Facility in {city}
@@ -383,10 +383,10 @@ const Location = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
-      <section className="w-full bg-green-600 text-white py-5">
+      {/* <section className="w-full bg-green-600 text-white py-5">
         <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="md:text-left text-center">
             <Link href={"/"} className="text-2xl font-semibold">
@@ -409,10 +409,10 @@ const Location = () => {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ */}
-      <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
+      {/* <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
         <h2 className="text-center text-2xl md:text-[42px] font-bold mb-5">
           Garbage Bags in {city} – FAQs
         </h2>
@@ -485,10 +485,10 @@ const Location = () => {
             </p>
           </details>
         </div>
-      </section>
+      </section> */}
 
       {/* about */}
-      <section className="mx-auto lg:px-15 px-5 py-8">
+      {/* <section className="mx-auto lg:px-15 px-5 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="w-full">
             <img
@@ -519,7 +519,7 @@ const Location = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
