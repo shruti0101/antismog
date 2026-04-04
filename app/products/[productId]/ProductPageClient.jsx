@@ -243,7 +243,7 @@ export default function ProductPage({ params }) {
               </a>
 
               <a
-                href="/brochure.pdf"
+                href="/Anti Smog Gun .pdf"
                 download
                 className="flex-1 py-4 text-center rounded-xl border border-gray-300 hover:bg-black hover:text-white transition font-semibold"
               >

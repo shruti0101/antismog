@@ -95,6 +95,7 @@ export default function Footer() {
               { name: "Blogs", link: "/" },
               { name: "Contact", link: "/contact" },
               { name: "Sitemap", link: "/sitemap" },
+              { name: "Enquiry", link: "/enquiry" },
             ].map((item, i) => (
               <Link
                 href={item?.link}
