@@ -17,10 +17,10 @@ export default function AboutPage() {
 
         {/* BG IMAGE */}
         <Image
-          src="/Anti-smog-gun-copy.jpg"
+          src="/bg-product.webp"
           alt="About"
           fill
-          className="object-cover"
+          className="object-cover "
           priority
         />
 

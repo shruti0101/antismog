@@ -13,7 +13,7 @@ export default function Footer() {
       {/* BG IMAGE */}
       <div className="absolute inset-0">
         <Image
-          src="/Anti-smog-gun-copy.jpg"
+          src="/bg-product.webp"
           alt="bg"
           fill
           className="object-cover"

@@ -16,7 +16,7 @@ const Page = () => {
     <div className="">
       {/* Hero Section */}
       <section
-        style={{ backgroundImage: "url('/Anti-smog-gun-copy.jpg')" }}
+        style={{ backgroundImage: "url('/bg-product.webp')" }}
         className="w-full bg-cover bg-center h-[50vh]  md:h-[90vh] relative"
       >
         {/* <div className="absolute inset-0 bg-black opacity-10"></div> */}

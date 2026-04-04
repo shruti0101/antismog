@@ -33,7 +33,7 @@ export default function CategoryPage({ params }) {
     <>
       {/* Hero Section */}
       <section
-        style={{ backgroundImage: "url(/Anti-smog-gun-copy.jpg)" }}
+        style={{ backgroundImage: "url(/bg-product.webp)" }}
         className="w-full bg-cover bg-center h-[50vh] md:h-[90vh] relative mt-10"
       >
         <div className="px-5 absolute inset-0 text-center flex items-center justify-center ">

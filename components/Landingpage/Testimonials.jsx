@@ -51,7 +51,7 @@ export default function TestimonialSlider() {
 
     <>
     
-    <section style={{backgroundImage:"url(/testimonial.jpeg)"}} className="relative h-full w-full  bg-cover   bg-center py-25 text-white">
+    <section style={{backgroundImage:"url(/testimonial-bg.webp)"}} className="relative h-full w-full  bg-cover   bg-center py-25 text-white">
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#08372C]/30"></div>
 

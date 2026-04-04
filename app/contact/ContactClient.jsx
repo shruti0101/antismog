@@ -73,10 +73,10 @@ Contact: ${phone}`;
     <div>
       {/* HERO */}
       <section
-        style={{ backgroundImage: "url('/Anti-smog-gun-copy.jpg')" }}
+        style={{ backgroundImage: "url('/bg-product.webp')" }}
         className="w-full h-[60vh] md:h-[85vh] bg-cover bg-center relative flex items-center justify-center"
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/50"></div>
 
         <div className="relative text-center text-white px-6">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
