@@ -13,9 +13,19 @@ import {
   Leaf,
   Warehouse,
   Truck,
+  Building2,
+  Construction,
+  Mountain,
+  Droplets,
+  RotateCcw,
+  Maximize,
+  Shield,
   Tags,
   Handshake,
+  Phone,
+  Mail,
 } from "lucide-react";
+import EnquiryForm from "@/components/Enquiry";
 
 const Location = () => {
   const params = useParams();
@@ -28,38 +38,7 @@ const Location = () => {
         .join(" ")
     : "India";
 
-  const data = [
-    {
-      title: "High-Quality Waste Disposal Bags",
-      desc: "Our garbage bags are manufactured using premium-grade plastic materials that offer high strength, durability, and resistance to leakage and tearing.",
-      icon: Warehouse,
-      img: "/bag/product/10L Biohazard Garbage Bag.webp",
-    },
-    {
-      title: "Multiple Size Options",
-      desc: "We provide garbage bags in a variety of sizes, thicknesses, and colors to meet the needs of households, offices, hospitals, hotels, and industrial facilities.",
-      icon: Leaf,
-      img: "/bag/product/20 x 24 inch Disposable Garbage Bags.webp",
-    },
-    {
-      title: "Manufacturer Direct Supply",
-      desc: `As a direct Garbage Bag Manufacturer in ${city}, Sangam Plastic Industries offers competitive pricing and consistent supply for bulk orders and distributors.`,
-      icon: Truck,
-      img: "/bag/pro1.png",
-    },
-    {
-      title: "Strong & Leak-Proof Design",
-      desc: "Our garbage bags are designed to handle wet and dry waste efficiently while preventing spills, leaks, and unpleasant odors.",
-      icon: Tags,
-      img: "/bag/pro2.png",
-    },
-    {
-      title: "Trusted by Multiple Industries",
-      desc: `Our garbage bags are widely used by municipal corporations, hospitals, offices, hotels, restaurants, and waste management companies across ${city}.`,
-      icon: Handshake,
-      img: "/bag/pro3.png",
-    },
-  ];
+  const [enquiry, setEnquiry] = useState(false);
 
   return (
     <>
@@ -81,7 +60,79 @@ const Location = () => {
         </section>
       </div>
 
-      <section className="max-w-7xl mx-auto px-4 md:px-0  py-8">
+      {/* Types of Anti Smog Guns We Offer  */}
+      <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
+        <h2 className="text-center text-2xl md:text-[42px] font-bold mb-2">
+          Types of Anti Smog Guns We Offer
+        </h2>
+        <p className="text-center text-black mb-4 text-lg">
+          We supply multiple models based on your requirements:
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:mt-6">
+          <div className="border rounded-xl overflow-hidden shadow hover:shadow-2xl duration-300 flex flex-col items-center">
+            <div className="">
+              <img src="/nav/category-1-nav.webp" alt="loading" className="" />
+            </div>
+            <h3 className="text-center my-2 font-bold text-lg">
+              Anti Smog Gun
+            </h3>
+            <button
+              onClick={() => setEnquiry(true)}
+              className="rounded-lg px-4 py-2 bg-red-600 text-white mx-auto text-xl my-5"
+            >
+              Enquiry Now
+            </button>
+          </div>
+
+          <div className="border rounded-xl overflow-hidden shadow hover:shadow-2xl duration-300 flex flex-col items-center">
+            <div className="">
+              <img src="/nav/category-2-nav.webp" alt="loading" className="" />
+            </div>
+            <h3 className="text-center my-2 font-bold text-lg">
+              Roof Mounted Anti Smog Gun
+            </h3>
+            <button
+              onClick={() => setEnquiry(true)}
+              className="rounded-lg px-4 py-2 bg-red-600 text-white mx-auto text-xl my-5"
+            >
+              Enquiry Now
+            </button>
+          </div>
+
+          <div className="border rounded-xl overflow-hidden shadow hover:shadow-2xl duration-300 flex flex-col items-center">
+            <div className="">
+              <img src="/nav/category-3-nav.webp" alt="loading" className="" />
+            </div>
+            <h3 className="text-center my-2 font-bold text-lg">
+              Tractor Operated Anti Smog Gun
+            </h3>
+            <button
+              onClick={() => setEnquiry(true)}
+              className="rounded-lg px-4 py-2 bg-red-600 text-white mx-auto text-xl my-5"
+            >
+              Enquiry Now
+            </button>
+          </div>
+
+          <div className="border rounded-xl overflow-hidden shadow hover:shadow-2xl duration-300 flex flex-col items-center">
+            <div className="">
+              <img src="/nav/category-4-nav.webp" alt="loading" className="" />
+            </div>
+            <h3 className="text-center my-2 font-bold text-lg">
+              Truck Mounted Anti Smog Gun
+            </h3>
+            <button
+              onClick={() => setEnquiry(true)}
+              className="rounded-lg px-4 py-2 bg-red-600 text-white mx-auto text-xl my-5"
+            >
+              Enquiry Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="max-w-7xl  mx-auto px-4 md:px-10  py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           <div>
             <h2 className="text-2xl md:text-[42px] font-bold mb-4">
@@ -124,6 +175,181 @@ const Location = () => {
         </div>
       </section>
 
+      {/* third section  */}
+      <section className="max-w-7xl mx-auto px-4 md:px-10  py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <motion.div
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="relative overflow-hidden rounded-lg"
+          >
+            <Image
+              src={"/cta-image.webp"}
+              alt="loading"
+              width={500}
+              height={200}
+              className="object-contain rounded-lg"
+            />
+          </motion.div>
+
+          <div>
+            <h2 className="text-2xl md:text-[42px] font-bold mb-4">
+              What is an Anti Smog Gun?
+            </h2>
+
+            <p className="text-black mb-4 text-lg">
+              An anti smog gun is a modern dust suppression system that sprays
+              ultra-fine water droplets into the air. These droplets capture
+              airborne dust and pollutants, forcing them to settle on the ground
+              and significantly improving air quality.
+            </p>
+
+            <p className="text-black mb-4 text-lg">
+              This system works like artificial rain and is highly effective in
+              reducing dust pollution in large open areas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Features Section */}
+      <section className="mx-auto lg:px-16 px-5 py-16 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              Our Anti Smog Gun <span className="text-red-600">Features</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+              These features ensure efficient dust suppression across large
+              areas with minimal operational cost.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "High-Pressure Misting",
+                desc: "Misting system producing ultra-fine droplets (10 micron) for maximum dust capture efficiency.",
+                icon: Droplets,
+              },
+              {
+                title: "Extended Spray Range",
+                desc: "High-performance projection range spanning from 30 meters to over 100 meters.",
+                icon: Maximize,
+              },
+              {
+                title: "360° Dynamic Rotation",
+                desc: "Full 360-degree rotation with adjustable vertical angles for total area coverage.",
+                icon: RotateCcw,
+              },
+              {
+                title: "Eco-Smart Engineering",
+                desc: "Energy-efficient and water-saving design optimized for low-cost sustainable operations.",
+                icon: Leaf,
+              },
+              {
+                title: "Industrial Durability",
+                desc: "Robust, heavy-duty construction built to perform reliably in the harshest environments.",
+                icon: Shield,
+              },
+              {
+                title: "Versatile Deployment",
+                desc: "Flexible mobility options including tractor, truck, trolley, or fixed tower installations.",
+                icon: Truck,
+              },
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className="group p-8 rounded-2xl bg-gray-50 border border-transparent hover:border-red-500 hover:bg-white hover:shadow-2xl transition-all duration-300"
+              >
+                <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-red-100 text-red-600 mb-6 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 shadow-sm">
+                  <feature.icon size={28} />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Applications Section */}
+      <section className="mx-auto lg:px-16 px-5 py-16 bg-gray-50 border-y border-gray-200">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              Applications in <span className="text-red-600">{city}</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+              Our anti smog guns are widely used across various sectors to
+              ensure environmental compliance and sustainability.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Construction & Infrastructure",
+                desc: "Essential for dust control in large-scale building and infrastructure projects.",
+                icon: Building2,
+              },
+              {
+                title: "Road & Highway Maintenance",
+                desc: "Reducing airborne dust during road construction and regular maintenance cycles.",
+                icon: Truck,
+              },
+              {
+                title: "Demolition Activities",
+                desc: "Suppressing heavy dust clouds generated during building and structure demolition.",
+                icon: Construction,
+              },
+              {
+                title: "Mining & Quarry Operations",
+                desc: "Effective pollution control in harsh mining environments and stone crushing units.",
+                icon: Mountain,
+              },
+              {
+                title: "Industrial & Cement Plants",
+                desc: "Managing industrial emissions and maintaining air quality in factory premises.",
+                icon: Factory,
+              },
+              {
+                title: "Municipal & Smart Cities",
+                desc: "Supporting government initiatives for cleaner urban air and city-wide pollution management.",
+                icon: BadgeCheck,
+              },
+            ].map((app, index) => (
+              <div
+                key={index}
+                className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300"
+              >
+                <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-red-50 text-red-600 mb-6 group-hover:bg-red-600 group-hover:text-white transition-all duration-300">
+                  <app.icon size={28} />
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-gray-900">
+                  {app.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {app.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16 p-8 bg-gradient-to-r from-red-600 to-red-800 rounded-3xl text-center text-white shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
+            <p className="text-lg md:text-2xl font-semibold relative z-10">
+              With increasing environmental regulations in{" "}
+              {city === "Delhi" ? "Delhi NCR" : city}, anti smog guns have
+              become essential for compliance and sustainability.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* why us */}
       <section className="mx-auto lg:px-16 px-5 py-12 bg-gradient-to-b from-gray-50 to-gray-100">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
@@ -151,375 +377,51 @@ const Location = () => {
         </div>
       </section>
 
-    
+      {/* CTA Final Contact Section */}
+      <section className="mx-auto lg:px-16 px-5 py-20 bg-gray-50 ">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-white border rounded-3xl p-8 md:p-16 text-center relative overflow-hidden shadow-2xl">
+            {/* Background Decorations */}
 
-      {/* Workstation  */}
-      <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
-        <h2 className="text-center text-2xl md:text-[42px] font-bold mb-2">
-          Types of Anti Smog Guns We Offer
-        </h2>
-        <p className="text-center text-black mb-4 text-lg">
-          We supply multiple models based on your requirements:
-        </p>
+            <div className="relative z-10">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-red-600 text-white mb-8 shadow-lg shadow-red-600/30">
+                <Phone size={36} className="animate-pulse" />
+              </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-          <div className="bg-white  rounded-xl shadow-md hover:shadow-xl transition group">
-            <div className="w-full h-40 flex items-center justify-center mb-3 overflow-hidden rounded-lg">
-              <img
-                src="/nav/category-1-nav.webp"
-                alt="loading"
-                className="h-40 w-40 object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl"
-              />
+              <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 leading-tight">
+                Get Best Price for Anti Smog Gun in{" "}
+                <span className="text-red-500">{city}</span>
+              </h2>
+
+              <p className="text-black text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                Looking to control dust and pollution effectively? Contact us
+                today for the best price on anti smog guns in {city}. Our
+                experts will guide you in selecting the right model for your
+                project.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a
+                  href="tel:+919999926558"
+                  className="w-full sm:w-auto flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-xl shadow-red-900/20"
+                >
+                  <Phone size={20} />
+                  Call Now
+                </a>
+                <Link
+                  href="/contact"
+                  className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-gray-900 px-10 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-xl"
+                >
+                  <Mail size={20} />
+                  Get a Quote
+                </Link>
+              </div>
             </div>
-            <h3 className="font-semibold text-lg mb-2 text-center">Anti Smog Gun</h3>
-            <p className="text-black text-sm leading-relaxed">
-              Long range anti smog gun machine for large-scale dust suppression
-              with up to 100 meter spray.
-            </p>
           </div>
-
-        
         </div>
       </section>
 
-      {/* Key features  */}
-      {/* <section className="mx-auto lg:px-15 px-5 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="w-full">
-            <img
-              src="/bag/try2.webp"
-              alt="Key Features"
-              className="w-full h-[28rem] object-cover transition-transform duration-700 group-hover:scale-105"
-              style={{ objectPosition: "50% 70%" }}
-            />
-          </div>
-
-          <div>
-            <h3 className="text-2xl md:text-[42px] font-bold mb-6">
-              Key Features of{" "}
-              <span className="text-green-600">
-                Sangam Plastic Garbage Bags
-              </span>
-            </h3>
-
-            <ul className="space-y-4 text-black text-base">
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full mt-2"></span>
-                <span>High-quality durable plastic material</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full mt-2"></span>
-                <span>Strong and tear-resistant structure</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full mt-2"></span>
-                <span>Leak-proof design</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full mt-2"></span>
-                <span>Flexible and easy to handle</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full mt-2"></span>
-                <span>Available in multiple sizes and thicknesses</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full mt-2"></span>
-                <span>Suitable for wet and dry waste</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="w-2 h-2 bg-blue-600 rounded-full mt-2"></span>
-                <span>Hygienic and efficient waste disposal solution</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Industries */}
-      {/* <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
-        <h2 className="text-center text-2xl md:text-[42px] font-bold mb-5">
-          Industries & Applications We Serve
-        </h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 text-center group">
-            <div className="flex justify-center mb-4">
-              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600 transition">
-                <Store className="w-7 h-7 text-blue-600 group-hover:text-white transition" />
-              </div>
-            </div>
-            <h3 className="font-semibold text-lg mb-2 text-black">
-              Residential Use
-            </h3>
-            <p className="text-black text-sm leading-relaxed">
-              Daily waste collection for homes, apartments, and housing
-              societies.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 text-center group">
-            <div className="flex justify-center mb-4">
-              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-green-100 group-hover:bg-green-600 transition">
-                <Hotel className="w-7 h-7 text-green-600 group-hover:text-white transition" />
-              </div>
-            </div>
-            <h3 className="font-semibold text-lg mb-2 text-black">
-              Hotels & Restaurants
-            </h3>
-            <p className="text-black text-sm leading-relaxed">
-              Efficient waste management for food waste and kitchen waste.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 text-center group">
-            <div className="flex justify-center mb-4">
-              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-orange-100 group-hover:bg-orange-600 transition">
-                <Factory className="w-7 h-7 text-orange-600 group-hover:text-white transition" />
-              </div>
-            </div>
-            <h3 className="font-semibold text-lg mb-2 text-black">
-              Offices & Commercial Buildings
-            </h3>
-            <p className="text-black text-sm leading-relaxed">
-              Routine waste collection in offices, malls, and commercial spaces.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 text-center group">
-            <div className="flex justify-center mb-4">
-              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-purple-100 group-hover:bg-purple-600 transition">
-                <Hospital className="w-7 h-7 text-purple-600 group-hover:text-white transition" />
-              </div>
-            </div>
-            <h3 className="font-semibold text-lg mb-2 text-black">
-              Hospitals & Healthcare Facilities
-            </h3>
-            <p className="text-black text-sm leading-relaxed">
-              Safe disposal of medical waste and general healthcare waste.
-            </p>
-          </div>
-          <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 text-center group">
-            <div className="flex justify-center mb-4">
-              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-indigo-100 group-hover:bg-indigo-600 transition">
-                <Home className="w-7 h-7 text-indigo-600 group-hover:text-white transition" />
-              </div>
-            </div>
-            <h3 className="font-semibold text-lg mb-2 text-black">
-              Municipal Waste Management
-            </h3>
-            <p className="text-black text-sm leading-relaxed">
-              Reliable garbage bags for city sanitation and public waste
-              collection systems.
-            </p>
-          </div>
-        </div>
-      </section> */}
-
-      {/* Case Study Card */}
-      {/* <section className="mx-auto lg:px-15 px-5 py-8">
-        <div className="text-center max-w-5xl mx-auto">
-          <h2 className="text-2xl md:text-[42px] font-bold">
-            Case Study: Garbage Bag Supply for Commercial Facility in {city}
-          </h2>
-        </div>
-
-        <div className="bg-white rounded-2xl shadow-xl p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div className="space-y-3">
-              <div>
-                <span className="text-sm uppercase tracking-wide text-gray-500">
-                  Client
-                </span>
-                <p className="text-lg font-semibold">
-                  Commercial Office Complex
-                </p>
-              </div>
-              <div>
-                <span className="text-sm uppercase tracking-wide text-gray-500">
-                  Location
-                </span>
-                <p className="text-lg font-semibold">{city}</p>
-              </div>
-              <div>
-                <span className="text-sm uppercase tracking-wide text-gray-500">
-                  Project
-                </span>
-                <p className="text-lg font-semibold">
-                  Waste Management & Sanitation System
-                </p>
-              </div>
-              <div className="">
-                <p className="text-black leading-relaxed">
-                  This project highlights{" "}
-                  <strong>
-                    Sangam Plastic Industries’ reliability as a Garbage Bag
-                    Manufacturer in {city}.
-                  </strong>
-                  .
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              <div>
-                <span className="text-sm uppercase tracking-wide text-gray-500">
-                  Scope
-                </span>
-                <ul className="list-disc list-inside text-black space-y-1">
-                  <li>Bulk supply of heavy-duty garbage bags</li>
-                  <li>Waste segregation support using color-coded bags</li>
-                  <li>Reliable daily waste disposal solution</li>
-                </ul>
-              </div>
-              <div>
-                <span className="text-sm uppercase tracking-wide text-gray-500">
-                  Results
-                </span>
-                <ul className="list-disc list-inside text-black space-y-1">
-                  <li>Improved hygiene and cleanliness across the facility</li>
-                  <li>Efficient waste collection and disposal system</li>
-                  <li>Reduced leakage and waste spillage</li>
-                  <li>Better compliance with sanitation standards</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* CTA */}
-      {/* <section className="w-full bg-green-600 text-white py-5">
-        <div className="max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="md:text-left text-center">
-            <Link href={"/"} className="text-2xl font-semibold">
-              Garbage Bag Manufacturer in {city}
-            </Link>
-            <p className="text-2xl md:text-[42px] font-semibold">
-              +91 9810057441
-            </p>
-            <p className="text-lg text-white">
-              For More Details Contact Us Now!
-            </p>
-          </div>
-
-          <div>
-            <a
-              href="tel:+919810057441"
-              className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
-            >
-              Connect Now
-            </a>
-          </div>
-        </div>
-      </section> */}
-
-      {/* FAQ */}
-      {/* <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
-        <h2 className="text-center text-2xl md:text-[42px] font-bold mb-5">
-          Garbage Bags in {city} – FAQs
-        </h2>
-
-        <div className="space-y-4">
-          <details className="group bg-gray-50 rounded-xl p-5 cursor-pointer">
-            <summary className="flex justify-between items-center font-semibold text-lg">
-              What are garbage bags used for?
-              <span className="transition-transform group-open:rotate-180">
-                ⌄
-              </span>
-            </summary>
-            <p className="mt-3 text-gray-600 leading-relaxed">
-              Garbage bags are used for the safe collection, storage, and
-              disposal of waste in homes, offices, hospitals, and commercial
-              facilities.
-            </p>
-          </details>
-
-          <details className="group bg-gray-50 rounded-xl p-5 cursor-pointer">
-            <summary className="flex justify-between items-center font-semibold text-lg">
-              Do you supply garbage bags in bulk?
-              <span className="transition-transform group-open:rotate-180">
-                ⌄
-              </span>
-            </summary>
-            <p className="mt-3 text-gray-600 leading-relaxed">
-              Yes, Sangam Plastic Industries provides bulk supply for
-              distributors, businesses, hospitals, and municipal waste
-              management companies.
-            </p>
-          </details>
-
-          <details className="group bg-gray-50 rounded-xl p-5 cursor-pointer">
-            <summary className="flex justify-between items-center font-semibold text-lg">
-              Are your garbage bags leak-proof?
-              <span className="transition-transform group-open:rotate-180">
-                ⌄
-              </span>
-            </summary>
-            <p className="mt-3 text-gray-600 leading-relaxed">
-              Yes, our garbage bags are designed with strong and leak-resistant
-              materials to prevent spills.
-            </p>
-          </details>
-
-          <details className="group bg-gray-50 rounded-xl p-5 cursor-pointer">
-            <summary className="flex justify-between items-center font-semibold text-lg">
-              What sizes of garbage bags do you provide?
-              <span className="transition-transform group-open:rotate-180">
-                ⌄
-              </span>
-            </summary>
-            <p className="mt-3 text-gray-600 leading-relaxed">
-              We offer garbage bags in multiple sizes, thickness levels, and
-              colors depending on customer requirements.
-            </p>
-          </details>
-
-          <details className="group bg-gray-50 rounded-xl p-5 cursor-pointer">
-            <summary className="flex justify-between items-center font-semibold text-lg">
-              Do you supply across Delhi NCR?
-              <span className="transition-transform group-open:rotate-180">
-                ⌄
-              </span>
-            </summary>
-            <p className="mt-3 text-gray-600 leading-relaxed">
-              Yes, we supply garbage bags across Delhi, Noida, Gurgaon,
-              Faridabad, and other NCR regions.
-            </p>
-          </details>
-        </div>
-      </section> */}
-
-      {/* about */}
-      {/* <section className="mx-auto lg:px-15 px-5 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="w-full">
-            <img
-              src="/bag/bg-other.webp"
-              alt="Premium Dates Supplier in Delhi NCR"
-              className="w-full h-102 object-cover rounded-2xl shadow-xl"
-            />
-          </div>
-
-          <div>
-            <h2 className="text-2xl md:text-[42px] font-bold mb-5">
-              Looking for the Best Garbage Bag Manufacturer in {city}?
-            </h2>
-
-            <p className="text-black mb-6 leading-relaxed text-lg">
-              Contact <strong>Sangam Plastic Industries</strong> today for
-              pricing, product details, or bulk supply inquiries. Our team will
-              help you choose the right garbage bags for residential,
-              commercial, and industrial waste management, ensuring reliable and
-              hygienic waste disposal solutions across {city}.
-            </p>
-
-            <Link
-              href={"/contact"}
-              className="mx-auto px-4 py-3 text-lg text-white rounded-md bg-green-500 hover:bg-green-600"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </section> */}
+      <EnquiryForm isOpen={enquiry} onClose={() => setEnquiry(false)} />
     </>
   );
 };
