@@ -92,7 +92,7 @@ export default function AboutPage() {
                 "/cat2_2.avif",
                 "/cta.webp",
                 "/cat4_4.avif",
-                "/slider.webp"
+               
               ].map((img, i) => (
                 <SwiperSlide key={i}>
                   <div className="relative w-full h-[500px]">

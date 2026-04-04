@@ -8,81 +8,84 @@ import Image from "next/image";
 import "swiper/css";
 
 export default function WhyChooseKapmix() {
-  const points = [
-    {
-      title: "1. Proven Industry Experience",
-      desc: `Kapmix Machinery has been a trusted name in construction and pollution control equipment since its establishment in 2012, delivering reliable machinery across India. 
+const points = [
+  {
+    title: "1. Proven Industry Experience",
+    desc: `Kapmix Machinery has been a trusted name in construction and pollution control equipment since its establishment in 2012, delivering reliable machinery across India. 
 With years of expertise, the company understands the real challenges of dust suppression in construction, mining, and industrial environments.`,
-    },
-    {
-      title: "2. Wide Range of Anti Smog Solutions",
-      desc: `Kapmix offers a complete portfolio of dust suppression systems, including:
+  },
+
+  {
+    title: "2. Wide Range of Anti Smog Solutions",
+    desc: `Kapmix offers a complete portfolio of dust suppression systems, including:
 • Anti Smog Guns 
 • Truck Mounted Smog Guns 
 • Anti Pollution Guns 
 • Anti Smog Towers & Air Filter Cubes 
 • Air Quality Monitoring Systems 
 This ensures you get all solutions under one roof.`,
-    },
-    {
-      title: "3. High Performance & Effective Dust Control",
-      desc: `Kapmix Anti Smog Guns are designed with:
-• Long throw range (30m to 50m+) 
-• Powerful motors & high-pressure pumps 
-• Fine mist technology for capturing dust particles 
-These systems effectively reduce airborne pollution and improve air quality on-site.`,
-    },
-    {
-      title: "4. Durable & Heavy-Duty Construction",
-      desc: `Manufactured using mild steel and robust components, Kapmix machines are built for:
+  },
+  {
+    title: "3. CPCB Compliant Technology",
+    desc: `Kapmix Anti Smog Guns are designed in accordance with guidelines of the Central Pollution Control Board (CPCB), ensuring:
+• Effective suppression of PM10 & PM2.5 dust particles 
+• Fine mist generation for maximum efficiency 
+• Suitable usage for construction, demolition & industrial sites 
+• Helps meet environmental norms and avoid penalties 
+This makes Kapmix machines ideal for projects requiring pollution control compliance.`,
+  },
+  {
+    title: "4. Durable & Heavy-Duty Construction",
+    desc: `Manufactured using mild steel and robust components, Kapmix machines are built for:
 • Tough construction sites 
 • Mining & industrial operations 
 • Long operational life with minimal maintenance`,
-    },
-    {
-      title: "5. Multiple Mounting Options for Flexibility",
-      desc: `Kapmix provides versatile configurations such as:
+  },
+  {
+    title: "5. Multiple Mounting Options for Flexibility",
+    desc: `Kapmix provides versatile configurations such as:
 • Trolley mounted 
 • Truck mounted 
 • Fixed tower systems 
 This allows easy deployment based on project requirements.`,
-    },
-    {
-      title: "6. Made in India with Quality Assurance",
-      desc: `All machines are manufactured in India, ensuring:
+  },
+ 
+  {
+    title: "6. Made in India with Quality Assurance",
+    desc: `All machines are manufactured in India, ensuring:
 • Better pricing 
 • Faster delivery 
 • Easy availability of spare parts 
 • Compliance with local standards`,
-    },
-    {
-      title: "7. Customization & Bulk Supply Capability",
-      desc: `Kapmix supports:
+  },
+  {
+    title: "7. Customization & Bulk Supply Capability",
+    desc: `Kapmix supports:
 • Custom-built solutions 
 • Bulk orders for large projects 
 • PAN India supply and delivery 
 This makes them ideal for contractors, government projects, and industrial buyers.`,
-    },
-    {
-      title: "8. Strong Production & Supply Capacity",
-      desc: `With consistent production capability and ready stock availability, Kapmix ensures:
+  },
+  {
+    title: "8. Strong Production & Supply Capacity",
+    desc: `With consistent production capability and ready stock availability, Kapmix ensures:
 • Quick delivery timelines 
 • Reliable supply for urgent requirements`,
-    },
-    {
-      title: "9. Competitive Pricing",
-      desc: `Kapmix offers cost-effective Anti Smog Guns without compromising quality, making them suitable for both small and large-scale projects.`,
-    },
-    {
-      title: "10. Trusted by Construction & Industrial Sector",
-      desc: `Kapmix products are widely used in:
+  },
+  {
+    title: "9. Competitive Pricing",
+    desc: `Kapmix offers cost-effective Anti Smog Guns without compromising quality, making them suitable for both small and large-scale projects.`,
+  },
+  {
+    title: "10. Trusted by Construction & Industrial Sector",
+    desc: `Kapmix products are widely used in:
 • Construction sites 
 • Road projects 
 • Mining operations 
 • Industrial plants 
 Their machines help maintain environmental compliance and worker safety.`,
-    },
-  ];
+  },
+];
 
   return (
     <section className="w-full bg-white py-20 px-6 md:px-16">
