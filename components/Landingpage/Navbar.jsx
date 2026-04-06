@@ -129,7 +129,7 @@ export default function Navbar() {
             <a
               href="https://wa.me/919999926558"
               target="_blank"
-              className="flex items-center gap-2 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-full transition text-md"
+              className="flex items-center gap-2 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-full transition text-md lg:hidden"
             >
               <FaWhatsapp size={25} />
               Chat

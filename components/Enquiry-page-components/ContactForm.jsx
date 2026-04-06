@@ -76,7 +76,7 @@ Contact: ${phone}`;
   };
 
   return (
-    <div className="flex flex-col mb-6">
+    <div className="flex flex-col mb-6 lg:hidden">
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}

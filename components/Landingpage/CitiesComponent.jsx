@@ -1,10 +1,15 @@
 "use client";
 import Link from "next/link";
 import { serviceLocations } from "@/Data";
+import { usePathname } from "next/navigation";
 
 const CitesKeyword = () => {
+  const pathname = usePathname();
+  const hideLayout = pathname.startsWith("/enquiry");
   return (
-    <div className="px-3 overflow-hidden mb-10 md:px-8 lg:px-26 mt-6">
+    <div
+      className={`px-3 overflow-hidden mb-10 md:px-8 lg:px-26 mt-6 ${hideLayout && "hidden"}`}
+    >
       <h2 className="text-3xl  md:text-5xl font-bold md:my-12 mb-8 ">
         Our Supply <span className="text-[#E7000B]">Network</span>
       </h2>
