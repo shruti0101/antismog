@@ -1,4 +1,14 @@
-import { ArrowBigDownDash, Bubbles, ChartNoAxesGantt, Factory, FireExtinguisher, Plug, Rotate3d, SprayCan, Workflow } from "lucide-react";
+import {
+  ArrowBigDownDash,
+  Bubbles,
+  ChartNoAxesGantt,
+  Factory,
+  FireExtinguisher,
+  Plug,
+  Rotate3d,
+  SprayCan,
+  Workflow,
+} from "lucide-react";
 import Image from "next/image";
 
 const features = [
@@ -21,15 +31,22 @@ const applications = [
 
 export default function FeaturesApplications() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 lg:py-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2 md:p-6 lg:py-20 overflow-hidden">
       {/* Key Features */}
       <div>
         <h2 className="text-2xl font-bold mb-4">KEY FEATURES</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-5">
           {features.map((feature, index) => (
-            <div key={index} className="flex items-center gap-3 border-2 px-5 py-5 rounded-lg">
-              <span className="text-lg bg-red-400 h-10 w-10 flex justify-center items-center rounded-full">{feature.icon}</span>
-              <span className="text-red-500 font-bold text-lg">{feature.text}</span>
+            <div
+              key={index}
+              className="flex items-center flex-col lg:flex-row gap-3 border-2 px-2 py-5 rounded-lg"
+            >
+              <span className="text-lg bg-red-400 h-10 w-10 flex justify-center items-center rounded-full">
+                {feature.icon}
+              </span>
+              <span className="text-red-500 font-bold text-lg text-center lg:text-left">
+                {feature.text}
+              </span>
             </div>
           ))}
         </div>

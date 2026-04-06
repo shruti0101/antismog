@@ -15,7 +15,7 @@ export default function LayoutWrapper({ children }) {
     <>
       {!hideLayout && <Navbar />}
       {children}
-      {hideLayout && <CitesKeyword />}
+      {!hideLayout && <CitesKeyword />}
       {!hideLayout && <Footer />}
     </>
   );

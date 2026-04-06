@@ -1,6 +1,7 @@
 "use client";
 
 import CategoryProducts from "@/components/Enquiry-page-components/CategoryProducts";
+import ContactForm from "@/components/Enquiry-page-components/ContactForm";
 import Counter from "@/components/Enquiry-page-components/Counter";
 import HeroSection from "@/components/Enquiry-page-components/HeroSection";
 import KeyFeature from "@/components/Enquiry-page-components/KeyFeature";
@@ -14,7 +15,7 @@ const Enquiry = () => {
   return (
     <div className="mt-22 md:mt-0">
       <Hero />
-      <ClienteleSlider />
+      <ContactForm />
       <CategoryProducts />
       <HighQualityCTA />
       <KeyFeature />

@@ -3,8 +3,14 @@
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import EnquiryForm from "@/components/Enquiry";
+import ClienteleSlider from "../Landingpage/Clientele";
 
 const ContactForm = () => {
+  const [enquiry, setEnquiry] = useState(false);
+
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(null);
 
@@ -70,8 +76,30 @@ Contact: ${phone}`;
   };
 
   return (
-    <div className="flex flex-col">
-      <div className="bg-white p-10 rounded-3xl shadow-2xl border">
+    <div className="flex flex-col mb-6">
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={() => setEnquiry(true)}
+        className="relative flex items-center justify-center mx-3 -mt-10 mb-5 gap-3 bg-red-600 hover:bg-red-700 text-white px-7 py-4 rounded-xl font-semibold overflow-hidden shadow-lg shadow-red-600/30 lg:hidden"
+      >
+        <span className="relative z-10">Get a Free Quote</span>
+
+        {/* SHINE */}
+        <motion.div
+          animate={{ x: ["-100%", "200%"] }}
+          transition={{
+            repeat: Infinity,
+            duration: 2.5,
+            ease: "linear",
+          }}
+          className="absolute top-0 left-0 w-1/2 h-full bg-white/30 skew-x-12"
+        />
+      </motion.button>
+
+      <ClienteleSlider />
+
+      <div className="bg-white p-5 md:p-10 rounded-3xl shadow-2xl border my-4 mx-3">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">
           Send Your Requirement
         </h2>
@@ -165,9 +193,7 @@ Contact: ${phone}`;
         </form>
       </div>
 
-      <div>
-        <Image src="/process.png" width="1000" height="1000" alt="contact image" className="" />
-      </div>
+      <EnquiryForm isOpen={enquiry} onClose={() => setEnquiry(false)} />
     </div>
   );
 };

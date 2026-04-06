@@ -38,21 +38,21 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="w-full py-20 px-6 bg-gray-50">
+    <section className="w-full py-4 md:py-20 px-2 md:px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-gray-900">
           Why Choose <span className="text-red-600">Us</span>
         </h2>
-        <div className="w-24 h-1 bg-red-600 mx-auto mb-8 rounded-full"></div>
-        <p className="text-gray-600 mb-16 max-w-3xl mx-auto text-lg leading-relaxed">
+        <div className="w-24 h-1 bg-red-600 mx-auto mb-3 md:mb-8 rounded-full"></div>
+        <p className="text-gray-600 mb-2 md:mb-16 max-w-3xl mx-auto text-lg leading-relaxed">
           Engineered for performance, durability, and reliability. We are
           committed to providing the best dust suppression solutions in the
           industry.
         </p>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-6">
           {points.map((point, index) => (
             <motion.div
               key={index}

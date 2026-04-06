@@ -21,8 +21,10 @@ import {
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import EnquiryForm from "../Enquiry";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [showTopBar, setShowTopBar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,6 +33,8 @@ export default function Navbar() {
   const [enquiry, setEnquiry] = useState(false);
 
   const [showCategoryOnPhone, setShowCategoryOnPhone] = useState(false);
+
+  const hideLayout = pathname.startsWith("/enquiry");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -121,6 +125,16 @@ export default function Navbar() {
             />
           </Link>
 
+          {hideLayout && (
+            <a
+              href="https://wa.me/919999926558"
+              target="_blank"
+              className="flex items-center gap-2 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-full transition text-md"
+            >
+              <FaWhatsapp size={25} />
+              Chat
+            </a>
+          )}
           <button
             className="lg:hidden"
             onClick={() => setPhoneNavbar((prev) => !prev)}
