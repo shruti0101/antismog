@@ -233,9 +233,8 @@ export default function ProductPage({ params }) {
               >
                 Request Quote
               </button>
-
               <a
-                href={`https://wa.me/919810057441?text=Hello I am interested in ${product.name}`}
+                href={`https://wa.me/919999926558?text=Hello I am interested in ${product.name}`}
                 target="_blank"
                 className="flex-1 py-4 text-center rounded-xl border border-green-500 text-green-600 hover:bg-green-500 hover:text-white transition font-semibold"
               >
