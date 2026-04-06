@@ -2,14 +2,14 @@ export const dynamic = "force-dynamic";
 
 
 import { categories } from "@/Data";
-import { client } from "@/lib/sanity";
-import { groq } from "next-sanity";
+// import { client } from "@/lib/sanity";
+// import { groq } from "next-sanity";
 
 // Function to fetch all blogs from Sanity
-async function getAllBlogs() {
-  const query = groq`*[_type=="blog"]{slug, date}`;
-  return client.fetch(query);
-}
+// async function getAllBlogs() {
+//   const query = groq`*[_type=="blog"]{slug, date}`;
+//   return client.fetch(query);
+// }
 
 export async function GET() {
   const baseUrl = "https://antismoggunsupplier.com"; 
@@ -18,7 +18,7 @@ export async function GET() {
   const allProducts = categories.flatMap((c) => c.products);
 
   // Fetch blogs
-  const blogs = await getAllBlogs();
+  // const blogs = await getAllBlogs();
 
 
 
@@ -27,7 +27,7 @@ export async function GET() {
     { loc: `${baseUrl}/about`, priority: 0.8, changefreq: "yearly" },
     { loc: `${baseUrl}/contact`, priority: 0.8, changefreq: "yearly" },
     { loc: `${baseUrl}/products`, priority: 0.8, changefreq: "yearly" },
-    { loc: `${baseUrl}/our-blogs`, priority: 0.9, changefreq: "weekly" },
+    // { loc: `${baseUrl}/our-blogs`, priority: 0.9, changefreq: "weekly" },
   ]
     .map(
       (page) => `
@@ -80,20 +80,20 @@ export async function GET() {
     .join("");
 
   // Blogs
-  const blogUrls = blogs
-    .map(
-      (blog) => `
-      <url>
-        <loc>${baseUrl}/blog/${blog.slug.current}</loc>
-        <lastmod>${
-          blog.date ? new Date(blog.date).toISOString() : new Date().toISOString()
-        }</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-      </url>
-    `
-    )
-    .join("");
+  // const blogUrls = blogs
+  //   .map(
+  //     (blog) => `
+  //     <url>
+  //       <loc>${baseUrl}/blog/${blog.slug.current}</loc>
+  //       <lastmod>${
+  //         blog.date ? new Date(blog.date).toISOString() : new Date().toISOString()
+  //       }</lastmod>
+  //       <changefreq>monthly</changefreq>
+  //       <priority>0.6</priority>
+  //     </url>
+  //   `
+  //   )
+  //   .join("");
 
 
 
@@ -118,7 +118,7 @@ export async function GET() {
       ${staticPages}
     ${categoryUrls}
     ${productUrls}
-    ${blogUrls}
+
 
 
   </urlset>`;
