@@ -81,7 +81,7 @@ Contact: ${phone}`;
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setEnquiry(true)}
-        className="relative flex items-center justify-center mx-3 -mt-10 mb-5 gap-3 bg-red-600 hover:bg-red-700 text-white px-7 py-4 rounded-xl font-semibold overflow-hidden shadow-lg shadow-red-600/30 lg:hidden"
+        className="relative flex items-center justify-center mx-3  mb-5 gap-3 bg-red-600 hover:bg-red-700 text-white px-7 py-4 rounded-xl font-semibold overflow-hidden shadow-lg shadow-red-600/30 lg:hidden"
       >
         <span className="relative z-10">Get a Free Quote</span>
 

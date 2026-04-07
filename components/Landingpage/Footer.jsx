@@ -140,7 +140,7 @@ export default function Footer() {
         {/* ===== 🔥 TRUST CERTIFICATE ===== */}
         <div>
           <h3 className="text-lg font-semibold mb-5 text-red-500">
-            Trust Certificate
+            Trust Elite
           </h3>
 
           {/* IMAGE */}
