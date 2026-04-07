@@ -96,16 +96,25 @@ export default function Navbar() {
 
           {/* SOCIAL */}
           <div className="flex items-center gap-2 ml-auto">
-            {[Facebook, Twitter, Instagram, Youtube, Linkedin].map(
-              (Icon, i) => (
-                <div
-                  key={i}
-                  className="p-2 rounded-full hover:bg-white/20 transition cursor-pointer"
-                >
-                  <Icon size={16} />
-                </div>
-              ),
-            )}
+            {[
+              {
+                icon: <Facebook size={16} />,
+                link: "https://www.facebook.com/profile.php?id=61575396855062#",
+              },
+              {
+                icon: <Instagram size={16} />,
+                link: "https://www.instagram.com/kapmix01/",
+              },
+            ].map((item, i) => (
+              <a
+                target="_blank"
+                key={i}
+                href={item?.link}
+                className="p-2 rounded-full hover:bg-white/20 transition cursor-pointer"
+              >
+                {item?.icon}
+              </a>
+            ))}
           </div>
         </div>
       </div>
