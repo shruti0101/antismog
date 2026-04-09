@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Navbar from "@/components/Landingpage/Navbar";
 import Footer from "@/components/Landingpage/Footer";
-import CitesKeyword from "./Landingpage/CitiesComponent";
+// import CitesKeyword from "./Landingpage/CitiesComponent";
 
 export default function LayoutWrapper({ children }) {
   const pathname = usePathname();
@@ -15,7 +15,7 @@ export default function LayoutWrapper({ children }) {
     <>
       {!hideLayout && <Navbar />}
       {children}
-      {!hideLayout && <CitesKeyword />}
+      {/* {!hideLayout && <CitesKeyword />} */}
       {!hideLayout && <Footer />}
     </>
   );

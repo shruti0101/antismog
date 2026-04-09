@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-red-600/10 blur-[120px]" />
 
       {/* ================= MAIN ================= */}
-      <div className="relative max-w-[1400px] mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div className="relative max-w-[1400px] mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* ===== ABOUT ===== */}
         <div>
           <div className="bg-white rounded-xl h-50 w-50 mb-5 md:w-60 md:h-auto lg:w-50 lg:h-auto">
@@ -44,7 +44,39 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* ===== PRODUCTS ===== */}
+    
+
+        {/* ===== LINKS ===== */}
+        <div>
+          <h3 className="text-lg font-semibold mb-5">Quick Links</h3>
+
+          <ul className="space-y-3 text-sm">
+            {[
+              { name: "Home", link: "/" },
+              { name: "About", link: "/about" },
+              { name: "Products", link: "/products" },
+              { name: "Blogs", link: "/" },
+              { name: "Contact", link: "/contact" },
+              { name: "Sitemap", link: "/sitemap" },
+              { name: "Enquiry", link: "/enquiry" },
+            ].map((item, i) => (
+              <Link
+                href={item?.link}
+                key={i}
+                className="group flex cursor-pointer items-center gap-2 text-white hover:text-white transition "
+              >
+                <span className="text-red-500 group-hover:translate-x-1 transition">
+                  →
+                </span>
+                {item?.name}
+              </Link>
+            ))}
+          </ul>
+        </div>
+
+
+
+    {/* ===== PRODUCTS ===== */}
         <div>
           <h3 className="text-lg font-semibold cursor-pointer mb-5">
             Product Range
@@ -83,33 +115,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* ===== LINKS ===== */}
-        <div>
-          <h3 className="text-lg font-semibold mb-5">Quick Links</h3>
-
-          <ul className="space-y-3 text-sm">
-            {[
-              { name: "Home", link: "/" },
-              { name: "About", link: "/about" },
-              { name: "Products", link: "/products" },
-              { name: "Blogs", link: "/" },
-              { name: "Contact", link: "/contact" },
-              { name: "Sitemap", link: "/sitemap" },
-              { name: "Enquiry", link: "/enquiry" },
-            ].map((item, i) => (
-              <Link
-                href={item?.link}
-                key={i}
-                className="group flex cursor-pointer items-center gap-2 text-white hover:text-white transition "
-              >
-                <span className="text-red-500 group-hover:translate-x-1 transition">
-                  →
-                </span>
-                {item?.name}
-              </Link>
-            ))}
-          </ul>
-        </div>
 
         {/* ===== CONTACT ===== */}
         <div>
@@ -138,12 +143,12 @@ export default function Footer() {
         </div>
 
         {/* ===== 🔥 TRUST CERTIFICATE ===== */}
-        <div>
+        {/* <div>
           <h3 className="text-lg font-semibold mb-5 text-red-500">
-            Trust Elite
+            Trust Certificate
           </h3>
 
-          {/* IMAGE */}
+   
           <div
             onClick={() => setIsModalOpen(true)}
             className="cursor-pointer group"
@@ -163,7 +168,7 @@ export default function Footer() {
             customer service, outstanding business practices, and a dedication
             to building trust with their customers.
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* ===== BOTTOM ===== */}
