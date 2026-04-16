@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 
-import { categories } from "@/Data";
+import { categories, serviceLocations } from "@/Data";
 // import { client } from "@/lib/sanity";
 // import { groq } from "next-sanity";
 
@@ -12,7 +12,7 @@ import { categories } from "@/Data";
 // }
 
 export async function GET() {
-  const baseUrl = "https://antismoggunsupplier.com"; 
+  const baseUrl = "https://antismoggunsupplier.com";
 
   // Flatten all products
   const allProducts = categories.flatMap((c) => c.products);
@@ -22,7 +22,7 @@ export async function GET() {
 
 
 
-    // Static pages (About, Contact, Blog Listing)
+  // Static pages (About, Contact, Blog Listing)
   const staticPages = [
     { loc: `${baseUrl}/about`, priority: 0.8, changefreq: "yearly" },
     { loc: `${baseUrl}/contact`, priority: 0.8, changefreq: "yearly" },
@@ -41,7 +41,7 @@ export async function GET() {
     )
     .join("");
 
-   // Homepage
+  // Homepage
   const homepage = `
     <url>
       <loc>${baseUrl}</loc>
@@ -98,18 +98,18 @@ export async function GET() {
 
 
 
-//     const locationUrls = serviceLocations
-//   .map(
-//     (loc) => `
-//       <url>
-//         <loc>${baseUrl}${loc.href}</loc>
-//         <lastmod>${new Date().toISOString()}</lastmod>
-//         <changefreq>weekly</changefreq>
-//         <priority>0.7</priority>
-//       </url>
-//     `
-//   )
-//   .join("");
+  const locationUrls = serviceLocations
+    .map(
+      (loc) => `
+      <url>
+        <loc>${baseUrl}${loc.href}</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+      </url>
+    `
+    )
+    .join("");
 
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -118,6 +118,7 @@ export async function GET() {
       ${staticPages}
     ${categoryUrls}
     ${productUrls}
+    ${locationUrls}
 
 
 

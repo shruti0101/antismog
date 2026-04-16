@@ -56,14 +56,14 @@ const WhyChooseUs = () => {
           {points.map((point, index) => (
             <motion.div
               key={index}
-              whileHover={{ y: -10 }}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.5,
-                delay: index * 0.1,
-              }}
+              // whileHover={{ y: -10 }}
+              // initial={{ opacity: 0, y: 20 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // viewport={{ once: true }}
+              // transition={{
+              //   duration: 0.5,
+              //   delay: index * 0.1,
+              // }}
               className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-2xl hover:border-red-200 transition-all duration-300 flex flex-col items-center group"
             >
               <div className="mb-5 p-4 bg-red-50 text-red-600 rounded-2xl group-hover:bg-red-600 group-hover:text-white transition-all duration-300">

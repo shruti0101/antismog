@@ -99,8 +99,8 @@ Contact: ${phone}`;
 
       <ClienteleSlider />
 
-      <div className="bg-white p-5 md:p-10 rounded-3xl shadow-2xl border my-4 mx-3">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">
+      <div className="bg-white p-5 md:p-10 rounded-3xl shadow-2xl border border-red-400 my-4 mx-4">
+        <h2 className="text-2xl font-bold mb-6 text-red-600 text-center">
           Send Your Requirement
         </h2>
 

@@ -34,8 +34,8 @@ export default function ClienteleSlider2() {
         {/* SLIDER */}
         <Swiper
           modules={[Autoplay, FreeMode]}
-          spaceBetween={40}
-          slidesPerView={2}
+          // spaceBetween={40}
+          // slidesPerView={2}
           loop={true}
           speed={4000}
           freeMode={true}
@@ -45,9 +45,18 @@ export default function ClienteleSlider2() {
           }}
           allowTouchMove={false}
           breakpoints={{
-            640: { slidesPerView: 3 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 5 },
+            0: {
+              slidesPerView: 3,
+              spaceBetween: 10
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 20
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 40
+            },
           }}
         >
           {clients.map((logo, index) => (
