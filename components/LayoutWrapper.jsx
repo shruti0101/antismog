@@ -6,7 +6,7 @@ import Footer from "@/components/Landingpage/Footer";
 // import CitesKeyword from "./Landingpage/CitiesComponent";
 
 export default function LayoutWrapper({ children }) {
-  const pathname = usePathname();
+  const pathname = usePathname();   
 
   // Hide Navbar/Footer on /studio routes
   const hideLayout = pathname.startsWith("/studio", "/login", "/enquiry");

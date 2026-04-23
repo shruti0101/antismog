@@ -1,10 +1,12 @@
 import BlogClient from "./BlogClient";
 
 export const metadata = {
-  title: "Blogs – Waste Management Insights & Tips | Sangam Plastic Industries",
-  description: "Read expert articles, news, and practical tips about garbage bags, waste management solutions, recycling best practices, and sustainability from Sangam Plastic Industries.",
+  title:
+    "Blogs – Waste Management Insights & Tips | Sangam Plastic Industries",
+  description:
+    "Read expert articles, news, and tips on waste management and sustainability.",
 };
 
-export default function AboutUsPage() {
+export default function BlogsPage() {
   return <BlogClient />;
 }

@@ -10,7 +10,23 @@ const blog = {
   type: "document",
   fields: [
     { name: "title", title: "Title", type: "string" },
-    { name: "slug", title: "Slug", type: "slug", options: { source: "title" } },
+  {
+  name: "slug",
+  title: "Slug",
+  type: "slug",
+  options: {
+    source: "title",
+    maxLength: 200,
+    slugify: (input) =>
+      input
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s-]/g, "")  
+        .replace(/\s+/g, "-")       
+        .replace(/--+/g, "-")       
+        .slice(0, 200),
+  },
+},
     { name: "date", title: "Publish Date", type: "datetime" },
     { name: "excerpt", title: "Excerpt", type: "text" },
 
@@ -81,8 +97,8 @@ const blog = {
 
 
 export default defineConfig({
-  name: "sangam-studio",
-  title: "sangam Studio",
+  name: "kapmix-studio",
+  title: "kapmix Studio",
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   apiVersion: "2024-06-01",

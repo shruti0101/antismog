@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -17,40 +17,34 @@ async function getBlogs() {
   );
 }
 
-export default function BlogsPage() {
+export default function BlogClient() {
   const [blogs, setBlogs] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(6); // ✅ initially show 6 blogs
+  const [visibleCount, setVisibleCount] = useState(6);
 
   useEffect(() => {
-    async function fetchBlogs() {
-      const data = await getBlogs();
-      setBlogs(data);
-    }
-    fetchBlogs();
+    getBlogs().then(setBlogs);
   }, []);
 
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero */}
       <section
-        style={{ backgroundImage: "url('/bag/bg-other.webp')" }}
-        className="w-full bg-cover h-[50vh] md:h-[90vh]  relative"
+        style={{ backgroundImage: "url('/process.png')" }}
+        className="w-full bg-cover h-[50vh] md:h-[100vh] relative"
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center ">
-           <p className="text-emerald-700 text-lg ">Home / Blogs</p>
-          <h2 className="text-white text-6xl font-bold z-10 ">
-            Our Blogs
-          </h2>
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <p className="text-white">Home / Blogs</p>
+          <h2 className="text-white text-5xl font-bold">Our Blogs</h2>
         </div>
       </section>
 
-      {/* Blog Listing */}
+      {/* Blogs */}
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.slice(0, visibleCount).map((b) => (
             <article
-              key={b.slug?.current || b.title}
+              key={b.slug?.current}
               className="bg-white border rounded-lg shadow"
             >
               {b.imageUrl && (
@@ -62,22 +56,21 @@ export default function BlogsPage() {
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
               )}
+
               <div className="p-4">
                 <h2 className="text-lg font-semibold mb-2">{b.title}</h2>
-                <p className="text-sm text-gray-500 mb-3">
+
+                <p className="text-sm text-gray-500 mb-2">
                   {b.date
-                    ? new Date(b.date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })
+                    ? new Date(b.date).toLocaleDateString()
                     : "No date"}
                 </p>
 
-                <p className="text-gray-700 text-sm">{b.excerpt}</p>
+                <p className="text-sm text-gray-700">{b.excerpt}</p>
+
                 <Link
-                  href={`/our-blogs/${b.slug.current}`}
-                  className="text-blue-600 font-medium hover:underline mt-3 block"
+                href={`/our-blogs/${encodeURIComponent(b.slug.current)}`}
+                  className="text-blue-600 mt-3 inline-block"
                 >
                   Read More →
                 </Link>
@@ -86,12 +79,12 @@ export default function BlogsPage() {
           ))}
         </div>
 
-        {/* ✅ Load More Button */}
+        {/* Load More */}
         {visibleCount < blogs.length && (
           <div className="text-center mt-10">
             <button
-              onClick={() => setVisibleCount((prev) => prev + 6)} // load +6 blogs each click
-              className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-md shadow hover:bg-blue-700 transition"
+              onClick={() => setVisibleCount((prev) => prev + 6)}
+              className="px-6 py-3 bg-blue-600 text-white rounded"
             >
               Load More
             </button>

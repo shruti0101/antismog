@@ -200,7 +200,7 @@ export default function Navbar() {
                 )}
               </div>
               <Link
-                href="/blogs"
+                href="/our-blogs"
                 onClick={() => setPhoneNavbar(false)}
                 className="hover:text-red-600 transition"
               >
@@ -311,7 +311,7 @@ export default function Navbar() {
             </div>
 
             {/* BLOGS */}
-            <Link href="/blogs" className="relative group">
+            <Link href="/our-blogs" className="relative group">
               <span className="text-black group-hover:text-yellow-500 transition">
                 BLOGS
               </span>

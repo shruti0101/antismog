@@ -21,10 +21,13 @@ async function getBlog(slug) {
 
 // ✅ SEO
 export async function generateMetadata({ params }) {
-  const blog = await getBlog(params.slug);
+  const { slug } = await params;
+  const decodedSlug = decodeURIComponent(slug);
+
+  const blog = await getBlog(decodedSlug);
 
   return {
-    title: blog?.metaTitle || blog?.title || "Blog |  Studio",
+    title: blog?.metaTitle || blog?.title || "Blog | Studio",
     description:
       blog?.metaDescription ||
       blog?.excerpt ||
@@ -32,8 +35,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
+// PortableText components
 const components = {
-  types: {},
   list: {
     bullet: ({ children }) => <ul className="list-disc ml-6">{children}</ul>,
     number: ({ children }) => <ol className="list-decimal ml-6">{children}</ol>,
@@ -48,83 +51,52 @@ const components = {
     h3: ({ children }) => (
       <h3 className="text-xl font-semibold text-gray-700 mb-2">{children}</h3>
     ),
-
-    h4: ({ children }) => (
-      <h4 className="text-lg font-semibold text-gray-600 mb-2">{children}</h4>
-    ),
-
-    h5: ({ children }) => (
-      <h5 className="text-base font-semibold text-gray-500 mb-2">{children}</h5>
-    ),
     normal: ({ children }) => (
       <p className="text-black leading-relaxed mb-4">{children}</p>
     ),
-    blockquote: ({ children }) => (
-      <blockquote className="border-l-4 border-blue-500 pl-4 italic text-gray-600 my-4">
-        {children}
-      </blockquote>
-    ),
   },
-marks: {
-  strong: ({ children }) => <strong className="font-bold">{children}</strong>,
-  em: ({ children }) => <em className="italic">{children}</em>,
-  underline: ({ children }) => <span className="underline">{children}</span>,
-  link: ({ value, children }) => (
-    <a
-      href={value?.href}
-      className="text-blue-600 hover:underline"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {children}
-    </a>
-  ),
-  color: ({ value, children }) => {
-    const colorHex = value?.hex || "inherit";
-    return <span style={{ color: colorHex }}>{children}</span>;
-  },
-}
 };
 
 export default async function BlogDetail({ params }) {
-  const blog = await getBlog(params.slug);
+  const { slug } = await params;
+  const decodedSlug = decodeURIComponent(slug);
 
-  if (!blog) return <p>Blog not found</p>;
+  const blog = await getBlog(decodedSlug);
+
+  if (!blog) return <p className="p-10 text-center">Blog not found</p>;
 
   return (
     <>
-     <section
-  style={{ backgroundImage: "url('/bag/bg-other.webp')" }}
-  className="relative h-[50vh] md:h-[90vh] bg-center bg-cover overflow-hidden"
->
-  <div className="absolute inset-0 bg-black/40 z-[1]"></div>
-  
-        <div className="relative  z-10 flex h-full items-center justify-center max-w-6xl mx-auto px-6">
-          <div className="text-emerald-700 max-w-2xl bg-white p-2 rounded">
-       
+      {/* Hero */}
+      <section
+        style={{ backgroundImage: "url('/process.png')" }}
+        className="relative h-[50vh] md:h-[90vh] bg-center bg-cover"
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
 
-            <h1 className="text-3xl md:text-6xl font-bold leading-tight mt-3">
+        <div className="relative z-10 flex h-full items-center justify-center px-6">
+          <div className="bg-white p-4 rounded text-center">
+            <h1 className="text-3xl md:text-4xl font-bold">
               {blog.title}
             </h1>
-
-          
           </div>
         </div>
-</section>
+      </section>
 
-      <div className="max-w-6xl mx-auto px-6 py-10">
+      {/* Content */}
+      <div className="max-w-5xl mx-auto px-6 py-10">
         {blog.imageUrl && (
           <Image
             src={blog.imageUrl}
             alt={blog.title}
             width={800}
             height={400}
-            className="rounded my-6"
+            className="rounded mb-6"
           />
         )}
 
-        <p className="text-sm text-red-500 mb-3">
-          published on:{" "}
+        <p className="text-sm text-red-500 mb-4">
+          Published on:{" "}
           {blog.date
             ? new Date(blog.date).toLocaleDateString("en-US", {
                 year: "numeric",
@@ -136,7 +108,6 @@ export default async function BlogDetail({ params }) {
 
         <PortableText value={blog.content} components={components} />
       </div>
-    
     </>
   );
 }
