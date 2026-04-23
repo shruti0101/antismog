@@ -66,6 +66,7 @@ export async function GET() {
     .join("");
 
   // Products
+  console.log(allProducts);
   const productUrls = allProducts
     .map(
       (product) => `

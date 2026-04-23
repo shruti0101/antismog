@@ -54,7 +54,7 @@ const Sitemap = () => {
                 {category.products.map((product) => (
                   <Link
                     key={product.id}
-                    href={`/product/${product.id}`}
+                    href={`/products/${product.id}`}
                     className="flex items-center gap-2 text-sm text-gray-600 hover:text-red-600 transition"
                   >
                     <ChevronRight className="w-3 h-3 text-gray-400" />
