@@ -47,7 +47,7 @@ const industries = [
 
 
         {/* ===== RIGHT VIDEO AREA ===== */}
-        <div className="relative">
+        <div className="relative lg:block hidden">
 
           {/* VIDEO PLACEHOLDER */}
           <div className="w-full h-[620px] rounded-2xl border border-white/10 bg-black/40 backdrop-blur-md flex items-center justify-center text-gray-400">

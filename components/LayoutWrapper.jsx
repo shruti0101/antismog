@@ -9,7 +9,7 @@ export default function LayoutWrapper({ children }) {
   const pathname = usePathname();   
 
   // Hide Navbar/Footer on /studio routes
-  const hideLayout = pathname.startsWith("/studio", "/login", "/enquiry");
+  const hideLayout = pathname.startsWith("/studio", "/login", "/inquiry");
 
   return (
     <>

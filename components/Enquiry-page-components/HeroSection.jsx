@@ -43,7 +43,7 @@ const HeroSection = () => {
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={`desktop-${currentIndex}`}
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-auto"
               custom={direction}
               initial={{ x: direction > 0 ? "100%" : "-100%" }}
               animate={{ x: 0 }}
@@ -63,11 +63,11 @@ const HeroSection = () => {
         </section>
 
         {/* ✅ Mobile Hero */}
-        <section className="relative block md:hidden lg:hidden w-full mt-20 h-[55vh] overflow-hidden">
+        <section className="relative block md:hidden lg:hidden w-full mt-20 h-[48vh] overflow-hidden">
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={`mobile-${currentIndex}`}
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-auto"
               custom={direction}
               initial={{ x: direction > 0 ? "100%" : "-100%" }}
               animate={{ x: 0 }}

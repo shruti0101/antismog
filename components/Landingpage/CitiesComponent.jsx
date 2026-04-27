@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const CitesKeyword = () => {
   const pathname = usePathname();
-  const hideLayout = pathname.startsWith("/enquiry");
+  const hideLayout = pathname.startsWith("/inquiry");
   return (
     <div
       className={`px-3 overflow-hidden mb-10 md:px-8 lg:px-26 mt-6 ${hideLayout && "hidden"}`}

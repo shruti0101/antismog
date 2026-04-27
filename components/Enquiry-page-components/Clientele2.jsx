@@ -24,10 +24,10 @@ export default function ClienteleSlider2() {
   ];
 
   return (
-    <section className="bg-white md:my-10 hidden lg:flex">
+    <section className="bg-gray-100 pt-5 md:pt-8">
       <div className="w-full mx-auto px-4">
         {/* HEADING */}
-        <h2 className="text-center text-2xl md:text-4xl font-semibold text-black mb-10">
+        <h2 className="text-center text-[28px] md:text-4xl font-semibold text-black">
           Trusted by Leading Clients
         </h2>
 
@@ -58,6 +58,7 @@ export default function ClienteleSlider2() {
               spaceBetween: 40
             },
           }}
+          className="!py-6"
         >
           {clients.map((logo, index) => (
             <SwiperSlide key={index}>

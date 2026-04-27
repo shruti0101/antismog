@@ -34,7 +34,7 @@ export default function Navbar() {
 
   const [showCategoryOnPhone, setShowCategoryOnPhone] = useState(false);
 
-  const hideLayout = pathname.startsWith("/enquiry");
+  const hideLayout = pathname.startsWith("/inquiry");
 
   useEffect(() => {
     const handleScroll = () => {

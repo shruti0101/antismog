@@ -77,29 +77,8 @@ Contact: ${phone}`;
 
   return (
     <div className="flex flex-col mb-6 lg:hidden">
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={() => setEnquiry(true)}
-        className="relative flex items-center justify-center mx-3  mb-5 gap-3 bg-red-600 hover:bg-red-700 text-white px-7 py-4 rounded-xl font-semibold overflow-hidden shadow-lg shadow-red-600/30 lg:hidden"
-      >
-        <span className="relative z-10">Get a Free Quote</span>
 
-        {/* SHINE */}
-        <motion.div
-          animate={{ x: ["-100%", "200%"] }}
-          transition={{
-            repeat: Infinity,
-            duration: 2.5,
-            ease: "linear",
-          }}
-          className="absolute top-0 left-0 w-1/2 h-full bg-white/30 skew-x-12"
-        />
-      </motion.button>
-
-      <ClienteleSlider />
-
-      <div className="bg-white p-5 md:p-10 rounded-3xl shadow-2xl border border-red-400 my-4 mx-4">
+      <div className="bg-gray-100 p-5 md:p-10 rounded-3xl shadow-2xl border border-red-400 my-4 mx-4">
         <h2 className="text-2xl font-bold mb-6 text-red-600 text-center">
           Send Your Requirement
         </h2>
@@ -110,7 +89,7 @@ Contact: ${phone}`;
               type="text"
               required
               placeholder="Full Name"
-              className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
+              className="border border-red-300 rounded-lg px-4 py-3 w-full focus:ring-1 focus:ring-red-600 outline-none"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -121,7 +100,7 @@ Contact: ${phone}`;
               maxLength={10}
               pattern="[0-9]{10}"
               placeholder="Phone Number"
-              className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
+              className="border border-red-300 rounded-lg px-4 py-3 w-full focus:ring-1 focus:ring-red-600 outline-none"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
@@ -131,13 +110,13 @@ Contact: ${phone}`;
             <input
               type="text"
               placeholder="City"
-              className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
+              className="border border-red-300 rounded-lg px-4 py-3 w-full focus:ring-1 focus:ring-red-600 outline-none"
               value={city}
               onChange={(e) => setCity(e.target.value)}
             />
 
             <select
-              className="border rounded-lg px-4 py-3 w-full bg-red-600 text-white font-semibold"
+              className="border border-red-300 rounded-lg px-4 py-3 w-full focus:ring-1 focus:ring-red-600 outline-none"
               value={requirement}
               onChange={(e) => setRequirement(e.target.value)}
             >
@@ -159,7 +138,7 @@ Contact: ${phone}`;
             type="email"
             required
             placeholder="Email Address"
-            className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
+            className="border border-red-300 rounded-lg px-4 py-3 w-full focus:ring-1 focus:ring-red-600 outline-none"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -167,7 +146,7 @@ Contact: ${phone}`;
           <textarea
             rows={4}
             placeholder="Message"
-            className="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-red-600 outline-none"
+            className="border border-red-300 rounded-lg px-4 py-3 w-full focus:ring-1 focus:ring-red-600 outline-none"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
@@ -194,7 +173,7 @@ Contact: ${phone}`;
       </div>
 
       <EnquiryForm isOpen={enquiry} onClose={() => setEnquiry(false)} />
-    </div>
+    </div >
   );
 };
 
