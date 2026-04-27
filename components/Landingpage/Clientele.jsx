@@ -13,13 +13,13 @@ export default function ClienteleSlider() {
     "/client-tails/a76f999d268cf61fe3c941292f6826d2.webp",
     "/client-tails/Ashiana-logo.webp",
     "/client-tails/assotech_limited_logo.webp",
-    "/client-tails/Gaurs_Green_With_Black_(2)_(3).webp",
+  
     "/client-tails/Jaypee_Group_Logo.svg.webp",
-    "/client-tails/WhatsApp Image 2026-04-03 at 12.28.28 PM.webp",
+ 
     "/client-tails/Larsen-Toubro.webp",
-    "/client-tails/Marathon_Group.webp",
+   
     "/client-tails/Opulent-Asthetics-Favicon.webp",
-    "/client-tails/Supertech-New-Logo.webp",
+    
     "/client-tails/ultratech-super-cement.webp"
   ];
 
