@@ -1,76 +1,56 @@
 "use client";
-import React from "react";
+import React, { useRef, memo } from "react";
 import Link from "next/link";
-import {
-  Factory,
-  Building2,
-  Truck,
-  Warehouse,
-  ShieldCheck,
-  Wind,
-} from "lucide-react";
-import { useRef } from "react";
-const About = () => {
- const videoRef = useRef(null);
- 
+import dynamic from "next/dynamic";
+
+// ✅ Lazy load icons (reduces bundle)
+const Factory = dynamic(() => import("lucide-react").then(m => m.Factory));
+const Building2 = dynamic(() => import("lucide-react").then(m => m.Building2));
+const Truck = dynamic(() => import("lucide-react").then(m => m.Truck));
+const Warehouse = dynamic(() => import("lucide-react").then(m => m.Warehouse));
+const ShieldCheck = dynamic(() => import("lucide-react").then(m => m.ShieldCheck));
+const Wind = dynamic(() => import("lucide-react").then(m => m.Wind));
+
+// ✅ Move outside (no re-creation)
 const industries = [
-  {
-    title: "Construction & Real Estate Projects",
-    icon: Building2, // buildings / construction
-  },
-  {
-    title: "Mining & Quarrying Sites",
-    icon: Truck, // heavy vehicles
-  },
-  {
-    title: "Cement & Steel Industries",
-    icon: Factory, // industrial factory
-  },
-  {
-    title: "Municipal Corporations & Smart Cities",
-    icon: ShieldCheck, // govt / authority
-  },
-  {
-    title: "Highways & Infrastructure Projects",
-    icon: Warehouse, // infra / large structures
-  },
-  {
-    title: "Waste Management & Landfills",
-    icon: Wind, // pollution / environment
-  },
+  { title: "Construction & Real Estate Projects", icon: Building2 },
+  { title: "Mining & Quarrying Sites", icon: Truck },
+  { title: "Cement & Steel Industries", icon: Factory },
+  { title: "Municipal Corporations & Smart Cities", icon: ShieldCheck },
+  { title: "Highways & Infrastructure Projects", icon: Warehouse },
+  { title: "Waste Management & Landfills", icon: Wind },
 ];
+
+const About = () => {
+  const videoRef = useRef(null);
 
   return (
     <section className="relative bg-white py-5 px-4 sm:px-14 overflow-hidden">
-
       <div className="w-full mx-auto grid lg:grid-cols-2 gap-14 items-center">
-
 
         {/* ===== RIGHT VIDEO AREA ===== */}
         <div className="relative lg:block hidden">
-
-          {/* VIDEO PLACEHOLDER */}
           <div className="w-full h-[620px] rounded-2xl border border-white/10 bg-black/40 backdrop-blur-md flex items-center justify-center text-gray-400">
 
-          <div className=" ">
-            <video
-              ref={videoRef}
-              src="/video.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="absolute top-0 left-0 w-full h-full object-cover"
-            />
-          
+            <div>
+              <video
+                ref={videoRef}
+                src="/video.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="none" // ✅ important (no initial load)
+                className="absolute top-0 left-0 w-full h-full object-cover"
+              />
 
-            {/* floating badge */}
-            <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-3 rounded-xl shadow-lg">
-              <h4 className="text-lg font-semibold text-gray-900">
-                11+ Years Experience
-              </h4>
+              {/* floating badge */}
+              <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-3 rounded-xl shadow-lg">
+                <h4 className="text-lg font-semibold text-gray-900">
+                  11+ Years Experience
+                </h4>
+              </div>
             </div>
-          </div>
 
           </div>
 
@@ -80,15 +60,10 @@ const industries = [
               Covers Large Area • High Pressure Mist
             </p>
           </div>
-
         </div>
 
-
-
         {/* ===== LEFT CONTENT ===== */}
-
         <div>
-
           <span className="inline-block mb-4 px-4 py-1.5 text-xs font-semibold tracking-wider text-red-400 bg-red-500/10 rounded-full border border-red-500/20">
             AIR POLLUTION CONTROL SOLUTION
           </span>
@@ -99,8 +74,7 @@ const industries = [
           </h1>
 
           <p className="text-lg text-black mb-5 max-w-xl">
-          Founded in 2012, Kapmix Machinery Pvt. Ltd. is a trusted Anti Smog Gun Supplier . We deliver high-quality pollution control machinery designed for durability, precision, and efficiency. 
-Kapmix Machinery Pvt. Ltd. – India’s Leading Anti Smog Gun Supplier is a trusted name in the field of dust suppression and pollution control equipment. With a strong commitment to quality, innovation, and environmental responsibility, the company delivers advanced solutions to control air pollution across construction and industrial sites.
+            Founded in 2012, Kapmix Machinery Pvt. Ltd. is a trusted Anti Smog Gun Supplier...
           </p>
 
           {/* FEATURES GRID */}
@@ -123,7 +97,6 @@ Kapmix Machinery Pvt. Ltd. – India’s Leading Anti Smog Gun Supplier is a tru
 
           {/* CTA */}
           <div className="flex items-center gap-4 mt-5">
-
             <Link
               href="/contact"
               className="px-7 py-3 text-sm font-semibold text-white bg-gradient-to-r from-[#c8102e] to-red-600 rounded-full shadow-lg hover:scale-105 transition"
@@ -137,9 +110,7 @@ Kapmix Machinery Pvt. Ltd. – India’s Leading Anti Smog Gun Supplier is a tru
             >
               View Products
             </Link>
-
           </div>
-
         </div>
 
       </div>
@@ -147,4 +118,4 @@ Kapmix Machinery Pvt. Ltd. – India’s Leading Anti Smog Gun Supplier is a tru
   );
 };
 
-export default About;
+export default memo(About); // ✅ prevent unnecessary re-render

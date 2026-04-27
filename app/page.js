@@ -16,7 +16,7 @@ import Popup from "@/components/Popup";
 import Otherproduct from "@/components/Landingpage/Otherpro";
 
 import Loactions from "@/components/Locations";
-import ClienteleSlider from "@/components/Landingpage/Clientele";
+import ClienteleSlider from "@/components/Enquiry-page-components/Clientele2";
 
 export default function Home() {
   return (

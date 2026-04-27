@@ -1,7 +1,7 @@
 import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
-// import SplashCursor from "@/components/SplashCursor";
+import SplashCursor from "@/components/SplashCursor";
 
 import Whatsapp from "@/components/Whatsapp";
 import Script from "next/script";
@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
         </noscript>
         <Whatsapp />
 
-        {/* <SplashCursor /> */}
+        <SplashCursor />
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
