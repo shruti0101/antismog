@@ -6,7 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import EnquiryForm from "@/components/Enquiry";
-import ClienteleSlider from "../Landingpage/Clientele";
+
 
 const ContactForm = () => {
   const [enquiry, setEnquiry] = useState(false);
