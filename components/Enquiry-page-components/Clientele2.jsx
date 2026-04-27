@@ -8,19 +8,19 @@ import Image from "next/image";
 
 export default function ClienteleSlider2() {
   const clients = [
-    "/client-tails/96dd26_f89673d1381148efa518c05a02f8296e~mv2.png",
-    "/client-tails/kalyan-toll-infrastructure-limited-karegaon-nanded-construction-contractors-ypc4hbdpbp.avif",
-    "/client-tails/a76f999d268cf61fe3c941292f6826d2.jpg",
-    "/client-tails/Ashiana-logo.jpg",
-    "/client-tails/assotech_limited_logo.jpg",
-    "/client-tails/Gaurs_Green_With_Black_(2)_(3).png",
-    "/client-tails/Jaypee_Group_Logo.svg.png",
-    "/client-tails/WhatsApp Image 2026-04-03 at 12.28.28 PM.png",
-    "/client-tails/Larsen-Toubro.jpg",
+    "/client-tails/96dd26_f89673d1381148efa518c05a02f8296e~mv2.webp",
+    "/client-tails/kalyan-toll-infrastructure-limited-karegaon-nanded-construction-contractors-ypc4hbdpbp.webp",
+    "/client-tails/a76f999d268cf61fe3c941292f6826d2.webp",
+    "/client-tails/Ashiana-logo.webp",
+    "/client-tails/assotech_limited_logo.webp",
+    "/client-tails/Gaurs_Green_With_Black_(2)_(3).webp",
+    "/client-tails/Jaypee_Group_Logo.svg.webp",
+    "/client-tails/WhatsApp Image 2026-04-03 at 12.28.28 PM.webp",
+    "/client-tails/Larsen-Toubro.webp",
     "/client-tails/Marathon_Group.webp",
-    "/client-tails/Opulent-Asthetics-Favicon.png",
+    "/client-tails/Opulent-Asthetics-Favicon.webp",
     "/client-tails/Supertech-New-Logo.webp",
-    "/client-tails/ultratech-super-cement.jpg"
+    "/client-tails/ultratech-super-cement.webp"
   ];
 
   return (
