@@ -25,6 +25,7 @@ const Enquiry = () => {
       <WhyChooseUs />
       <Counter />
       <TestimonialSlider />
+      <ContactForm />
     </div>
   );
 };

@@ -31,15 +31,15 @@ const applications = [
 
 export default function FeaturesApplications() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2 md:p-6 lg:py-20 overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 px-4 overflow-hidden">
       {/* Key Features */}
       <div>
-        <h2 className="text-2xl font-bold mb-4">KEY FEATURES</h2>
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-5">
+        <h2 className="text-2xl font-bold mb-4">Key Features</h2>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-4">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex items-center flex-col lg:flex-row gap-3 border-2 px-2 py-5 rounded-lg"
+              className="flex items-center flex-col gap-2 border-2 px-2 py-5 rounded-lg"
             >
               <span className="text-lg bg-red-400 h-10 w-10 flex justify-center items-center rounded-full">
                 {feature.icon}
@@ -54,7 +54,7 @@ export default function FeaturesApplications() {
 
       {/* Applications */}
       <div>
-        <h2 className="text-2xl font-bold mb-4">APPLICATIONS</h2>
+        <h2 className="text-2xl font-bold mb-4">Applications</h2>
         <div className="grid grid-cols-2 gap-4">
           {applications.map((app, index) => (
             <div
