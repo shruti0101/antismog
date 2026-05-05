@@ -40,7 +40,7 @@ const Page = () => {
                 width={300}
                 height={200}
                 title={product.name} 
-                className="w-full h-75 object-cover"
+                className="w-full h-75 object-contain"
               />
               <div className="p-3">
                 <h2 className="text-lg text-center font-semibold">{product.name}</h2>

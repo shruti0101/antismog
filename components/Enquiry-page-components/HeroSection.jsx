@@ -1,93 +1,34 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
 import Image from "next/image";
-// import Heroform from "@/components/Landingpage/Heroform";
-
-// ✅ Separate images
-const desktopImages = ["/banner2.webp", "/banner1.webp"];
-const mobileImages = [
-  "/Enquiry/kapmix banner.webp",
-  "/Enquiry/kapmix mobile banner.webp",
-];
 
 const HeroSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(1);
-
-  // Auto-slide every 5s
-  useEffect(() => {
-    const interval = setInterval(() => {
-      slideNext();
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const slideNext = () => {
-    setDirection(1);
-    setCurrentIndex((prev) => (prev + 1) % desktopImages.length);
-  };
-
-  const slidePrev = () => {
-    setDirection(-1);
-    setCurrentIndex(
-      (prev) => (prev - 1 + desktopImages.length) % desktopImages.length,
-    );
-  };
-
   return (
-    <>
-      <section className="">
-        {/* ✅ Desktop Hero */}
-        <section className="relative mt-30 md:mt-36 md:h-[70vh] hidden md:flex justify-end w-full h-[100vh] xl:mt-30 xl:h-[90vh] overflow-hidden">
-          <AnimatePresence initial={false} custom={direction}>
-            <motion.div
-              key={`desktop-${currentIndex}`}
-              className="absolute inset-0 w-full h-auto"
-              custom={direction}
-              initial={{ x: direction > 0 ? "100%" : "-100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: direction > 0 ? "-100%" : "100%" }}
-              transition={{ duration: 1, ease: "easeInOut" }}
-            >
-              <Image
-                src={desktopImages[currentIndex]}
-                alt={`Desktop banner ${currentIndex + 1}`}
-                fill
-                priority
-                sizes="100vw"
-                className="object-cover"
-              />
-            </motion.div>
-          </AnimatePresence>
-        </section>
+    <section>
+      {/* ✅ Desktop Image */}
+      <div className="relative mt-30 md:mt-36 hidden md:block w-full h-[70vh] xl:h-[90vh] overflow-hidden">
+        <Image
+          src="https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777962166/banner1_ru6znh.webp" // your desktop image
+          alt="Desktop Banner"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
 
-        {/* ✅ Mobile Hero */}
-        <section className="relative block md:hidden lg:hidden w-full mt-20 h-[48vh] overflow-hidden">
-          <AnimatePresence initial={false} custom={direction}>
-            <motion.div
-              key={`mobile-${currentIndex}`}
-              className="absolute inset-0 w-full h-auto"
-              custom={direction}
-              initial={{ x: direction > 0 ? "100%" : "-100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: direction > 0 ? "-100%" : "100%" }}
-              transition={{ duration: 1, ease: "easeInOut" }}
-            >
-              <Image
-                src={mobileImages[currentIndex]}
-                alt={`Mobile banner ${currentIndex + 1}`}
-                width={600}
-                height={1200}
-                priority
-                // sizes="100vw"
-                className="object-cover "
-              />
-            </motion.div>
-          </AnimatePresence>
-        </section>
-      </section>
-    </>
+      {/* ✅ Mobile Image */}
+      <div className="relative block md:hidden w-full mt-20 h-[48vh] overflow-hidden">
+        <Image
+          src="https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777962149/kapmix_mobile_banner_lbc7kv.webp" // your mobile image
+          alt="Mobile Banner"
+          width={600}
+          height={1200}
+          priority
+          className="object-cover w-full h-full"
+        />
+      </div>
+    </section>
   );
 };
 

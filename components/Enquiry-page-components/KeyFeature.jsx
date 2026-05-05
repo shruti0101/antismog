@@ -23,10 +23,10 @@ const features = [
 ];
 
 const applications = [
-  { title: "Construction", img: "/Enquiry/2152006125.webp" },
-  { title: "Mines", img: "/Enquiry/500px-Kalgoorlie_The_Big_Pit_DSC04498.jpg" },
-  { title: "Roads", img: "/Enquiry/highways.jpg" },
-  { title: "Cement & Steel Industries", img: "/Enquiry/DSC_40.jpg" },
+  { title: "Construction", img: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777961193/construction_fgg115.webp" },
+  { title: "Mines", img: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777961193/mines_zkj6cp.webp" },
+  { title: "Roads", img: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777961193/higway_pghor6.webp" },
+  { title: "Cement & Steel Industries", img: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777961192/cement_wzbarv.webp" },
 ];
 
 export default function FeaturesApplications() {

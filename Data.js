@@ -97,7 +97,7 @@ export const categories = [
 
         image: [
           {
-            src: "/nav/category-1-nav.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777963767/category-1-nav_cjl0wa.webp",
             alt: "75–100 Meter Anti Smog Gun Machine",
           },
         ],
@@ -190,7 +190,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/roof mounted a8.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777963843/roof_mounted_a8_vftan4.webp",
             alt: "30–100 Meter Anti Smog Gun Machine",
           },
         ],
@@ -294,7 +294,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/roof mounted anti.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777963928/roof_mounted_anti_q3edeh.webp",
             alt: "Anti Smog Gun Without Water Tank Machine",
           },
         ],
@@ -396,7 +396,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/roof top .webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964114/roof_top_mmqbrp.webp",
             alt: "Anti-Pollution Control Gun Machine",
           },
         ],
@@ -498,7 +498,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/roof mounted anti.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777963928/roof_mounted_anti_q3edeh.webp",
             alt: "Semi-Automatic Anti Smog Gun Without Autoswing",
           },
         ],
@@ -617,7 +617,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/aNTI smog gun(1).webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964056/aNTI_smog_gun_1_drnycm.webp",
             alt: "Fog Cannon Spray Machine",
           },
         ],
@@ -721,7 +721,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/anti smog gun.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964057/anti_smog_gun_myenar.webp",
             alt: "Fog Cannon Machine",
           },
         ],
@@ -834,7 +834,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/anti smog gun9.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964060/anti_smog_gun9_vfo3oq.webp",
             alt: "Air Pollution Control Cannon Machine",
           },
         ],
@@ -939,7 +939,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/anti smog ginn.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964055/anti_smog_ginn_jvcp3z.webp",
             alt: "Industrial Fogging Machine",
           },
         ],
@@ -1041,7 +1041,7 @@ export const categories = [
           },
         ],
 
-        image: [{ src: "/prodtest.webp", alt: "Spray Cannon Machine" }],
+        image: [{ src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777965420/prodtest_zruu5h.webp", alt: "Spray Cannon Machine" }],
       },
     ],
   },
@@ -1160,7 +1160,7 @@ export const categories = [
 
         image: [
           {
-            src: "/nav/category-2-nav.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777965332/category-2-nav_njxkjo.webp",
             alt: "Roof-Mounted Anti Smog Gun",
           },
         ],
@@ -1257,7 +1257,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/roof mounted a8.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964060/roof_mounted_a8_bzhqnw.webp",
             alt: "Terrace Anti Smog Gun",
           },
         ],
@@ -1359,7 +1359,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/roof mounted anti.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964113/roof_mounted_anti_c8d4ev.webp",
             alt: "Roof Mounted Fog Cannon",
           },
         ],
@@ -1713,7 +1713,7 @@ export const categories = [
 
         image: [
           {
-            src: "/nav/category-3-nav.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964642/category-3-nav_oi9jpw.webp",
             alt: "Tractor Operated Anti Smog Gun",
           },
         ],
@@ -1815,7 +1815,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/tractor mounted.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964117/tractor_mounted_bi6ajb.webp",
             alt: "Tractor Mounted Anti Smog Gun",
           },
         ],
@@ -1923,7 +1923,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/tractor mounted2.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964119/tractor_mounted2_bsopgt.webp",
             alt: "Tractor Mounted Fog Cannon",
           },
         ],
@@ -2031,7 +2031,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/tractor mounted(1).webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964116/tractor_mounted_1_uqqtrx.webp",
             alt: "Tractor Operated Fog Cannon",
           },
         ],
@@ -2148,7 +2148,7 @@ export const categories = [
 
         image: [
           {
-            src: "/nav/category-4-nav.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964474/category-4-nav_rovqef.webp",
             alt: "Truck-Mounted Anti Smog Gun Machine",
           },
         ],
@@ -2253,7 +2253,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/truck mounted 3 (13).webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964119/truck_mounted_3_13_pwz2xl.webp",
             alt: "truck Mounted Dust Control Machine",
           },
         ],
@@ -2358,7 +2358,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/truck mounted a.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964120/truck_mounted_a_uv0evh.webp",
             alt: "truck Mounted Dust Suppression Cannon",
           },
         ],
@@ -2463,7 +2463,7 @@ export const categories = [
 
         image: [
           {
-            src: "/kapmix products/truck mountedc.webp",
+            src: "https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777964121/truck_mountedc_wkkwte.webp",
             alt: "truck Mounted Spray Cannon",
           },
         ],

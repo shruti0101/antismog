@@ -8,7 +8,7 @@ import Counter from "@/components/Enquiry-page-components/Counter";
 import HeroSection from "@/components/Enquiry-page-components/HeroSection";
 import KeyFeature from "@/components/Enquiry-page-components/KeyFeature";
 import WhyChooseUs from "@/components/Enquiry-page-components/WhyChooseUs";
-import HighQualityCTA from "@/components/Landingpage/Countup";
+import Cta from "@/components/Enquiry-page-components/Cta";
 import Hero from "@/components/Landingpage/Hero";
 import TestimonialSlider from "@/components/Landingpage/Testimonials";
 
@@ -20,7 +20,7 @@ const Enquiry = () => {
       <ContactForm />
       <CategoryProducts />
       <ContactForm2 />
-      <HighQualityCTA />
+      <Cta/>
       <KeyFeature />
       <WhyChooseUs />
       <Counter />

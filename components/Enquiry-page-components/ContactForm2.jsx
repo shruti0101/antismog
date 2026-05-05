@@ -194,7 +194,7 @@ Contact: ${phone}`;
 
         <div className="hidden lg:block">
           <Image
-            src="/prodtest.webp"
+            src="https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777962364/prodtest_mrija3.webp"
             width="1000"
             height={1000}
             alt="product"

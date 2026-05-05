@@ -1,7 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Users, Trophy, Truck, Globe, CheckCircle } from "lucide-react";
+import { Users, Trophy, Truck, Globe } from "lucide-react";
 
 const Counter = () => {
   const stats = [
@@ -33,6 +32,7 @@ const Counter = () => {
 
   return (
     <section className="relative w-full py-4 md:py-20 bg-gray-100 text-black overflow-hidden">
+      
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
         <div className="absolute top-[-10%] right-[-10%] w-96 h-96 bg-red-600 rounded-full blur-[120px]"></div>
@@ -40,6 +40,8 @@ const Counter = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-2 md:px-6 relative z-10">
+        
+        {/* Heading */}
         <div className="text-center mb-4 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
             Our Impact in <span className="text-red-500">Numbers</span>
@@ -50,31 +52,32 @@ const Counter = () => {
           </p>
         </div>
 
+        {/* Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8">
           {stats.map((stat, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex flex-col items-center px-2 py-5 md:p-8 rounded-2xl bg-white text-black border border-slate-700 hover:border-red-500/50 transition-colors group"
             >
               <div className="mb-4 text-red-500 group-hover:scale-110 transition-transform duration-300">
                 {stat.icon}
               </div>
+
               <div className="text-4xl md:text-5xl font-extrabold mb-2 text-black">
                 {stat.value}
               </div>
+
               <div className="text-lg font-semibold text-red-500 mb-3">
                 {stat.label}
               </div>
+
               <p className="text-sm text-gray-400 text-center leading-relaxed">
                 {stat.description}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
+
       </div>
     </section>
   );

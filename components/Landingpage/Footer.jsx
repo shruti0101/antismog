@@ -13,7 +13,7 @@ export default function Footer() {
       {/* BG IMAGE */}
       <div className="absolute inset-0">
         <Image
-          src="/bg-product.webp"
+          src="https://res.cloudinary.com/dqoktmo4j/image/upload/q_auto/f_auto/v1777962582/bg-product_t5u2tr.webp"
           alt="bg"
           fill
           className="object-cover"
