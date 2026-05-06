@@ -29,6 +29,7 @@ const nextConfig = {
         search: "",
       },
     ],
+    domains: ["img.youtube.com"],
   },
 };
 

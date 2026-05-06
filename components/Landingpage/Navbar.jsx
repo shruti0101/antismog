@@ -187,8 +187,9 @@ export default function Navbar() {
                 </span>
                 {showCategoryOnPhone && (
                   <div className="flex flex-col gap-1 duration-200">
-                    {categories.map((item) => (
+                    {categories.map((item,index) => (
                       <Link
+                      key={index}
                         href={`/categories/${item.id}`}
                         onClick={() => setPhoneNavbar(false)}
                         className="text-black flex items-center gap-2"

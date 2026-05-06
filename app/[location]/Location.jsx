@@ -132,6 +132,50 @@ const Location = () => {
         </div>
       </section>
 
+      {/* CTA Final Contact Section */}
+      <section className="mx-auto lg:px-16 px-5 py-20 bg-gray-50 ">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-white border rounded-3xl p-8 md:p-16 text-center relative overflow-hidden shadow-2xl">
+            {/* Background Decorations */}
+
+            <div className="relative z-10">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-red-600 text-white mb-8 shadow-lg shadow-red-600/30">
+                <Phone size={36} className="animate-pulse" />
+              </div>
+
+              <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 leading-tight">
+                Get Best Price for Anti Smog Gun in{" "}
+                <span className="text-red-500">{city}</span>
+              </h2>
+
+              <p className="text-black text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                Looking to control dust and pollution effectively? Contact us
+                today for the best price on anti smog guns in {city}. Our
+                experts will guide you in selecting the right model for your
+                project.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a
+                  href="tel:+919999926558"
+                  className="w-full sm:w-auto flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-xl shadow-red-900/20"
+                >
+                  <Phone size={20} />
+                  Call Now
+                </a>
+                <Link
+                  href="/contact"
+                  className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-gray-900 px-10 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-xl"
+                >
+                  <Mail size={20} />
+                  Get a Quote
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="max-w-7xl  mx-auto px-4 md:px-10  py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           <div>
@@ -377,49 +421,7 @@ const Location = () => {
         </div>
       </section>
 
-      {/* CTA Final Contact Section */}
-      <section className="mx-auto lg:px-16 px-5 py-20 bg-gray-50 ">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-white border rounded-3xl p-8 md:p-16 text-center relative overflow-hidden shadow-2xl">
-            {/* Background Decorations */}
-
-            <div className="relative z-10">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-red-600 text-white mb-8 shadow-lg shadow-red-600/30">
-                <Phone size={36} className="animate-pulse" />
-              </div>
-
-              <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 leading-tight">
-                Get Best Price for Anti Smog Gun in{" "}
-                <span className="text-red-500">{city}</span>
-              </h2>
-
-              <p className="text-black text-lg md:text-xl max-w-2xl mx-auto mb-10">
-                Looking to control dust and pollution effectively? Contact us
-                today for the best price on anti smog guns in {city}. Our
-                experts will guide you in selecting the right model for your
-                project.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a
-                  href="tel:+919999926558"
-                  className="w-full sm:w-auto flex items-center justify-center gap-3 bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-xl shadow-red-900/20"
-                >
-                  <Phone size={20} />
-                  Call Now
-                </a>
-                <Link
-                  href="/contact"
-                  className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-gray-900 px-10 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105 shadow-xl"
-                >
-                  <Mail size={20} />
-                  Get a Quote
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       <EnquiryForm isOpen={enquiry} onClose={() => setEnquiry(false)} />
     </>

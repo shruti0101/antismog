@@ -98,17 +98,17 @@ Kapmix experts can guide you in selecting the best model.`,
   };
 
   return (
-    <section className="w-full bg-red-50 py-20 px-6 md:px-16">
+    <section className="w-full bg-red-50 py-10 px-6 md:px-16">
 
       {/* HEADING */}
-      <div className="text-center max-w-4xl mx-auto mb-14">
+      <div className="text-center max-w-4xl mx-auto mb-6 md:mb-14">
         <h2 className="text-3xl md:text-5xl font-semibold text-black">
           Frequently Asked <span className="text-red-600">Questions</span>
         </h2>
       </div>
 
       {/* GRID */}
-      <div className="grid grid-cols-1 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 gap-3 md:gap-6 max-w-7xl mx-auto">
 
         {faqs.map((item, i) => (
           <div

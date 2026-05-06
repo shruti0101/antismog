@@ -32,11 +32,11 @@ const IndustryClassification = () => {
   ];
 
   return (
-    <section className="bg-white py-20 px-4 sm:px-14">
+    <section className="bg-white py-9 px-4 sm:px-14">
       <div className="max-w-[1300px] mx-auto">
 
         {/* HEADING */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-8">
           <span className="inline-block mb-3 px-4 py-1 text-xs tracking-wider text-red-600 bg-red-100 border border-red-200 rounded-full">
             INDUSTRY OVERVIEW
           </span>
@@ -52,7 +52,7 @@ const IndustryClassification = () => {
         </div>
 
         {/* GRID */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-8">
           {data.map((item, index) => (
             <div
               key={index}

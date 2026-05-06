@@ -61,11 +61,11 @@ const Hero = () => {
       </section>
 
       {/* Mobile Hero */}
-      <section className="relative block md:hidden lg:hidden w-full mt-20 h-[30vh] overflow-hidden">
+      <section className="relative block md:hidden lg:hidden w-full mt-20 h-[193px] bg-gray-100 overflow-hidden">
         <AnimatePresence initial={false} custom={direction}>
           <MotionDiv
             key={`mobile-${currentIndex}`}
-            className="absolute inset-0 w-full h-full"
+            className="absolute inset-0 w-full h-[194px]"
             custom={direction}
             initial={{ x: direction > 0 ? "100%" : "-100%" }}
             animate={{ x: 0 }}
@@ -76,7 +76,7 @@ const Hero = () => {
               src={mobileImages[currentIndex]}
               alt={`Mobile banner ${currentIndex + 1}`}
               width={600}
-              height={1200}
+              height={1500}
               priority
               sizes="100vw"
               quality={70}

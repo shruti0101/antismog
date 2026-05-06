@@ -66,6 +66,17 @@ export default function ProductPage({ params }) {
     },
   ];
 
+  const getYouTubeId = (url) => {
+    if (!url) return "";
+
+    const regExp =
+      /(?:youtube\.com\/(?:.*v=|embed\/|shorts\/)|youtu\.be\/)([^"&?\/\s]{11})/;
+
+    const match = url.match(regExp);
+    return match ? match[1] : "";
+  };
+  const videoId = getYouTubeId(product.videoUrl);
+
   return (
     <>
       {/* ================= HERO ================= */}
@@ -88,7 +99,7 @@ export default function ProductPage({ params }) {
           <div className="lg:sticky top-24">
             <div className="bg-white rounded-3xl p-2 md:p-6 shadow-[0_20px_60px_rgba(0,0,0,0.08)] border mt-4">
               <div
-                className="relative w-full h-[300px] md:h-[550px] lg:h-[500px] rounded-2xl overflow-hidden bg-gray-50"
+                className="relative w-full h-[300px] md:h-[550px] lg:h-[500px] rounded-2xl overflow-hidden bg-white"
                 onMouseEnter={() => setIsZoomed(true)}
                 onMouseLeave={() => setIsZoomed(false)}
                 onMouseMove={handleMouseMove}
@@ -169,20 +180,18 @@ export default function ProductPage({ params }) {
                     }`}
                   >
                     {/* YouTube Thumbnail */}
-                    <Image
-                      src={`https://img.youtube.com/vi/${
-                        product.videoUrl.includes("youtu.be/")
-                          ? product.videoUrl.split("youtu.be/")[1].split("?")[0]
-                          : product.videoUrl.split("v=")[1]?.split("&")[0] || ""
-                      }/hqdefault.jpg`}
-                      alt="video thumbnail"
-                      width={80}
-                      height={80}
-                      className="object-cover w-full h-full"
-                    />
+                    {videoId && (
+                      <Image
+                        src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                        alt="video thumbnail"
+                        width={100}
+                        height={100}
+                        className="object-cover w-full h-full"
+                      />
+                    )}
 
                     {/* Play Icon */}
-                    <span className="absolute inset-0 flex items-center justify-center bg-black/40 text-white text-xl">
+                    <span className="absolute inset-0 flex items-center justify-center bg-red-500/10 text-white text-3xl">
                       ▶
                     </span>
                   </button>
@@ -253,12 +262,12 @@ export default function ProductPage({ params }) {
         </div>
 
         {/* ================= DESCRIPTION ================= */}
-        <div className="max-w-7xl mx-auto mt-20">
-          <h2 className="text-3xl md:text-5xl font-semibold mb-10 text-gray-900">
+        <div className="max-w-7xl mx-auto mt-10  md:mt-20">
+          <h2 className="text-3xl md:text-5xl font-semibold mb-5 md:mb-10 text-gray-900">
             Product Overview
           </h2>
 
-          <div className="space-y-6 text-gray-700">
+          <div className=" space-y-6 text-gray-700">
             {Array.isArray(product.description) ? (
               product.description.map((block, i) => {
                 if (block.type === "h3")
@@ -300,7 +309,7 @@ export default function ProductPage({ params }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 lg:grid-cols-3 gap-5">
-            <div className="space-y-6 text-gray-70 px-4 py-5 border rounded-lg shadow hover:shadow-2xl duration-200">
+            <div className="space-y-6 mt-4 text-gray-70 px-4 py-5 border rounded-lg shadow hover:shadow-2xl duration-200">
               <h3 className="text-2xl font-semibold text-red-600">
                 Key Features
               </h3>
@@ -312,7 +321,7 @@ export default function ProductPage({ params }) {
               </ul>
             </div>
 
-            <div className="space-y-6 text-gray-700  px-4 py-5 border rounded-lg shadow hover:shadow-2xl duration-200">
+            <div className="space-y-6 mt-4 text-gray-700  px-4 py-5 border rounded-lg shadow hover:shadow-2xl duration-200">
               <h3 className="text-2xl font-semibold text-red-600">
                 Applications
               </h3>
@@ -324,7 +333,7 @@ export default function ProductPage({ params }) {
               </ul>
             </div>
 
-            <div className="space-y-6 text-gray-700  px-4 py-5 border rounded-lg shadow hover:shadow-2xl duration-200">
+            <div className="space-y-6 text-gray-700  mt-4 px-4 py-5 border rounded-lg shadow hover:shadow-2xl duration-200">
               <h3 className="text-2xl font-semibold text-red-600">
                 Why Choose Us
               </h3>
@@ -337,7 +346,7 @@ export default function ProductPage({ params }) {
             </div>
           </div>
 
-          <div className="mt-16 lg:w-1/2 mb-5">
+          <div className="mt-8 md:mt-16 lg:w-1/2 mb-5">
             <h3 className="text-2xl font-semibold text-red-600 mb-6">
               Detailed Technical Specifications
             </h3>

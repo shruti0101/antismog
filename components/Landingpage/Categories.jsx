@@ -80,7 +80,7 @@ const Productcategory = () => {
     <>
       {/* ================= SECTION ================= */}
       <section className="bg-white">
-        <div className="w-full mx-auto px-6 md:px-30 py-16">
+        <div className="w-full mx-auto px-6 md:px-30 py-8">
           {/* HEADING */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-14 gap-6">
             <div>

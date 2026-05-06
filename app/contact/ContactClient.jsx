@@ -89,10 +89,10 @@ Contact: ${phone}`;
       </section>
 
       {/* CONTACT INFO */}
-      <section className="bg-white py-16 px-6 md:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <section className="bg-white py-8 md:py-16 px-6 md:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-16">
           {/* Phone */}
-          <div className="bg-gradient-to-br from-red-600 to-red-800 text-white p-8 rounded-3xl shadow-xl text-center hover:scale-105 transition">
+          <div className="bg-gradient-to-br from-red-600 to-red-800 text-white p-5 md:p-8 rounded-3xl shadow-xl text-center hover:scale-105 transition">
             <Phone size={38} className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">Call Us</h3>
             <div className="flex flex-col gap-1">
@@ -141,7 +141,7 @@ Contact: ${phone}`;
         {/* FORM + MAP */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* FORM */}
-          <div className="bg-white p-10 rounded-3xl shadow-2xl border">
+          <div className="bg-white p-5 md:p-10 rounded-3xl shadow-2xl border">
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
               Send Your Requirement
             </h2>
@@ -179,7 +179,7 @@ Contact: ${phone}`;
                 />
 
                 <select
-                  className="border rounded-lg px-4 py-3 w-full bg-red-600 text-white font-semibold"
+                  className="border rounded-lg pl-2 pr-3  py-3 w-full bg-red-600 text-white font-semibold"
                   value={requirement}
                   onChange={(e) => setRequirement(e.target.value)}
                 >
@@ -239,8 +239,7 @@ Contact: ${phone}`;
           <div className="rounded-3xl overflow-hidden shadow-2xl border">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.0073179103633!2d77.4346515!3d28.6894277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf16ea2458c77%3A0x4d56fe83237cceec!2sKapmix%20Machinery%20Private%20Limited!5e0!3m2!1sen!2sin!4v1775042874515!5m2!1sen!2sin"
-              width="600"
-              height="450"
+              className="w-full h-full rounded-xl"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"

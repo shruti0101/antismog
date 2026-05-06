@@ -17,7 +17,7 @@ export default function HighQualityCTA() {
               alt="Industrial Machines"
               fill
               priority
-              className="object-cover"
+              className="object-contain"
             />
           </div>
 

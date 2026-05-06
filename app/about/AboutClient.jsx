@@ -7,6 +7,7 @@ import Image from "next/image";
 import Categories from "@/components/Landingpage/Categories";
 
 import "swiper/css";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -37,7 +38,7 @@ export default function AboutPage() {
       </section>
 
       {/* ================= ABOUT ================= */}
-      <section className="w-full bg-white py-20 px-6 md:px-16">
+      <section className="w-full bg-white py-8 px-6 md:px-16">
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -95,12 +96,12 @@ export default function AboutPage() {
                
               ].map((img, i) => (
                 <SwiperSlide key={i}>
-                  <div className="relative w-full h-[500px]">
+                  <div className="relative w-full h-[370px] md:h-[500px]">
                     <Image
                       src={img}
                       alt="machine"
                       fill
-                      className="object-cover"
+                      className="object-fill md:object-cover "
                     />
                   </div>
                 </SwiperSlide>
@@ -115,7 +116,7 @@ export default function AboutPage() {
 <Categories></Categories>
 
       {/* ================= VISION ================= */}
-      <section className="w-full bg-[#fafafa] py-20 px-6 md:px-16 relative overflow-hidden">
+      <section className="w-full bg-[#fafafa] py-10 px-6 md:px-16 relative overflow-hidden">
 
         <div className="absolute -top-20 -right-20 w-[300px] h-[300px] bg-red-600/10 blur-[120px]" />
 
@@ -138,7 +139,7 @@ export default function AboutPage() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-10 overflow-hidden">
 
         {/* BG */}
         <Image
@@ -169,15 +170,15 @@ export default function AboutPage() {
 
             <div className="flex flex-col sm:flex-row justify-center gap-6">
 
-              <a
+              <Link
                 href="/contact"
                 className="px-8 py-4 bg-red-600 hover:bg-red-700 transition rounded-full font-medium shadow-lg hover:scale-105"
               >
                 Request a Quote
-              </a>
+              </Link>
 
               <a
-                href="/products"
+                href={"/productprprs"}
                 className="px-8 py-4 border border-white/30 hover:border-red-400 hover:text-red-400 transition rounded-full font-medium"
               >
                 Explore Products

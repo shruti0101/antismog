@@ -20,8 +20,8 @@ const clients = [
 
 export default function ClienteleSlider2() {
   return (
-    <section className="bg-gray-100 pt-5 md:py-8">
-      <div className="w-full mx-auto px-4">
+    <section className="bg-gray-100 pb-3  md:py-8">
+      <div className="w-full mx-auto   px-4">
         <h2 className="text-center text-[28px] md:text-4xl mb-6 font-semibold text-black">
           Trusted by Leading Clients
         </h2>

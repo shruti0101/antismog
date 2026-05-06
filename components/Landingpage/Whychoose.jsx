@@ -88,9 +88,9 @@ Their machines help maintain environmental compliance and worker safety.`,
 ];
 
   return (
-    <section className="w-full bg-white py-20 px-6 md:px-16">
+    <section className="w-full bg-white py-8 px-6 md:px-16">
       {/* HEADING */}
-      <div className="max-w-6xl mx-auto text-center mb-16">
+      <div className="max-w-6xl mx-auto text-center mb-8">
         <h2 className="text-3xl md:text-5xl font-semibold text-black leading-tight">
           Why Choose <span className="text-red-600">Kapmix Machinery</span> as
           Your Anti Smog Gun Manufacturer?
@@ -136,12 +136,12 @@ Their machines help maintain environmental compliance and worker safety.`,
               "/cat4_4.avif",
             ].map((img, i) => (
               <SwiperSlide key={i}>
-                <div className="relative w-full h-[300px] md:h-[500px]">
+                <div className="relative w-full h-[350px] md:h-[500px]">
                   <Image
                     src={img}
                     alt="machine"
                     fill
-                    className="object-contain bg-white md:p-6"
+                    className="object-fill md:object-cover bg-white md:p-6"
                   />
                 </div>
               </SwiperSlide>

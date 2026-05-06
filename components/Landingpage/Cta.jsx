@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function VideoSection() {
   return (
-    <section className="w-full bg-black py-20">
+    <section className="w-full bg-black py-10">
       <div className="w-full px-4 md:px-10">
         {/* HEADING */}
         <div className="text-center mb-12">
