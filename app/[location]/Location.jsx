@@ -61,7 +61,7 @@ const Location = () => {
       </div>
 
       {/* Types of Anti Smog Guns We Offer  */}
-      <section className="mx-auto lg:px-15 px-5 py-8 bg-gray-100">
+      <section className="mx-auto lg:px-15 px-5 py-10 bg-gray-100">
         <h2 className="text-center text-2xl md:text-[42px] font-bold mb-2">
           Types of Anti Smog Guns We Offer
         </h2>
@@ -133,7 +133,7 @@ const Location = () => {
       </section>
 
       {/* CTA Final Contact Section */}
-      <section className="mx-auto lg:px-16 px-5 py-20 bg-gray-50 ">
+      <section className="mx-auto lg:px-16 px-5 py-10 bg-gray-50 ">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white border rounded-3xl p-8 md:p-16 text-center relative overflow-hidden shadow-2xl">
             {/* Background Decorations */}
@@ -221,7 +221,7 @@ const Location = () => {
 
       {/* third section  */}
       <section className="max-w-7xl mx-auto px-4 md:px-10  py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-20 items-center">
           <motion.div
             initial="hidden"
             whileInView="show"
@@ -258,10 +258,10 @@ const Location = () => {
       </section>
 
       {/* Technical Features Section */}
-      <section className="mx-auto lg:px-16 px-5 py-16 bg-white">
+      <section className="mx-auto lg:px-16 px-5 py-7 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
               Our Anti Smog Gun <span className="text-red-600">Features</span>
             </h2>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
@@ -270,7 +270,7 @@ const Location = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {[
               {
                 title: "High-Pressure Misting",
@@ -321,7 +321,7 @@ const Location = () => {
       </section>
 
       {/* Applications Section */}
-      <section className="mx-auto lg:px-16 px-5 py-16 bg-gray-50 border-y border-gray-200">
+      <section className="mx-auto lg:px-16 px-5 py-7 md:py-16 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -368,7 +368,7 @@ const Location = () => {
             ].map((app, index) => (
               <div
                 key={index}
-                className="flex flex-col p-8 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300"
+                className="flex flex-col p-5 md:p-8 bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300"
               >
                 <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-red-50 text-red-600 mb-6 group-hover:bg-red-600 group-hover:text-white transition-all duration-300">
                   <app.icon size={28} />
@@ -383,9 +383,9 @@ const Location = () => {
             ))}
           </div>
 
-          <div className="mt-16 p-8 bg-gradient-to-r from-red-600 to-red-800 rounded-3xl text-center text-white shadow-2xl relative overflow-hidden">
+          <div className=" mt-8 md:mt-16 p-8 bg-gradient-to-r from-red-600 to-red-800 rounded-3xl text-center text-white shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
-            <p className="text-lg md:text-2xl font-semibold relative z-10">
+            <p className="text-xl md:text-2xl font-semibold relative z-10">
               With increasing environmental regulations in{" "}
               {city === "Delhi" ? "Delhi NCR" : city}, anti smog guns have
               become essential for compliance and sustainability.
@@ -395,11 +395,11 @@ const Location = () => {
       </section>
 
       {/* why us */}
-      <section className="mx-auto lg:px-16 px-5 py-12 bg-gradient-to-b from-gray-50 to-gray-100">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+      <section className="mx-auto lg:px-16 px-5 py-6 md:py-12 bg-gradient-to-b from-gray-50 to-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-10">
           Why Choose Us in <span className="text-red-600">{city}</span>?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {[
             "Trusted supplier with industry expertise",
             "High-quality and durable machines",
