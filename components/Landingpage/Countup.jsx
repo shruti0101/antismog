@@ -11,13 +11,13 @@ export default function HighQualityCTA() {
       <Reveal>
         <div className="grid grid-cols-1 md:grid-cols-[420px_1fr] items-stretch">
           {/*  LEFT IMAGE  */}
-          <div className="relative h-[260px] md:h-auto w-full">
+          <div className="relative h-[260px] md:h-[320px] w-full">
             <Image
               src="/cta-image.webp"
               alt="Industrial Machines"
               fill
               priority
-              className="object-contain"
+              className="object-cover"
             />
           </div>
 

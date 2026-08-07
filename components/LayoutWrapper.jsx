@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Navbar from "@/components/Landingpage/Navbar";
 import Footer from "@/components/Landingpage/Footer";
-import SplashCursor from "./SplashCursor";
+// import SplashCursor from "./SplashCursor";
 // import CitesKeyword from "./Landingpage/CitiesComponent";
 
 export default function LayoutWrapper({ children }) {
@@ -12,14 +12,14 @@ export default function LayoutWrapper({ children }) {
   // Hide Navbar/Footer on /studio routes
   const hideLayout = pathname.startsWith("/studio", "/login", "/inquiry");
   const hideCursor = ["/studio", "/login", "/inquiry"];
-  const hidecursor = hideCursor.some((route) => pathname.startsWith(route));
+  // const hidecursor = hideCursor.some((route) => pathname.startsWith(route));
   
   return (
     <>
       {!hideLayout && <Navbar />}
       {children}
       {/* {!hideLayout && <CitesKeyword />} */}
-      {!hidecursor && <SplashCursor />}
+      {/* {!hidecursor && <SplashCursor />} */}
       {!hideLayout && <Footer />}
     </>
   );

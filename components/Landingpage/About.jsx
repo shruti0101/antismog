@@ -40,7 +40,7 @@ const About = () => {
                 muted
                 loop
                 playsInline
-                preload="none" // ✅ important (no initial load)
+                preload="none" 
                 className="absolute top-0 left-0 w-full h-full object-cover"
               />
 

@@ -21,7 +21,7 @@ useEffect(() => {
 
     const scrollPercent = (scrollTop + windowHeight) / fullHeight;
 
-    if (scrollPercent >= 0.3) {
+    if (scrollPercent >= 0.4) {
       setIsOpen(true);
       window.removeEventListener("scroll", handleScroll); // trigger only once
     }
