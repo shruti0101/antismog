@@ -2,17 +2,17 @@
 
 import React, { useState } from "react";
 import axios from "axios";
-import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import { auth } from "@/lib/firebase";
+// import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
+// import { auth } from "@/lib/firebase";
 
 export default function Enquiry({ isOpen, onClose }) {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
 
-  const [otp, setOtp] = useState("");
-  const [showOtp, setShowOtp] = useState(false);
-  const [confirmationResult, setConfirmationResult] = useState(null);
-  const [isVerified, setIsVerified] = useState(false);
+  // const [otp, setOtp] = useState("");
+  // const [showOtp, setShowOtp] = useState(false);
+  // const [confirmationResult, setConfirmationResult] = useState(null);
+  // const [isVerified, setIsVerified] = useState(false);
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -31,90 +31,90 @@ export default function Enquiry({ isOpen, onClose }) {
     setRequirement("");
     setMessage("");
 
-    setOtp("");
-    setShowOtp(false);
-    setIsVerified(false);
-    setConfirmationResult(null);
+    // setOtp("");
+    // setShowOtp(false);
+    // setIsVerified(false);
+    // setConfirmationResult(null);
   };
 
-  const initRecaptcha = async () => {
-    if (!window.recaptchaVerifier) {
-      window.recaptchaVerifier = new RecaptchaVerifier(
-        auth,
-        "recaptcha-container",
-        {
-          size: "invisible",
-        },
-      );
+  // const initRecaptcha = async () => {
+  //   if (!window.recaptchaVerifier) {
+  //     window.recaptchaVerifier = new RecaptchaVerifier(
+  //       auth,
+  //       "recaptcha-container",
+  //       {
+  //         size: "invisible",
+  //       },
+  //     );
 
-      await window.recaptchaVerifier.render();
-    }
+  //     await window.recaptchaVerifier.render();
+  //   }
 
-    return window.recaptchaVerifier;
-  };
+  //   return window.recaptchaVerifier;
+  // };
 
-  const sendOTP = async () => {
-    try {
-      setLoading(true);
-      setStatus("");
+  // const sendOTP = async () => {
+  //   try {
+  //     setLoading(true);
+  //     setStatus("");
 
-      if (!/^[6-9]\d{9}$/.test(phone)) {
-        setStatus("Enter valid phone number");
-        return;
-      }
+  //     if (!/^[6-9]\d{9}$/.test(phone)) {
+  //       setStatus("Enter valid phone number");
+  //       return;
+  //     }
 
-      const appVerifier = await initRecaptcha();
+  //     const appVerifier = await initRecaptcha();
 
-      const result = await signInWithPhoneNumber(
-        auth,
-        `+91${phone}`,
-        appVerifier,
-      );
+  //     const result = await signInWithPhoneNumber(
+  //       auth,
+  //       `+91${phone}`,
+  //       appVerifier,
+  //     );
 
-      setConfirmationResult(result);
-      setShowOtp(true);
+  //     setConfirmationResult(result);
+  //     setShowOtp(true);
 
-      setStatus("OTP sent successfully");
-    } catch (err) {
-      console.log(err);
+  //     setStatus("OTP sent successfully");
+  //   } catch (err) {
+  //     console.log(err);
 
-      if (window.recaptchaVerifier) {
-        window.recaptchaVerifier.clear();
-        window.recaptchaVerifier = null;
-      }
+  //     if (window.recaptchaVerifier) {
+  //       window.recaptchaVerifier.clear();
+  //       window.recaptchaVerifier = null;
+  //     }
 
-      if (err.code === "auth/too-many-requests") {
-        setStatus("Too many attempts. Try later.");
-      } else {
-        setStatus("Failed to send OTP");
-      }
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     if (err.code === "auth/too-many-requests") {
+  //       setStatus("Too many attempts. Try later.");
+  //     } else {
+  //       setStatus("Failed to send OTP");
+  //     }
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
-  const verifyOTP = async () => {
-    try {
-      setLoading(true);
+  // const verifyOTP = async () => {
+  //   try {
+  //     setLoading(true);
 
-      if (!confirmationResult) {
-        setStatus("OTP expired");
-        return;
-      }
+  //     if (!confirmationResult) {
+  //       setStatus("OTP expired");
+  //       return;
+  //     }
 
-      await confirmationResult.confirm(otp);
+  //     await confirmationResult.confirm(otp);
 
-      setIsVerified(true);
-      setShowOtp(false);
+  //     setIsVerified(true);
+  //     setShowOtp(false);
 
-      await submitForm();
-    } catch (err) {
-      console.log(err);
-      setStatus("Invalid OTP");
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     await submitForm();
+  //   } catch (err) {
+  //     console.log(err);
+  //     setStatus("Invalid OTP");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   const submitForm = async () => {
     try {
@@ -172,14 +172,15 @@ Contact: ${phone}`;
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!showOtp) {
-      await sendOTP();
-      return;
-    }
+    // if (!showOtp) {
+    //   await sendOTP();
+    //   return;
+    // }
 
-    if (!isVerified) {
-      await verifyOTP();
-    }
+    // if (!isVerified) {
+    //   await verifyOTP();
+    // }
+    await submitForm();
   };
 
   return (
@@ -212,51 +213,61 @@ Contact: ${phone}`;
                 onChange={(e) => setName(e.target.value)}
                 required
                 placeholder="Name"
-                className="w-1/2 p-3 rounded border"
+                className="w-1/2 p-3 placeholder:text-white rounded border"
               />
 
               <select
                 value={requirement}
                 onChange={(e) => setRequirement(e.target.value)}
                 required
-                className="w-1/2 p-3 rounded text-black"
+                className="w-1/2 p-3 rounded border border-white text-white"
               >
-                <option value="">Select Product</option>
+                <option className="text-black" value="">
+                  Select Product
+                </option>
 
-                <option>Anti Smog Gun</option>
+                <option className="text-black">Anti Smog Gun</option>
 
-                <option>Roof Mounted Anti Smog Gun</option>
+                <option className="text-black">
+                  Roof Mounted Anti Smog Gun
+                </option>
 
-                <option>Tractor Operated Anti Smog Gun</option>
+                <option className="text-black">
+                  Tractor Operated Anti Smog Gun
+                </option>
 
-                <option>Truck Mounted Anti Smog Gun</option>
+                <option className="text-black">
+                  Truck Mounted Anti Smog Gun
+                </option>
               </select>
             </div>
 
             <input
               value={phone}
-              disabled={showOtp}
+              disabled={loading}
               onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
               maxLength={10}
               required
               placeholder="Phone"
-              className="w-full p-3 rounded border"
+              className="w-full p-3 placeholder:text-white rounded border"
             />
 
             <input
               type="email"
               value={email}
               required
+              disabled={loading}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
-              className="w-full p-3 rounded border"
+              className="w-full p-3 placeholder:text-white rounded border"
             />
 
             <input
               value={city}
+              disabled={loading}
               onChange={(e) => setCity(e.target.value)}
               placeholder="City"
-              className="w-full p-3 rounded border"
+              className="w-full p-3 placeholder:text-white rounded border"
             />
 
             <textarea
@@ -264,27 +275,23 @@ Contact: ${phone}`;
               required
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Message"
-              className="w-full p-3 rounded border h-28"
+              className="w-full p-3 placeholder:text-white rounded border h-28"
             />
 
-            {showOtp && (
+            {/* {showOtp && (
               <input
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
                 placeholder="Enter OTP"
                 className="w-full p-3 rounded border"
               />
-            )}
+            )} */}
 
             <button
               disabled={loading}
               className="w-full py-3 rounded bg-blue-600"
             >
-              {loading
-                ? "Please wait..."
-                : !showOtp
-                  ? "Send OTP"
-                  : "Verify OTP"}
+              {loading ? "Please wait..." : "Submit Enquiry"}
             </button>
 
             {status && (

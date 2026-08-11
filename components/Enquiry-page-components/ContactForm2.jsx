@@ -4,8 +4,8 @@ import axios from "axios";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import { auth } from "@/lib/firebase";
+// import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
+// import { auth } from "@/lib/firebase";
 import EnquiryForm from "@/components/Enquiry";
 
 const ContactForm2 = () => {
@@ -14,10 +14,10 @@ const ContactForm2 = () => {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(null);
 
-  const [otp, setOtp] = useState("");
-  const [showOtp, setShowOtp] = useState(false);
-  const [confirmationResult, setConfirmationResult] = useState(null);
-  const [isVerified, setIsVerified] = useState(false);
+  // const [otp, setOtp] = useState("");
+  // const [showOtp, setShowOtp] = useState(false);
+  // const [confirmationResult, setConfirmationResult] = useState(null);
+  // const [isVerified, setIsVerified] = useState(false);
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -29,80 +29,81 @@ const ContactForm2 = () => {
   // -------------------------
   // RECAPTCHA INIT
   // -------------------------
-  useEffect(() => {
-    if (typeof window === "undefined") return;
+  // useEffect(() => {
+  //   if (typeof window === "undefined") return;
 
-    if (!window.recaptchaVerifier) {
-      window.recaptchaVerifier = new RecaptchaVerifier(
-        auth,
-        "recaptcha-container",
-        {
-          size: "invisible",
-        }
-      );
+  //   if (!window.recaptchaVerifier) {
+  //     window.recaptchaVerifier = new RecaptchaVerifier(
+  //       auth,
+  //       "recaptcha-container",
+  //       {
+  //         size: "invisible",
+  //       }
+  //     );
 
-      window.recaptchaVerifier.render();
-    }
-  }, []);
+  //     window.recaptchaVerifier.render();
+  //   }
+  // }, []);
 
   // -------------------------
   // SEND OTP
   // -------------------------
-  const sendOTP = async () => {
-    try {
-      setLoading(true);
+  // const sendOTP = async () => {
+  //   try {
+  //     setLoading(true);
 
-      const appVerifier = window.recaptchaVerifier;
+  //     const appVerifier = window.recaptchaVerifier;
 
-      if (!appVerifier) {
-        return;
-      }
+  //     if (!appVerifier) {
+  //       return;
+  //     }
 
-      const result = await signInWithPhoneNumber(
-        auth,
-        "+91" + phone,
-        appVerifier
-      );
+  //     const result = await signInWithPhoneNumber(
+  //       auth,
+  //       "+91" + phone,
+  //       appVerifier
+  //     );
 
-      setConfirmationResult(result);
-      setShowOtp(true);
+  //     setConfirmationResult(result);
+  //     setShowOtp(true);
 
-      setStatus("otp-sent");
-    } catch (err) {
-      console.log(err);
-      setStatus("error");
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     setStatus("otp-sent");
+  //   } catch (err) {
+  //     console.log(err);
+  //     setStatus("error");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   // -------------------------
   // VERIFY OTP
   // -------------------------
-  const verifyOTP = async () => {
-    try {
-      setLoading(true);
+  // const verifyOTP = async () => {
+  //   try {
+  //     setLoading(true);
 
-      if (!confirmationResult) return;
+  //     if (!confirmationResult) return;
 
-      await confirmationResult.confirm(otp);
+  //     await confirmationResult.confirm(otp);
 
-      setIsVerified(true);
+  //     setIsVerified(true);
 
-      await submitForm();
-    } catch (err) {
-      console.log(err);
-      setStatus("error");
-    } finally {
-      setLoading(false);
-    }
-  };
+  //     await submitForm();
+  //   } catch (err) {
+  //     console.log(err);
+  //     setStatus("error");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   // -------------------------
   // FINAL SUBMIT
   // -------------------------
   const submitForm = async () => {
     try {
+      setLoading(true)
       const formDataPayload = {
         platform: "Kapmix Machinery Contact Form",
         platformEmail: "kapmixmachinery@gmail.com",
@@ -116,11 +117,13 @@ const ContactForm2 = () => {
 
       const res = await axios.post(
         "https://brandbnalo.com/api/form/add",
-        formDataPayload
+        formDataPayload,
       );
 
       if (res?.data?.success) {
         setStatus("success");
+                setLoading(false)
+
 
         const whatsappText = `Hi, I am ${name}.
 Email: ${email}
@@ -130,10 +133,8 @@ Message: ${message}
 Contact: ${phone}`;
 
         window.open(
-          `https://wa.me/919999926558?text=${encodeURIComponent(
-            whatsappText
-          )}`,
-          "_blank"
+          `https://wa.me/919999926558?text=${encodeURIComponent(whatsappText)}`,
+          "_blank",
         );
 
         setName("");
@@ -142,10 +143,11 @@ Contact: ${phone}`;
         setCity("");
         setRequirement("");
         setMessage("");
-        setOtp("");
-        setShowOtp(false);
-        setIsVerified(false);
+        // setOtp("");
+        // setShowOtp(false);
+        // setIsVerified(false);
       } else {
+        setLoading(false)
         setStatus("error");
       }
     } catch (error) {
@@ -165,24 +167,23 @@ Contact: ${phone}`;
       return;
     }
 
-    if (!showOtp) {
-      await sendOTP();
-      return;
-    }
+    // if (!showOtp) {
+    //   await sendOTP();
+    //   return;
+    // }
 
-    if (!isVerified) {
-      await verifyOTP();
-      return;
-    }
+    // if (!isVerified) {
+    //   await verifyOTP();
+    //   return;
+    // }
 
     await submitForm();
   };
 
   return (
     <div className="lg:flex flex-col mb-6 hidden">
-
       {/* RECAPTCHA DIV */}
-      <div id="recaptcha-container"></div>
+      {/* <div id="recaptcha-container"></div> */}
 
       <motion.button
         whileHover={{ scale: 1.05 }}
@@ -194,19 +195,16 @@ Contact: ${phone}`;
       </motion.button>
 
       <div className="lg:grid lg:grid-cols-2 lg:gap-5">
-
         {/* FORM */}
         <div className="bg-white p-5 md:p-10 rounded-3xl shadow-2xl border my-4 mx-3">
-          <h2 className="text-3xl font-bold mb-6">
-            Send Your Requirement
-          </h2>
+          <h2 className="text-3xl font-bold mb-6">Send Your Requirement</h2>
 
           <form className="space-y-5" onSubmit={handleSubmit}>
-
             <div className="grid grid-cols-2 gap-4">
               <input
                 type="text"
                 placeholder="Full Name"
+                disabled={loading}
                 className="border p-3 rounded-lg"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -215,6 +213,7 @@ Contact: ${phone}`;
 
               <input
                 type="tel"
+                disabled={loading}
                 placeholder="Phone Number"
                 maxLength={10}
                 className="border p-3 rounded-lg"
@@ -227,6 +226,7 @@ Contact: ${phone}`;
             <input
               type="email"
               placeholder="Email"
+              disabled={loading}
               className="border p-3 rounded-lg w-full"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -236,6 +236,7 @@ Contact: ${phone}`;
             <input
               type="text"
               placeholder="City"
+              disabled={loading}
               className="border p-3 rounded-lg w-full"
               value={city}
               onChange={(e) => setCity(e.target.value)}
@@ -244,6 +245,7 @@ Contact: ${phone}`;
             <select
               className="border p-3 rounded-lg w-full"
               value={requirement}
+              disabled={loading}
               onChange={(e) => setRequirement(e.target.value)}
             >
               <option value="">Select Product</option>
@@ -255,13 +257,14 @@ Contact: ${phone}`;
 
             <textarea
               placeholder="Message"
+              disabled={loading}
               className="border p-3 rounded-lg w-full"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
 
             {/* OTP INPUT */}
-            {showOtp && !isVerified && (
+            {/* {showOtp && !isVerified && (
               <div className="space-y-3">
                 <input
                   type="text"
@@ -273,20 +276,14 @@ Contact: ${phone}`;
 
                 
               </div>
-            )}
+            )} */}
 
             <button
               type="submit"
               disabled={loading}
               className="bg-red-600 text-white w-full py-3 rounded-lg"
             >
-              {loading
-                ? "Processing..."
-                : !showOtp
-                ? "Send OTP"
-                : !isVerified
-                ? "Verify OTP"
-                : "Submit"}
+              {loading ? "Processing Your Needs..." : "Submit Requirments"}
             </button>
 
             {status === "success" && (
@@ -296,9 +293,7 @@ Contact: ${phone}`;
             )}
 
             {status === "error" && (
-              <p className="text-red-600 font-bold">
-                ❌ Something went wrong
-              </p>
+              <p className="text-red-600 font-bold">❌ Something went wrong</p>
             )}
           </form>
         </div>
