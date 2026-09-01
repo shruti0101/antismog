@@ -184,7 +184,7 @@ const Location = () => {
             </h2>
 
             <p className="text-black mb-4 text-lg">
-              Looking for a reliable Anti Smog Gun Supplier in{" "}
+              Looking for a reliable <a href="/" >Anti Smog Gun Supplier</a> in{" "}
               <strong>{city}?</strong> Kapmix Machinery Pvt. Ltd.is Provide
               advanced dust suppression and pollution control solutions designed
               to combat rising air pollution levels in urban and industrial
