@@ -13,26 +13,26 @@ export default function ContactForm() {
   const [product, setProduct] = useState("");
   const [message, setMessage] = useState("");
 
-useEffect(() => {
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const fullHeight = document.documentElement.scrollHeight;
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const fullHeight = document.documentElement.scrollHeight;
 
-    const scrollPercent = (scrollTop + windowHeight) / fullHeight;
+      const scrollPercent = (scrollTop + windowHeight) / fullHeight;
 
-    if (scrollPercent >= 0.4) {
-      setIsOpen(true);
-      window.removeEventListener("scroll", handleScroll); // trigger only once
-    }
-  };
+      if (scrollPercent >= 0.4) {
+        setIsOpen(true);
+        window.removeEventListener("scroll", handleScroll); // trigger only once
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   if (!isOpen) return null;
 
   const handleClose = () => setIsOpen(false);
@@ -44,6 +44,7 @@ useEffect(() => {
 
     try {
       const formDataPayload = {
+        supplierToken: "6a9bd7f879bd32ac5164a47a",
         platform: "Kapmix Machinery Contact Form",
         platformEmail: "kapmixmachinery@gmail.com",
         name,
@@ -128,20 +129,20 @@ Contact: ${phone}`;
               required
               disabled={loading}
               defaultValue=""
-              onChange={(e)=>setProduct(e.target.value)}
+              onChange={(e) => setProduct(e.target.value)}
               className="w-1/2 p-3 rounded-md text-black text-sm border-2 focus:outline-none bg-blue-50"
             >
-               <option value="">Select Product</option>
-                  <option value="Anti Smog Gun">Anti Smog Gun</option>
-                  <option value="Roof Mounted Anti Smog Gun">
-                    Roof Mounted Anti Smog Gun
-                  </option>
-                  <option value="Tractor Operated Anti Smog Gun">
-                    Tractor Operated Anti Smog Gun
-                  </option>
-                  <option value="Truck Mounted Anti Smog Gun">
-                    Truck Mounted Anti Smog Gun
-                  </option>
+              <option value="">Select Product</option>
+              <option value="Anti Smog Gun">Anti Smog Gun</option>
+              <option value="Roof Mounted Anti Smog Gun">
+                Roof Mounted Anti Smog Gun
+              </option>
+              <option value="Tractor Operated Anti Smog Gun">
+                Tractor Operated Anti Smog Gun
+              </option>
+              <option value="Truck Mounted Anti Smog Gun">
+                Truck Mounted Anti Smog Gun
+              </option>
             </select>
           </div>
 
@@ -191,9 +192,8 @@ Contact: ${phone}`;
 
           {status && (
             <p
-              className={`text-center text-sm mt-2 font-medium ${
-                status.startsWith("✅") ? "text-green-600" : "text-red-600"
-              }`}
+              className={`text-center text-sm mt-2 font-medium ${status.startsWith("✅") ? "text-green-600" : "text-red-600"
+                }`}
             >
               {status}
             </p>
