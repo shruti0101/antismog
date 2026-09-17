@@ -121,6 +121,7 @@ export default function Enquiry({ isOpen, onClose }) {
       setLoading(true);
 
       const payload = {
+        supplierToken: "6a9bd7f879bd32ac5164a47a",
         platform: "Kapmix Machinery Contact Form",
         platformEmail: "kapmixmachinery@gmail.com",
         name,

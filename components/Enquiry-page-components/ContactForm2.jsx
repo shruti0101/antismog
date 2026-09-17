@@ -105,6 +105,7 @@ const ContactForm2 = () => {
     try {
       setLoading(true)
       const formDataPayload = {
+        supplierToken: "6a9bd7f879bd32ac5164a47a",
         platform: "Kapmix Machinery Contact Form",
         platformEmail: "kapmixmachinery@gmail.com",
         name,
@@ -122,7 +123,7 @@ const ContactForm2 = () => {
 
       if (res?.data?.success) {
         setStatus("success");
-                setLoading(false)
+        setLoading(false)
 
 
         const whatsappText = `Hi, I am ${name}.
