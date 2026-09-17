@@ -234,6 +234,20 @@ export default function ProductPage({ params }) {
               </div>
             </div>
 
+            <div className="py-4 ml-2 mb-2">
+  {product.price && (
+    <div className="inline-flex items-center gap-3">
+      <span className="text-sm font-medium text-gray-500 uppercase tracking-wider">
+        Price
+      </span>
+
+      <span className="text-2xl sm:text-3xl font-bold text-black tracking-tight">
+        {product.price}
+      </span>
+    </div>
+  )}
+</div>
+
             {/* ================= CTA ================= */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button

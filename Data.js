@@ -16,6 +16,7 @@ export const categories = [
           "Long range anti smog gun machine for large-scale dust suppression with up to 100 meter spray.",
         videoUrl:
           "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
+          price:"₹ 1,35,000",
         description: [
           {
             type: "p",
@@ -849,6 +850,7 @@ export const categories = [
           "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
         category: "anti-smog-gun",
         type: "range",
+        price:"₹ 1,05,000",
 
         description: [
           {
@@ -1270,6 +1272,7 @@ export const categories = [
           "Advanced roof mounted fog cannon for efficient dust suppression and air pollution control across industrial, warehouse, and urban environments.",
         videoUrl:
           "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
+          price:"₹ 1,10,000",
         description: [
           {
             type: "p",
@@ -1834,6 +1837,7 @@ export const categories = [
           "Advanced tractor mounted fog cannon for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
         videoUrl:
           "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
+          price:"₹ 11,50,000",
         description: [
           {
             type: "p",
@@ -2377,6 +2381,7 @@ export const categories = [
           "Advanced truck mounted spray cannon for efficient dust suppression and air pollution control across construction, mining, and industrial sites.",
         videoUrl:
           "https://www.youtube.com/embed/05vYMbpg8ag?si=BCYvvFa5OX0soGhH",
+          price:"",
         description: [
           {
             type: "p",

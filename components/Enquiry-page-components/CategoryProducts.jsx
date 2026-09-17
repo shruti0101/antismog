@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import EnquiryForm from "@/components/Enquiry";
+import Link from "next/link";
 
 const CategoryProducts = () => {
   const [enquiry, setEnquiry] = useState(false);
@@ -11,18 +12,23 @@ const CategoryProducts = () => {
     {
       src: "/nav/category-1-nav.webp",
       title: "Anti Smog Gun Machine",
+      href:"/products/anti-smog-gun-75-100"
     },
     {
       src: "/nav/category-2-nav.webp",
       title: "Roof Mounted Anti Smog Gun",
+      href:"/products/roof-mounted-fog-cannon"
     },
     {
       src: "/nav/category-3-nav.webp",
       title: "Tractor Operated Anti Smog Gun",
+      href:"/products/tractor-mounted-fog-cannon"
+
     },
     {
       src: "/nav/category-4-nav.webp",
       title: "Truck Mounted Anti Smog Gun",
+      href:"/inquiry"
     },
   ];
 
@@ -37,30 +43,36 @@ const CategoryProducts = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:mt-6">
         {categories.map((item, index) => (
-          <div
-            key={index}
-            className="border rounded-xl overflow-hidden shadow hover:shadow-2xl duration-300 flex flex-col items-center"
-          >
-            <div className="w-full h-[350px] relative">
-              <Image
-                src={item.src}
-                alt={item.title}
-                fill
-                className="object-cover"
-              />
-            </div>
+         <Link
+  href={item.href}
+  key={index}
+  className="border rounded-xl overflow-hidden shadow hover:shadow-2xl duration-300 flex flex-col items-center"
+>
+  <div className="w-full h-[350px] relative">
+    <Image
+      src={item.src}
+      alt={item.title}
+      fill
+      className="object-cover"
+    />
+  </div>
 
-            <h3 className="text-center my-2 font-bold text-lg">
-              {item.title}
-            </h3>
+  <h3 className="text-center my-2 font-bold text-lg">
+    {item.title}
+  </h3>
 
-            <button
-              onClick={() => setEnquiry(true)}
-              className="rounded-lg px-4 py-2 bg-red-600 text-white mx-auto text-xl my-5"
-            >
-              Enquiry Now
-            </button>
-          </div>
+  <button
+    type="button"
+    onClick={(e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      setEnquiry(true);
+    }}
+    className="rounded-lg px-4 py-2 bg-red-600 text-white mx-auto text-xl my-5"
+  >
+    Enquiry Now
+  </button>
+</Link>
         ))}
       </div>
 

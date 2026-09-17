@@ -58,6 +58,10 @@ export default function Footer() {
               { name: "Blogs", link: "/" },
               { name: "Contact", link: "/contact" },
               { name: "Sitemap", link: "/sitemap" },
+              { name: "Privacy Policy", link: "/privacy-policy" },
+              { name: "Terms & Conditions", link: "/terms-conditions" },
+              { name: "Return & Refund", link: "/return-refund" },
+              { name: "Shipping Policy", link: "/shipping-policy" },
               { name: "Inquiry", link: "/inquiry" },
             ].map((item, i) => (
               <Link

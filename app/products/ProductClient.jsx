@@ -44,9 +44,9 @@ const Page = () => {
               />
               <div className="p-3">
                 <h2 className="text-lg text-center font-semibold">{product.name}</h2>
-                {product.price && (
+                {/* {product.price && (
                   <p className="text-gray-600">{product.price}</p>
-                )}
+                )} */}
               </div>
             </Link>
           ))}
