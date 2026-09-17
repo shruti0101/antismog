@@ -36,6 +36,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
           rel="stylesheet"
         />
+        <meta name="google-site-verification" content="sJPsIKHGALozzxzi3j9sgw3WTBeglKI4p9nAz4OC2AU" />
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
