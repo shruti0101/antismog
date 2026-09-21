@@ -204,6 +204,7 @@ export const categories = [
           "High-performance anti smog gun without water tank for continuous dust suppression with external water connection.",
         videoUrl:
           "https://www.youtube.com/embed/OdoPdgHx83Y?si=jgk9xaQQqh_FThP6",
+          price:"₹1,10,000",
         description: [
           {
             type: "p",
@@ -308,6 +309,7 @@ export const categories = [
           "Advanced anti-pollution control gun for efficient dust suppression and air quality improvement across industrial and construction sites.",
         videoUrl:
           "https://www.youtube.com/embed/D5kpo6z1ExY?si=D1rGGIefvzDNTGOQ",
+            price:"₹1,35,000",
         description: [
           {
             type: "p",
@@ -413,6 +415,7 @@ export const categories = [
           "https://www.youtube.com/embed/1HNrs_bWCCc?si=x13CXVzMCGPHsKzs",
         category: "anti-smog-gun",
         type: "no-autoswing",
+          price:"₹1,10,000",
 
         description: [
           {
@@ -956,6 +959,7 @@ export const categories = [
           "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
         category: "anti-smog-gun",
         type: "range",
+        price:"₹ 80,000",
 
         description: [
           {
@@ -1381,6 +1385,7 @@ export const categories = [
           "Advanced rooftop anti smog gun for efficient dust suppression and air pollution control across industrial, commercial, and urban environments.",
         videoUrl:
           "https://www.youtube.com/embed/D5kpo6z1ExY?si=D1rGGIefvzDNTGOQ",
+          price:"₹ 11,50,000",
         description: [
           {
             type: "p",
@@ -1610,6 +1615,7 @@ export const categories = [
           "https://www.youtube.com/embed/u-Z93mTHpiU?si=spiPxa9ibUzLywKN",
         category: "anti-smog-gun",
         type: "mobile",
+        price:"₹ 11,50,000",
 
         description: [
           {
@@ -3043,11 +3049,7 @@ export const serviceLocations = [
     id: 111,
   },
 
-  {
-    href: "/anti-smog-gun-supplier-in-delhi",
-    label: "Delhi",
-    id: 112,
-  },
+  
 
   {
     href: "/anti-smog-gun-supplier-in-goa",

@@ -42,11 +42,11 @@ const Page = () => {
                 title={product.name} 
                 className="w-full h-75 object-contain"
               />
-              <div className="p-3">
+              <div className="p-3   items-center">
                 <h2 className="text-lg text-center font-semibold">{product.name}</h2>
-                {/* {product.price && (
-                  <p className="text-gray-600">{product.price}</p>
-                )} */}
+                {product.price && (
+                  <p className="text-gray-600 text-center font-semibold">{product.price}</p>
+                )}
               </div>
             </Link>
           ))}

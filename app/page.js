@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "@/components/Landingpage/Hero";
 import About from "@/components/Landingpage/About";
 import Categories from "@/components/Landingpage/Categories";
@@ -35,7 +34,7 @@ export default function Home() {
 
       <Otherproduct/>
 
-      {/* <Loactions />  */}
+      <Loactions /> 
 
       {/* <CityPage /> */}
 
