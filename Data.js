@@ -1385,7 +1385,7 @@ export const categories = [
           "Advanced rooftop anti smog gun for efficient dust suppression and air pollution control across industrial, commercial, and urban environments.",
         videoUrl:
           "https://www.youtube.com/embed/D5kpo6z1ExY?si=D1rGGIefvzDNTGOQ",
-          price:"₹ 11,50,000",
+          price:"₹ 1,35,000",
         description: [
           {
             type: "p",
